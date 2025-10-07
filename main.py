@@ -2,24 +2,30 @@ from flask import Flask, request, render_template, jsonify
 import numpy as np
 import pandas as pd
 import pickle
+import os
+import re
 
 
-# flask app
-app = Flask(__name__)
+# Resolve paths relative to this file so the app works no matter the CWD
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# flask app (use absolute folders for templates/static)
+app = Flask(__name__, template_folder=os.path.join(BASE_DIR, 'templates'),
+            static_folder=os.path.join(BASE_DIR, 'static'))
 
 
 
 # load databasedataset===================================
-sym_des = pd.read_csv("symtoms_df.csv")
-precautions = pd.read_csv("precautions_df.csv")
-workout = pd.read_csv("workout_df.csv")
-description = pd.read_csv("description.csv")
-medications = pd.read_csv('medications.csv')
-diets = pd.read_csv("diets.csv")
+sym_des = pd.read_csv(os.path.join(BASE_DIR, "symtoms_df.csv"))
+precautions = pd.read_csv(os.path.join(BASE_DIR, "precautions_df.csv"))
+workout = pd.read_csv(os.path.join(BASE_DIR, "workout_df.csv"))
+description = pd.read_csv(os.path.join(BASE_DIR, "description.csv"))
+medications = pd.read_csv(os.path.join(BASE_DIR, 'medications.csv'))
+diets = pd.read_csv(os.path.join(BASE_DIR, "diets.csv"))
 
 
 # load model===========================================
-svc = pickle.load(open('svc.pkl','rb'))
+svc = pickle.load(open(os.path.join(BASE_DIR, 'svc.pkl'), 'rb'))
 
 
 #============================================================
@@ -95,14 +101,34 @@ def home():
             user_symptoms = [symptom.strip("[]' ") for symptom in user_symptoms]
             print(f"Processed symptoms: {user_symptoms}")
             
-            # Validate that all symptoms exist in our dictionary
+            # Normalization helper (case-insensitive + spaces -> underscores + remove punctuation)
+            def normalize(sym: str) -> str:
+                if not sym:
+                    return ''
+                s = sym.lower().strip()
+                # remove unwanted punctuation except underscore and spaces
+                s = re.sub(r"[^a-z0-9_\s]", "", s)
+                # collapse spaces to single underscore
+                s = re.sub(r"\s+", "_", s)
+                return s
+
             valid_symptoms = []
             invalid_symptoms = []
-            for symptom in user_symptoms:
-                if symptom in symptoms_dict:
-                    valid_symptoms.append(symptom)
+            for original in user_symptoms:
+                norm = normalize(original)
+                if norm in symptoms_dict:
+                    valid_symptoms.append(norm)
                 else:
-                    invalid_symptoms.append(symptom)
+                    invalid_symptoms.append(original)
+
+            # remove duplicates preserving order
+            seen = set()
+            deduped = []
+            for vs in valid_symptoms:
+                if vs not in seen:
+                    seen.add(vs)
+                    deduped.append(vs)
+            valid_symptoms = deduped
             
             if not valid_symptoms:
                 message = f"No valid symptoms found. Invalid symptoms: {', '.join(invalid_symptoms)}. Please check spelling and use symptoms like: itching, cough, fever, headache, etc."
@@ -120,7 +146,8 @@ def home():
 
             return render_template('index.html', predicted_disease=predicted_disease, dis_des=dis_des,
                                    my_precautions=my_precautions, medications=medications, my_diet=rec_diet,
-                                   workout=workout)
+                                   workout=workout, accepted_symptoms=valid_symptoms,
+                                   invalid_symptoms=invalid_symptoms)
 
     common_symptoms = ['itching', 'cough', 'high_fever', 'headache', 'stomach_pain', 'vomiting', 
                       'fatigue', 'chest_pain', 'nausea', 'dizziness', 'back_pain', 'joint_pain']
