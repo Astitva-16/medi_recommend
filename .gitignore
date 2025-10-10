@@ -45,3 +45,9 @@ instance/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+
+# Large training files
+train-*.csv
+test-*.csv
+*train*.csv
+*test*.csv
