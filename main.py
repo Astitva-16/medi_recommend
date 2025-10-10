@@ -1,7 +1,7 @@
 from flask import Flask, request, render_template, jsonify
 import numpy as np
 import pandas as pd
-import pickle
+import joblib
 import os
 import re
 
@@ -13,7 +13,39 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 app = Flask(__name__, template_folder=os.path.join(BASE_DIR, 'templates'),
             static_folder=os.path.join(BASE_DIR, 'static'))
 
+# Import the prediction function from your new model
+def preprocess_text(text):
+    """Cleans and standardizes text for prediction."""
+    if not isinstance(text, str):
+        return ""
+    text = text.lower()
+    text = re.sub(r'\[.*?\]', '', text)
+    text = re.sub(r'\s+', ' ', text).strip()
+    return text
 
+def predict_disease_from_symptoms(symptoms_text, model_pipeline):
+    """
+    Predicts the disease from a string of symptoms.
+    
+    Args:
+        symptoms_text (str): A string containing symptoms.
+        model_pipeline (dict): A dictionary containing the loaded model and vectorizer.
+        
+    Returns:
+        str: The predicted disease name.
+    """
+    # Clean the input text
+    cleaned_symptoms = preprocess_text(symptoms_text)
+    
+    # Vectorize the input using the loaded vectorizer
+    vectorizer = model_pipeline['vectorizer']
+    symptoms_tfidf = vectorizer.transform([cleaned_symptoms])
+    
+    # Predict using the loaded model
+    model = model_pipeline['model']
+    predicted_disease = model.predict(symptoms_tfidf)
+    
+    return predicted_disease[0].title()
 
 # load databasedataset===================================
 sym_des = pd.read_csv(os.path.join(BASE_DIR, "symtoms_df.csv"))
@@ -23,41 +55,103 @@ description = pd.read_csv(os.path.join(BASE_DIR, "description.csv"))
 medications = pd.read_csv(os.path.join(BASE_DIR, 'medications.csv'))
 diets = pd.read_csv(os.path.join(BASE_DIR, "diets.csv"))
 
+# Load your new treatment lookup for enhanced recommendations
+try:
+    treatment_lookup = pd.read_csv(os.path.join(BASE_DIR, "treatment_lookup.csv"))
+    print("✅ Enhanced treatment lookup loaded successfully")
+except FileNotFoundError:
+    treatment_lookup = None
+    print("⚠️ Treatment lookup not found, using basic recommendations")
 
-# load model===========================================
-svc = pickle.load(open(os.path.join(BASE_DIR, 'svc.pkl'), 'rb'))
+# load new model===========================================
+try:
+    model_pipeline = joblib.load(os.path.join(BASE_DIR, 'disease_model.joblib'))
+    print("✅ New ML model loaded successfully from disease_model.joblib")
+except FileNotFoundError:
+    print("❌ Error: disease_model.joblib not found. Please run the training script first.")
+    model_pipeline = None
 
 
 #============================================================
 # custome and helping functions
 #==========================helper funtions================
 def helper(dis):
-    desc = description[description['Disease'] == dis]['Description']
-    desc = " ".join([w for w in desc])
+    """Enhanced helper function with better disease matching"""
+    # Normalize disease name for better matching
+    dis_normalized = dis.lower().strip()
+    
+    # Try exact match first
+    desc_match = description[description['Disease'].str.lower() == dis_normalized]
+    if desc_match.empty:
+        # Try partial match
+        desc_match = description[description['Disease'].str.lower().str.contains(dis_normalized, regex=False, na=False)]
+    
+    if not desc_match.empty:
+        desc = desc_match['Description'].iloc[0]
+    else:
+        desc = f"Information about {dis} is being updated in our database."
+    
+    # Similar approach for other data
+    def safe_lookup(df, disease_col, disease_name, data_cols):
+        """Safely lookup data with fallback"""
+        exact_match = df[df[disease_col].str.lower() == disease_name.lower()]
+        if exact_match.empty:
+            partial_match = df[df[disease_col].str.lower().str.contains(disease_name.lower(), regex=False, na=False)]
+            if not partial_match.empty:
+                return partial_match[data_cols].iloc[0].dropna().tolist()
+            else:
+                return ["Consult a healthcare professional for specific guidance."]
+        return exact_match[data_cols].iloc[0].dropna().tolist()
+    
+    # Get precautions
+    pre = safe_lookup(precautions, 'Disease', dis, ['Precaution_1', 'Precaution_2', 'Precaution_3', 'Precaution_4'])
+    
+    # Get medications
+    med = safe_lookup(medications, 'Disease', dis, ['Medication'])
+    
+    # Get diet
+    die = safe_lookup(diets, 'Disease', dis, ['Diet'])
+    
+    # Get workout
+    wrkout = safe_lookup(workout, 'disease', dis, ['workout'])
+    
+    # Try to get enhanced treatment info if available
+    if treatment_lookup is not None:
+        enhanced_match = treatment_lookup[treatment_lookup['Name'].str.lower().str.contains(dis.lower(), regex=False, na=False)]
+        if not enhanced_match.empty:
+            treatment_info = enhanced_match['Treatments'].iloc[0]
+            if pd.notna(treatment_info) and treatment_info.strip():
+                # Add enhanced treatment to medications if available
+                med.insert(0, f"Enhanced Treatment: {treatment_info}")
 
-    pre = precautions[precautions['Disease'] == dis][['Precaution_1', 'Precaution_2', 'Precaution_3', 'Precaution_4']]
-    pre = [col for col in pre.values]
+    return desc, [pre], med, die, wrkout
 
-    med = medications[medications['Disease'] == dis]['Medication']
-    med = [med for med in med.values]
-
-    die = diets[diets['Disease'] == dis]['Diet']
-    die = [die for die in die.values]
-
-    wrkout = workout[workout['disease'] == dis] ['workout']
-
-
-    return desc,pre,med,die,wrkout
-
-symptoms_dict = {'itching': 0, 'skin_rash': 1, 'nodal_skin_eruptions': 2, 'continuous_sneezing': 3, 'shivering': 4, 'chills': 5, 'joint_pain': 6, 'stomach_pain': 7, 'acidity': 8, 'ulcers_on_tongue': 9, 'muscle_wasting': 10, 'vomiting': 11, 'burning_micturition': 12, 'spotting_ urination': 13, 'fatigue': 14, 'weight_gain': 15, 'anxiety': 16, 'cold_hands_and_feets': 17, 'mood_swings': 18, 'weight_loss': 19, 'restlessness': 20, 'lethargy': 21, 'patches_in_throat': 22, 'irregular_sugar_level': 23, 'cough': 24, 'high_fever': 25, 'sunken_eyes': 26, 'breathlessness': 27, 'sweating': 28, 'dehydration': 29, 'indigestion': 30, 'headache': 31, 'yellowish_skin': 32, 'dark_urine': 33, 'nausea': 34, 'loss_of_appetite': 35, 'pain_behind_the_eyes': 36, 'back_pain': 37, 'constipation': 38, 'abdominal_pain': 39, 'diarrhoea': 40, 'mild_fever': 41, 'yellow_urine': 42, 'yellowing_of_eyes': 43, 'acute_liver_failure': 44, 'fluid_overload': 45, 'swelling_of_stomach': 46, 'swelled_lymph_nodes': 47, 'malaise': 48, 'blurred_and_distorted_vision': 49, 'phlegm': 50, 'throat_irritation': 51, 'redness_of_eyes': 52, 'sinus_pressure': 53, 'runny_nose': 54, 'congestion': 55, 'chest_pain': 56, 'weakness_in_limbs': 57, 'fast_heart_rate': 58, 'pain_during_bowel_movements': 59, 'pain_in_anal_region': 60, 'bloody_stool': 61, 'irritation_in_anus': 62, 'neck_pain': 63, 'dizziness': 64, 'cramps': 65, 'bruising': 66, 'obesity': 67, 'swollen_legs': 68, 'swollen_blood_vessels': 69, 'puffy_face_and_eyes': 70, 'enlarged_thyroid': 71, 'brittle_nails': 72, 'swollen_extremeties': 73, 'excessive_hunger': 74, 'extra_marital_contacts': 75, 'drying_and_tingling_lips': 76, 'slurred_speech': 77, 'knee_pain': 78, 'hip_joint_pain': 79, 'muscle_weakness': 80, 'stiff_neck': 81, 'swelling_joints': 82, 'movement_stiffness': 83, 'spinning_movements': 84, 'loss_of_balance': 85, 'unsteadiness': 86, 'weakness_of_one_body_side': 87, 'loss_of_smell': 88, 'bladder_discomfort': 89, 'foul_smell_of urine': 90, 'continuous_feel_of_urine': 91, 'passage_of_gases': 92, 'internal_itching': 93, 'toxic_look_(typhos)': 94, 'depression': 95, 'irritability': 96, 'muscle_pain': 97, 'altered_sensorium': 98, 'red_spots_over_body': 99, 'belly_pain': 100, 'abnormal_menstruation': 101, 'dischromic _patches': 102, 'watering_from_eyes': 103, 'increased_appetite': 104, 'polyuria': 105, 'family_history': 106, 'mucoid_sputum': 107, 'rusty_sputum': 108, 'lack_of_concentration': 109, 'visual_disturbances': 110, 'receiving_blood_transfusion': 111, 'receiving_unsterile_injections': 112, 'coma': 113, 'stomach_bleeding': 114, 'distention_of_abdomen': 115, 'history_of_alcohol_consumption': 116, 'fluid_overload.1': 117, 'blood_in_sputum': 118, 'prominent_veins_on_calf': 119, 'palpitations': 120, 'painful_walking': 121, 'pus_filled_pimples': 122, 'blackheads': 123, 'scurring': 124, 'skin_peeling': 125, 'silver_like_dusting': 126, 'small_dents_in_nails': 127, 'inflammatory_nails': 128, 'blister': 129, 'red_sore_around_nose': 130, 'yellow_crust_ooze': 131}
-diseases_list = {15: 'Fungal infection', 4: 'Allergy', 16: 'GERD', 9: 'Chronic cholestasis', 14: 'Drug Reaction', 33: 'Peptic ulcer diseae', 1: 'AIDS', 12: 'Diabetes ', 17: 'Gastroenteritis', 6: 'Bronchial Asthma', 23: 'Hypertension ', 30: 'Migraine', 7: 'Cervical spondylosis', 32: 'Paralysis (brain hemorrhage)', 28: 'Jaundice', 29: 'Malaria', 8: 'Chicken pox', 11: 'Dengue', 37: 'Typhoid', 40: 'hepatitis A', 19: 'Hepatitis B', 20: 'Hepatitis C', 21: 'Hepatitis D', 22: 'Hepatitis E', 3: 'Alcoholic hepatitis', 36: 'Tuberculosis', 10: 'Common Cold', 34: 'Pneumonia', 13: 'Dimorphic hemmorhoids(piles)', 18: 'Heart attack', 39: 'Varicose veins', 26: 'Hypothyroidism', 24: 'Hyperthyroidism', 25: 'Hypoglycemia', 31: 'Osteoarthristis', 5: 'Arthritis', 0: '(vertigo) Paroymsal  Positional Vertigo', 2: 'Acne', 38: 'Urinary tract infection', 35: 'Psoriasis', 27: 'Impetigo'}
-
-# Model Prediction function
+# Model Prediction function - Updated for new ML model
 def get_predicted_value(patient_symptoms):
-    input_vector = np.zeros(len(symptoms_dict))
-    for item in patient_symptoms:
-        input_vector[symptoms_dict[item]] = 1
-    return diseases_list[svc.predict([input_vector])[0]]
+    """
+    New prediction function using your trained joblib model
+    """
+    if model_pipeline is None:
+        return "Model not available. Please train the model first."
+    
+    # Convert symptoms list to text format for the new model
+    symptoms_text = ", ".join(patient_symptoms)
+    
+    # Use the new model for prediction
+    try:
+        predicted_disease = predict_disease_from_symptoms(symptoms_text, model_pipeline)
+        return predicted_disease
+    except Exception as e:
+        print(f"Prediction error: {e}")
+        return "Unable to predict. Please check your symptoms."
+
+# Legacy function kept for compatibility (now uses new model)
+def get_predicted_value_legacy(patient_symptoms):
+    """
+    Legacy prediction function converted to use new model
+    This maintains compatibility with existing symptom processing
+    """
+    return get_predicted_value(patient_symptoms)
 
 
 
@@ -74,81 +168,66 @@ def index():
 
 @app.route('/symptoms')
 def show_symptoms():
-    """Display all available symptoms"""
-    return render_template("symptoms.html", symptoms=sorted(symptoms_dict.keys()))
+    """Display information about using symptoms with the new model"""
+    return render_template("symptoms.html", 
+                         info="Our new AI model can understand natural language symptom descriptions. Just describe how you feel!")
 
-# Define a route for the home page
+# Define a route for the prediction
 @app.route('/predict', methods=['GET', 'POST'])
 def home():
     if request.method == 'POST':
         symptoms = request.form.get('symptoms')
-        # mysysms = request.form.get('mysysms')
-        # print(mysysms)
         print(f"Raw symptoms input: '{symptoms}'")
-        if symptoms =="Symptoms":
-            message = "Please either write symptoms or you have written misspelled symptoms"
-            return render_template('index.html', message=message)
-        else:
+        
+        if not symptoms or symptoms.strip() == "" or symptoms == "Symptoms":
+            message = "Please enter your symptoms to get a medical prediction."
+            common_symptoms = ['itching', 'cough', 'high_fever', 'headache', 'stomach_pain', 'vomiting', 
+                              'fatigue', 'chest_pain', 'nausea', 'dizziness', 'back_pain', 'joint_pain']
+            return render_template('index.html', message=message, common_symptoms=common_symptoms)
 
-            # Split the user's input into a list of symptoms
-            # Handle both comma-separated and space-separated symptoms
-            if ',' in symptoms:
-                user_symptoms = [s.strip() for s in symptoms.split(',')]
-            else:
-                user_symptoms = [s.strip() for s in symptoms.split()]
+        try:
+            # Use the new model for prediction - it handles natural language input
+            predicted_disease = get_predicted_value([symptoms])  # Pass as list for compatibility
             
-            # Remove any extra characters, if any
-            user_symptoms = [symptom.strip("[]' ") for symptom in user_symptoms]
-            print(f"Processed symptoms: {user_symptoms}")
+            if "not available" in predicted_disease.lower() or "unable to predict" in predicted_disease.lower():
+                message = "Unable to predict disease. Please check your symptoms and try again."
+                common_symptoms = ['itching', 'cough', 'high_fever', 'headache', 'stomach_pain', 'vomiting', 
+                                  'fatigue', 'chest_pain', 'nausea', 'dizziness', 'back_pain', 'joint_pain']
+                return render_template('index.html', message=message, common_symptoms=common_symptoms)
             
-            # Normalization helper (case-insensitive + spaces -> underscores + remove punctuation)
-            def normalize(sym: str) -> str:
-                if not sym:
-                    return ''
-                s = sym.lower().strip()
-                # remove unwanted punctuation except underscore and spaces
-                s = re.sub(r"[^a-z0-9_\s]", "", s)
-                # collapse spaces to single underscore
-                s = re.sub(r"\s+", "_", s)
-                return s
-
-            valid_symptoms = []
-            invalid_symptoms = []
-            for original in user_symptoms:
-                norm = normalize(original)
-                if norm in symptoms_dict:
-                    valid_symptoms.append(norm)
-                else:
-                    invalid_symptoms.append(original)
-
-            # remove duplicates preserving order
-            seen = set()
-            deduped = []
-            for vs in valid_symptoms:
-                if vs not in seen:
-                    seen.add(vs)
-                    deduped.append(vs)
-            valid_symptoms = deduped
+            print(f"✅ Predicted disease: {predicted_disease}")
             
-            if not valid_symptoms:
-                message = f"No valid symptoms found. Invalid symptoms: {', '.join(invalid_symptoms)}. Please check spelling and use symptoms like: itching, cough, fever, headache, etc."
-                return render_template('index.html', message=message)
-            
-            if invalid_symptoms:
-                print(f"Warning: Invalid symptoms ignored: {invalid_symptoms}")
-            
-            predicted_disease = get_predicted_value(valid_symptoms)
+            # Get additional information about the disease
             dis_des, precautions, medications, rec_diet, workout = helper(predicted_disease)
 
             my_precautions = []
-            for i in precautions[0]:
-                my_precautions.append(i)
+            if precautions and len(precautions) > 0:
+                for i in precautions[0]:
+                    if i and str(i).strip() and str(i) != 'nan':  # Only add non-empty precautions
+                        my_precautions.append(i)
 
-            return render_template('index.html', predicted_disease=predicted_disease, dis_des=dis_des,
-                                   my_precautions=my_precautions, medications=medications, my_diet=rec_diet,
-                                   workout=workout, accepted_symptoms=valid_symptoms,
-                                   invalid_symptoms=invalid_symptoms)
+            # Prepare clean data for template
+            clean_medications = [med for med in medications if med and str(med).strip() and str(med) != 'nan']
+            clean_diet = [diet for diet in rec_diet if diet and str(diet).strip() and str(diet) != 'nan']
+            clean_workout = [work for work in workout if work and str(work).strip() and str(work) != 'nan']
 
+            return render_template('index.html', 
+                                   predicted_disease=predicted_disease, 
+                                   dis_des=dis_des,
+                                   my_precautions=my_precautions, 
+                                   medications=clean_medications, 
+                                   my_diet=clean_diet,
+                                   workout=clean_workout, 
+                                   user_symptoms=symptoms)
+
+        except Exception as e:
+            print(f"❌ Prediction error: {e}")
+            message = f"An error occurred during prediction. Please try again with different symptoms."
+            common_symptoms = ['itching', 'cough', 'high_fever', 'headache', 'stomach_pain', 'vomiting', 
+                              'fatigue', 'chest_pain', 'nausea', 'dizziness', 'back_pain', 'joint_pain']
+            return render_template('index.html', message=message, common_symptoms=common_symptoms)
+
+    # GET request - show the form
     common_symptoms = ['itching', 'cough', 'high_fever', 'headache', 'stomach_pain', 'vomiting', 
                       'fatigue', 'chest_pain', 'nausea', 'dizziness', 'back_pain', 'joint_pain']
     return render_template('index.html', common_symptoms=common_symptoms)
