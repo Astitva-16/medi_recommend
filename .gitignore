@@ -25,29 +25,63 @@ MANIFEST
 venv/
 env/
 ENV/
+.venv/
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
+*.sublime-project
+*.sublime-workspace
 
 # OS
 .DS_Store
 Thumbs.db
+*.tmp
 
 # Logs
 *.log
+logs/
 
 # Flask
 instance/
 .webassets-cache
+.env
 
 # Jupyter Notebook
 .ipynb_checkpoints
+*.ipynb
 
-# Large training files
-train-*.csv
-test-*.csv
-*train*.csv
-*test*.csv
+# Machine Learning & Data Science
+*.pkl
+*.joblib
+*.h5
+*.model
+models/
+checkpoints/
+
+# Data files (uncomment if you want to ignore large datasets)
+# *.csv
+# data/
+# datasets/
+
+# Temporary files
+temp/
+tmp/
+*.bak
+*.backup
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
