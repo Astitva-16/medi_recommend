@@ -1,411 +1,796 @@
-,Unnamed: 0,disease,workout
-0,0,Fungal infection,Avoid sugary foods
-1,1,Fungal infection,Consume probiotics
-2,2,Fungal infection,Increase intake of garlic
-3,3,Fungal infection,Include yogurt in diet
-4,4,Fungal infection,Limit processed foods
-5,5,Fungal infection,Stay hydrated
-6,6,Fungal infection,Consume green tea
-7,7,Fungal infection,Eat foods rich in zinc
-8,8,Fungal infection,Include turmeric in diet
-9,9,Fungal infection,Eat fruits and vegetables
-10,10,Allergy,Avoid allergenic foods
-11,11,Allergy,Consume anti-inflammatory foods
-12,12,Allergy,Include omega-3 fatty acids
-13,13,Allergy,Stay hydrated
-14,14,Allergy,Eat foods rich in vitamin C
-15,15,Allergy,Include quercetin-rich foods
-16,16,Allergy,Consume local honey
-17,17,Allergy,Limit processed foods
-18,18,Allergy,Include ginger in diet
-19,19,Allergy,Avoid artificial additives
-20,20,GERD,Consume smaller meals
-21,21,GERD,"Avoid trigger foods (spicy, fatty)"
-22,22,GERD,Eat high-fiber foods
-23,23,GERD,Limit caffeine and alcohol
-24,24,GERD,Chew food thoroughly
-25,25,GERD,Avoid late-night eating
-26,26,GERD,Consume non-citrus fruits
-27,27,GERD,Include lean proteins
-28,28,GERD,Stay hydrated
-29,29,GERD,Avoid carbonated beverages
-30,30,Chronic cholestasis,Consume a low-fat diet
-31,31,Chronic cholestasis,Eat high-fiber foods
-32,32,Chronic cholestasis,Include healthy fats
-33,33,Chronic cholestasis,Limit alcohol consumption
-34,34,Chronic cholestasis,Stay hydrated
-35,35,Chronic cholestasis,Consume antioxidant-rich foods
-36,36,Chronic cholestasis,Include omega-3 fatty acids
-37,37,Chronic cholestasis,Include lean proteins
-38,38,Chronic cholestasis,Limit processed foods
-39,39,Chronic cholestasis,Avoid fried foods
-40,40,Drug Reaction,Discontinue offending medication
-41,41,Drug Reaction,Stay hydrated
-42,42,Drug Reaction,Include anti-inflammatory foods
-43,43,Drug Reaction,Consume antioxidants
-44,44,Drug Reaction,Avoid trigger foods
-45,45,Drug Reaction,Include omega-3 fatty acids
-46,46,Drug Reaction,Limit caffeine and alcohol
-47,47,Drug Reaction,Stay hydrated
-48,48,Drug Reaction,Eat a balanced diet
-49,49,Drug Reaction,Consult a healthcare professional
-50,50,Peptic ulcer disease,"Consume smaller, more frequent meals"
-51,51,Peptic ulcer disease,"Avoid trigger foods (spicy, acidic)"
-52,52,Peptic ulcer disease,Include high-fiber foods
-53,53,Peptic ulcer disease,Limit caffeine and alcohol
-54,54,Peptic ulcer disease,Stay hydrated
-55,55,Peptic ulcer disease,Consume probiotics
-56,56,Peptic ulcer disease,Include lean proteins
-57,57,Peptic ulcer disease,Include antioxidant-rich foods
-58,58,Peptic ulcer disease,Limit processed foods
-59,59,Peptic ulcer disease,Avoid smoking and alcohol
-60,60,AIDS,Follow a balanced and nutritious diet
-61,61,AIDS,Include lean proteins
-62,62,AIDS,Consume nutrient-rich foods
-63,63,AIDS,Stay hydrated
-64,64,AIDS,Include healthy fats
-65,65,AIDS,Avoid raw or undercooked foods
-66,66,AIDS,Limit sugary foods and beverages
-67,67,AIDS,Consume immune-boosting foods
-68,68,AIDS,Take prescribed supplements
-69,69,AIDS,Consult a healthcare professional
-70,70,Diabetes,Monitor carbohydrate intake
-71,71,Diabetes,Eat balanced meals
-72,72,Diabetes,Include lean proteins
-73,73,Diabetes,Consume high-fiber foods
-74,74,Diabetes,Stay hydrated
-75,75,Diabetes,Limit sugary foods and beverages
-76,76,Diabetes,Include healthy fats
-77,77,Diabetes,Monitor blood sugar levels
-78,78,Diabetes,Consult a registered dietitian
-79,79,Diabetes,Take prescribed medications as directed
-80,80,Gastroenteritis,Stay hydrated
-81,81,Gastroenteritis,Consume clear fluids
-82,82,Gastroenteritis,"Follow the BRAT diet (bananas, rice, applesauce, toast)"
-83,83,Gastroenteritis,Include bland foods
-84,84,Gastroenteritis,Avoid fatty and greasy foods
-85,85,Gastroenteritis,Limit caffeine and alcohol
-86,86,Gastroenteritis,Avoid spicy foods
-87,87,Gastroenteritis,Consult a healthcare professional
-88,88,Gastroenteritis,Gradually reintroduce solid foods
-89,89,Gastroenteritis,Avoid dairy products
-90,90,Bronchial Asthma,Include anti-inflammatory foods
-91,91,Bronchial Asthma,Consume omega-3 fatty acids
-92,92,Bronchial Asthma,Limit sodium intake
-93,93,Bronchial Asthma,Stay hydrated
-94,94,Bronchial Asthma,Include antioxidant-rich foods
-95,95,Bronchial Asthma,Avoid sulfite-containing foods
-96,96,Bronchial Asthma,Limit processed foods
-97,97,Bronchial Asthma,Consume magnesium-rich foods
-98,98,Bronchial Asthma,Consult a healthcare professional
-99,99,Bronchial Asthma,Avoid trigger foods
-100,100,Hypertension,Follow the DASH diet (Dietary Approaches to Stop Hypertension)
-101,101,Hypertension,Limit sodium intake
-102,102,Hypertension,Include potassium-rich foods
-103,103,Hypertension,Stay hydrated
-104,104,Hypertension,Consume calcium-rich foods
-105,105,Hypertension,Limit alcohol consumption
-106,106,Hypertension,Include magnesium-rich foods
-107,107,Hypertension,Consume omega-3 fatty acids
-108,108,Hypertension,Limit processed foods
-109,109,Hypertension,Consult a healthcare professional
-110,110,Migraine,Identify and avoid trigger foods
-111,111,Migraine,Stay hydrated
-112,112,Migraine,Include magnesium-rich foods
-113,113,Migraine,Consume omega-3 fatty acids
-114,114,Migraine,Limit caffeine and alcohol
-115,115,Migraine,Consume riboflavin-rich foods
-116,116,Migraine,Limit processed foods
-117,117,Migraine,Maintain regular meal times
-118,118,Migraine,Consult a healthcare professional
-119,119,Migraine,Manage stress
-120,120,Cervical spondylosis,Include anti-inflammatory foods
-121,121,Cervical spondylosis,Consume omega-3 fatty acids
-122,122,Cervical spondylosis,Include vitamin D-rich foods
-123,123,Cervical spondylosis,Stay hydrated
-124,124,Cervical spondylosis,Consume antioxidant-rich foods
-125,125,Cervical spondylosis,Limit processed foods
-126,126,Cervical spondylosis,Include lean proteins
-127,127,Cervical spondylosis,Practice good posture
-128,128,Cervical spondylosis,Consult a healthcare professional
-129,129,Cervical spondylosis,Engage in regular exercise
-130,130,Paralysis (brain hemorrhage),Follow a balanced and nutritious diet
-131,131,Paralysis (brain hemorrhage),Include lean proteins
-132,132,Paralysis (brain hemorrhage),Consume nutrient-rich foods
-133,133,Paralysis (brain hemorrhage),Stay hydrated
-134,134,Paralysis (brain hemorrhage),Include healthy fats
-135,135,Paralysis (brain hemorrhage),Limit sugary foods and beverages
-136,136,Paralysis (brain hemorrhage),Include antioxidants
-137,137,Paralysis (brain hemorrhage),Consume foods rich in vitamin K
-138,138,Paralysis (brain hemorrhage),Consult a healthcare professional
-139,139,Paralysis (brain hemorrhage),Manage stress
-140,140,Jaundice,Stay hydrated
-141,141,Jaundice,Consume nutrient-rich foods
-142,142,Jaundice,Include protein-rich foods
-143,143,Jaundice,Consume easily digestible foods
-144,144,Jaundice,Limit fatty foods
-145,145,Jaundice,Avoid alcohol and caffeine
-146,146,Jaundice,Include vitamin C-rich foods
-147,147,Jaundice,Consult a healthcare professional
-148,148,Jaundice,Rest and conserve energy
-149,149,Jaundice,Gradually resume normal diet
-150,150,Malaria,Stay hydrated
-151,151,Malaria,Consume nutrient-rich foods
-152,152,Malaria,Include protein-rich foods
-153,153,Malaria,Consume foods rich in antioxidants
-154,154,Malaria,Limit fatty and greasy foods
-155,155,Malaria,Avoid alcohol and caffeine
-156,156,Malaria,Include vitamin C-rich foods
-157,157,Malaria,Consult a healthcare professional
-158,158,Malaria,Rest and conserve energy
-159,159,Malaria,Gradually resume normal diet
-160,160,Chicken pox,Stay hydrated
-161,161,Chicken pox,Include easily digestible foods
-162,162,Chicken pox,Include vitamin C-rich foods
-163,163,Chicken pox,Consume protein-rich foods
-164,164,Chicken pox,Include zinc-rich foods
-165,165,Chicken pox,Avoid spicy and acidic foods
-166,166,Chicken pox,Consult a healthcare professional
-167,167,Chicken pox,Practice good hygiene
-168,168,Chicken pox,Rest and conserve energy
-169,169,Chicken pox,Gradually resume normal diet
-170,170,Dengue,Stay hydrated
-171,171,Dengue,Include nutrient-rich foods
-172,172,Dengue,Consume foods rich in vitamin C and antioxidants
-173,173,Dengue,Limit fatty and greasy foods
-174,174,Dengue,Avoid caffeine and alcohol
-175,175,Dengue,Include soft and easily digestible foods
-176,176,Dengue,Consult a healthcare professional
-177,177,Dengue,Rest and conserve energy
-178,178,Dengue,Gradually resume normal diet
-179,179,Dengue,Follow medical recommendations
-180,180,Typhoid,Consume easily digestible foods
-181,181,Typhoid,Stay hydrated
-182,182,Typhoid,Include nutrient-rich foods
-183,183,Typhoid,Consume foods rich in vitamin C and antioxidants
-184,184,Typhoid,Include protein-rich foods
-185,185,Typhoid,Avoid fatty and greasy foods
-186,186,Typhoid,Consult a healthcare professional
-187,187,Typhoid,Gradually resume normal diet
-188,188,Typhoid,Follow medical recommendations
-189,189,Typhoid,Avoid alcohol and caffeine
-190,190,hepatitis A,Stay hydrated
-191,191,hepatitis A,Consume nutrient-rich foods
-192,192,hepatitis A,Include protein-rich foods
-193,193,hepatitis A,Consume easily digestible foods
-194,194,hepatitis A,Limit fatty foods
-195,195,hepatitis A,Avoid alcohol and caffeine
-196,196,hepatitis A,Include vitamin C-rich foods
-197,197,hepatitis A,Consult a healthcare professional
-198,198,hepatitis A,Rest and conserve energy
-199,199,hepatitis A,Gradually resume normal diet
-200,200,Hepatitis B,Follow a balanced and nutritious diet
-201,201,Hepatitis B,Stay hydrated
-202,202,Hepatitis B,Include protein-rich foods
-203,203,Hepatitis B,Consume nutrient-rich foods
-204,204,Hepatitis B,Limit fatty foods
-205,205,Hepatitis B,Avoid alcohol and caffeine
-206,206,Hepatitis B,Include vitamin C-rich foods
-207,207,Hepatitis B,Consult a healthcare professional
-208,208,Hepatitis B,Rest and conserve energy
-209,209,Hepatitis B,Gradually resume normal diet
-210,210,Hepatitis C,Follow a balanced and nutritious diet
-211,211,Hepatitis C,Stay hydrated
-212,212,Hepatitis C,Include protein-rich foods
-213,213,Hepatitis C,Consume nutrient-rich foods
-214,214,Hepatitis C,Limit fatty foods
-215,215,Hepatitis C,Avoid alcohol and caffeine
-216,216,Hepatitis C,Include vitamin C-rich foods
-217,217,Hepatitis C,Consult a healthcare professional
-218,218,Hepatitis C,Rest and conserve energy
-219,219,Hepatitis C,Gradually resume normal diet
-220,220,Hepatitis D,Follow a balanced and nutritious diet
-221,221,Hepatitis D,Stay hydrated
-222,222,Hepatitis D,Include protein-rich foods
-223,223,Hepatitis D,Consume nutrient-rich foods
-224,224,Hepatitis D,Limit fatty foods
-225,225,Hepatitis D,Avoid alcohol and caffeine
-226,226,Hepatitis D,Include vitamin C-rich foods
-227,227,Hepatitis D,Consult a healthcare professional
-228,228,Hepatitis D,Rest and conserve energy
-229,229,Hepatitis D,Gradually resume normal diet
-230,230,Hepatitis E,Stay hydrated
-231,231,Hepatitis E,Consume nutrient-rich foods
-232,232,Hepatitis E,Include protein-rich foods
-233,233,Hepatitis E,Consume easily digestible foods
-234,234,Hepatitis E,Limit fatty foods
-235,235,Hepatitis E,Avoid alcohol and caffeine
-236,236,Hepatitis E,Include vitamin C-rich foods
-237,237,Hepatitis E,Consult a healthcare professional
-238,238,Hepatitis E,Rest and conserve energy
-239,239,Hepatitis E,Gradually resume normal diet
-240,240,Alcoholic hepatitis,Avoid alcohol consumption
-241,241,Alcoholic hepatitis,Follow a balanced and nutritious diet
-242,242,Alcoholic hepatitis,Stay hydrated
-243,243,Alcoholic hepatitis,Consume nutrient-rich foods
-244,244,Alcoholic hepatitis,Include protein-rich foods
-245,245,Alcoholic hepatitis,Limit fatty foods
-246,246,Alcoholic hepatitis,Include antioxidants
-247,247,Alcoholic hepatitis,Consult a healthcare professional
-248,248,Alcoholic hepatitis,Rest and conserve energy
-249,249,Alcoholic hepatitis,Gradually resume normal diet
-250,250,Tuberculosis,Consume a high-protein diet
-251,251,Tuberculosis,Include nutrient-rich foods
-252,252,Tuberculosis,Stay hydrated
-253,253,Tuberculosis,Consume foods rich in vitamins A and C
-254,254,Tuberculosis,Include zinc-rich foods
-255,255,Tuberculosis,Limit sugary foods and beverages
-256,256,Tuberculosis,Consult a healthcare professional
-257,257,Tuberculosis,Rest and conserve energy
-258,258,Tuberculosis,Gradually resume normal diet
-259,259,Tuberculosis,Follow medical recommendations
-260,260,Common Cold,Stay hydrated
-261,261,Common Cold,Include nutrient-rich foods
-262,262,Common Cold,Consume foods rich in vitamin C and antioxidants
-263,263,Common Cold,Include zinc-rich foods
-264,264,Common Cold,Limit sugary foods and beverages
-265,265,Common Cold,Consume chicken soup
-266,266,Common Cold,Consult a healthcare professional
-267,267,Common Cold,Rest and conserve energy
-268,268,Common Cold,Gradually resume normal diet
-269,269,Common Cold,Follow medical recommendations
-270,270,Pneumonia,Stay hydrated
-271,271,Pneumonia,Include nutrient-rich foods
-272,272,Pneumonia,Consume foods rich in vitamin C and antioxidants
-273,273,Pneumonia,Include zinc-rich foods
-274,274,Pneumonia,Limit sugary foods and beverages
-275,275,Pneumonia,Consume chicken soup
-276,276,Pneumonia,Consult a healthcare professional
-277,277,Pneumonia,Rest and conserve energy
-278,278,Pneumonia,Gradually resume normal diet
-279,279,Pneumonia,Follow medical recommendations
-280,280,Dimorphic hemmorhoids(piles),Consume high-fiber foods
-281,281,Dimorphic hemmorhoids(piles),Stay hydrated
-282,282,Dimorphic hemmorhoids(piles),Include nutrient-rich foods
-283,283,Dimorphic hemmorhoids(piles),Consume foods rich in flavonoids
-284,284,Dimorphic hemmorhoids(piles),Limit processed foods
-285,285,Dimorphic hemmorhoids(piles),Avoid spicy and greasy foods
-286,286,Dimorphic hemmorhoids(piles),Consult a healthcare professional
-287,287,Dimorphic hemmorhoids(piles),Practice good hygiene
-288,288,Dimorphic hemmorhoids(piles),Gradually resume normal diet
-289,289,Dimorphic hemmorhoids(piles),Follow medical recommendations
-290,290,Heart attack,Follow a heart-healthy diet
-291,291,Heart attack,Limit sodium intake
-292,292,Heart attack,Include fiber-rich foods
-293,293,Heart attack,Consume healthy fats
-294,294,Heart attack,Include lean proteins
-295,295,Heart attack,Limit sugary foods and beverages
-296,296,Heart attack,Stay hydrated
-297,297,Heart attack,Consult a healthcare professional
-298,298,Heart attack,Follow medical recommendations
-299,299,Heart attack,Engage in regular exercise
-300,300,Varicose veins,Consume a high-fiber diet
-301,301,Varicose veins,Stay hydrated
-302,302,Varicose veins,Include nutrient-rich foods
-303,303,Varicose veins,Consume foods rich in antioxidants
-304,304,Varicose veins,Limit sodium intake
-305,305,Varicose veins,Include flavonoid-rich foods
-306,306,Varicose veins,Avoid standing or sitting for long periods
-307,307,Varicose veins,Consult a healthcare professional
-308,308,Varicose veins,Follow medical recommendations
-309,309,Varicose veins,Engage in regular exercise
-310,310,Hypothyroidism,Include iodine-rich foods
-311,311,Hypothyroidism,Consume selenium-rich foods
-312,312,Hypothyroidism,Stay hydrated
-313,313,Hypothyroidism,Include nutrient-rich foods
-314,314,Hypothyroidism,Limit processed foods
-315,315,Hypothyroidism,Consume foods rich in vitamins B and D
-316,316,Hypothyroidism,Consult a healthcare professional
-317,317,Hypothyroidism,Follow medical recommendations
-318,318,Hypothyroidism,Maintain a stable weight
-319,319,Hypothyroidism,Engage in regular exercise
-320,320,Hyperthyroidism,Limit iodine intake
-321,321,Hyperthyroidism,Consume cruciferous vegetables in moderation
-322,322,Hyperthyroidism,Stay hydrated
-323,323,Hyperthyroidism,Include nutrient-rich foods
-324,324,Hyperthyroidism,Limit caffeine and alcohol
-325,325,Hyperthyroidism,Include omega-3 fatty acids
-326,326,Hyperthyroidism,Consult a healthcare professional
-327,327,Hyperthyroidism,Follow medical recommendations
-328,328,Hyperthyroidism,Maintain a stable weight
-329,329,Hyperthyroidism,Engage in regular exercise
-330,330,Hypoglycemia,Consume complex carbohydrates
-331,331,Hypoglycemia,Include protein-rich foods
-332,332,Hypoglycemia,Stay hydrated
-333,333,Hypoglycemia,Limit sugary foods and beverages
-334,334,Hypoglycemia,Consume regular meals and snacks
-335,335,Hypoglycemia,Consult a healthcare professional
-336,336,Hypoglycemia,Monitor blood sugar levels
-337,337,Hypoglycemia,Follow medical recommendations
-338,338,Hypoglycemia,Engage in regular physical activity
-339,339,Hypoglycemia,Limit alcohol intake
-340,340,Osteoarthristis,Consume anti-inflammatory foods
-341,341,Osteoarthristis,Include omega-3 fatty acids
-342,342,Osteoarthristis,Consume antioxidant-rich foods
-343,343,Osteoarthristis,Stay hydrated
-344,344,Osteoarthristis,Limit processed foods
-345,345,Osteoarthristis,Include vitamin K-rich foods
-346,346,Osteoarthristis,Consult a healthcare professional
-347,347,Osteoarthristis,Follow medical recommendations
-348,348,Osteoarthristis,Engage in low-impact exercise
-349,349,Osteoarthristis,Maintain a healthy weight
-350,350,Arthritis,Consume anti-inflammatory foods
-351,351,Arthritis,Include omega-3 fatty acids
-352,352,Arthritis,Consume antioxidant-rich foods
-353,353,Arthritis,Stay hydrated
-354,354,Arthritis,Limit processed foods
-355,355,Arthritis,Include vitamin K-rich foods
-356,356,Arthritis,Consult a healthcare professional
-357,357,Arthritis,Follow medical recommendations
-358,358,Arthritis,Engage in low-impact exercise
-359,359,Arthritis,Maintain a healthy weight
-360,360,(vertigo) Paroymsal  Positional Vertigo,"Avoid trigger foods (caffeine, alcohol)"
-361,361,(vertigo) Paroymsal  Positional Vertigo,Limit sodium intake
-362,362,(vertigo) Paroymsal  Positional Vertigo,Stay hydrated
-363,363,(vertigo) Paroymsal  Positional Vertigo,Consume ginger and ginkgo biloba
-364,364,(vertigo) Paroymsal  Positional Vertigo,Limit artificial sweeteners
-365,365,(vertigo) Paroymsal  Positional Vertigo,Consult a healthcare professional
-366,366,(vertigo) Paroymsal  Positional Vertigo,Avoid sudden head movements
-367,367,(vertigo) Paroymsal  Positional Vertigo,Follow medical recommendations
-368,368,(vertigo) Paroymsal  Positional Vertigo,Manage stress
-369,369,(vertigo) Paroymsal  Positional Vertigo,Limit caffeine and stimulants
-370,370,Acne,Consume a balanced diet
-371,371,Acne,Limit dairy and high-glycemic foods
-372,372,Acne,Include antioxidants
-373,373,Acne,Stay hydrated
-374,374,Acne,Limit processed foods
-375,375,Acne,Include zinc-rich foods
-376,376,Acne,Consult a skincare professional
-377,377,Acne,Practice good skincare hygiene
-378,378,Acne,Limit sugary foods and beverages
-379,379,Acne,Follow medical recommendations
-380,380,Urinary tract infection,Stay hydrated
-381,381,Urinary tract infection,Consume cranberry products
-382,382,Urinary tract infection,Include vitamin C-rich foods
-383,383,Urinary tract infection,Limit caffeine and alcohol
-384,384,Urinary tract infection,Consume probiotics
-385,385,Urinary tract infection,Avoid spicy and acidic foods
-386,386,Urinary tract infection,Consult a healthcare professional
-387,387,Urinary tract infection,Follow medical recommendations
-388,388,Urinary tract infection,Maintain good hygiene
-389,389,Urinary tract infection,Limit sugary foods and beverages
-390,390,Psoriasis,Consume anti-inflammatory foods
-391,391,Psoriasis,Include omega-3 fatty acids
-392,392,Psoriasis,Include vitamin D analogues
-393,393,Psoriasis,Limit alcohol consumption
-394,394,Psoriasis,Stay hydrated
-395,395,Psoriasis,Consult a healthcare professional
-396,396,Psoriasis,Limit processed foods
-397,397,Psoriasis,Follow medical recommendations
-398,398,Psoriasis,Manage stress
-399,399,Psoriasis,Consider phototherapy under medical guidance
-400,400,Impetigo,Maintain good hygiene
-401,401,Impetigo,Stay hydrated
-402,402,Impetigo,Consume nutrient-rich foods
-403,403,Impetigo,Limit sugary foods and beverages
-404,404,Impetigo,Include foods rich in vitamin C
-405,405,Impetigo,Consult a healthcare professional
-406,406,Impetigo,Follow medical recommendations
-407,407,Impetigo,Avoid scratching
-408,408,Impetigo,Take prescribed antibiotics
-409,409,Impetigo,Practice wound care
+Unnamed: 0.1,Unnamed: 0,disease,workout
+0.0,0.0,Fungal infection,Avoid sugary foods
+1.0,1.0,Fungal infection,Consume probiotics
+2.0,2.0,Fungal infection,Increase intake of garlic
+3.0,3.0,Fungal infection,Include yogurt in diet
+4.0,4.0,Fungal infection,Limit processed foods
+5.0,5.0,Fungal infection,Stay hydrated
+6.0,6.0,Fungal infection,Consume green tea
+7.0,7.0,Fungal infection,Eat foods rich in zinc
+8.0,8.0,Fungal infection,Include turmeric in diet
+9.0,9.0,Fungal infection,Eat fruits and vegetables
+10.0,10.0,Allergy,Avoid allergenic foods
+11.0,11.0,Allergy,Consume anti-inflammatory foods
+12.0,12.0,Allergy,Include omega-3 fatty acids
+13.0,13.0,Allergy,Stay hydrated
+14.0,14.0,Allergy,Eat foods rich in vitamin C
+15.0,15.0,Allergy,Include quercetin-rich foods
+16.0,16.0,Allergy,Consume local honey
+17.0,17.0,Allergy,Limit processed foods
+18.0,18.0,Allergy,Include ginger in diet
+19.0,19.0,Allergy,Avoid artificial additives
+20.0,20.0,GERD,Consume smaller meals
+21.0,21.0,GERD,"Avoid trigger foods (spicy, fatty)"
+22.0,22.0,GERD,Eat high-fiber foods
+23.0,23.0,GERD,Limit caffeine and alcohol
+24.0,24.0,GERD,Chew food thoroughly
+25.0,25.0,GERD,Avoid late-night eating
+26.0,26.0,GERD,Consume non-citrus fruits
+27.0,27.0,GERD,Include lean proteins
+28.0,28.0,GERD,Stay hydrated
+29.0,29.0,GERD,Avoid carbonated beverages
+30.0,30.0,Chronic cholestasis,Consume a low-fat diet
+31.0,31.0,Chronic cholestasis,Eat high-fiber foods
+32.0,32.0,Chronic cholestasis,Include healthy fats
+33.0,33.0,Chronic cholestasis,Limit alcohol consumption
+34.0,34.0,Chronic cholestasis,Stay hydrated
+35.0,35.0,Chronic cholestasis,Consume antioxidant-rich foods
+36.0,36.0,Chronic cholestasis,Include omega-3 fatty acids
+37.0,37.0,Chronic cholestasis,Include lean proteins
+38.0,38.0,Chronic cholestasis,Limit processed foods
+39.0,39.0,Chronic cholestasis,Avoid fried foods
+40.0,40.0,Drug Reaction,Discontinue offending medication
+41.0,41.0,Drug Reaction,Stay hydrated
+42.0,42.0,Drug Reaction,Include anti-inflammatory foods
+43.0,43.0,Drug Reaction,Consume antioxidants
+44.0,44.0,Drug Reaction,Avoid trigger foods
+45.0,45.0,Drug Reaction,Include omega-3 fatty acids
+46.0,46.0,Drug Reaction,Limit caffeine and alcohol
+47.0,47.0,Drug Reaction,Stay hydrated
+48.0,48.0,Drug Reaction,Eat a balanced diet
+49.0,49.0,Drug Reaction,Consult a healthcare professional
+50.0,50.0,Peptic ulcer disease,"Consume smaller, more frequent meals"
+51.0,51.0,Peptic ulcer disease,"Avoid trigger foods (spicy, acidic)"
+52.0,52.0,Peptic ulcer disease,Include high-fiber foods
+53.0,53.0,Peptic ulcer disease,Limit caffeine and alcohol
+54.0,54.0,Peptic ulcer disease,Stay hydrated
+55.0,55.0,Peptic ulcer disease,Consume probiotics
+56.0,56.0,Peptic ulcer disease,Include lean proteins
+57.0,57.0,Peptic ulcer disease,Include antioxidant-rich foods
+58.0,58.0,Peptic ulcer disease,Limit processed foods
+59.0,59.0,Peptic ulcer disease,Avoid smoking and alcohol
+60.0,60.0,AIDS,Follow a balanced and nutritious diet
+61.0,61.0,AIDS,Include lean proteins
+62.0,62.0,AIDS,Consume nutrient-rich foods
+63.0,63.0,AIDS,Stay hydrated
+64.0,64.0,AIDS,Include healthy fats
+65.0,65.0,AIDS,Avoid raw or undercooked foods
+66.0,66.0,AIDS,Limit sugary foods and beverages
+67.0,67.0,AIDS,Consume immune-boosting foods
+68.0,68.0,AIDS,Take prescribed supplements
+69.0,69.0,AIDS,Consult a healthcare professional
+70.0,70.0,Diabetes,Monitor carbohydrate intake
+71.0,71.0,Diabetes,Eat balanced meals
+72.0,72.0,Diabetes,Include lean proteins
+73.0,73.0,Diabetes,Consume high-fiber foods
+74.0,74.0,Diabetes,Stay hydrated
+75.0,75.0,Diabetes,Limit sugary foods and beverages
+76.0,76.0,Diabetes,Include healthy fats
+77.0,77.0,Diabetes,Monitor blood sugar levels
+78.0,78.0,Diabetes,Consult a registered dietitian
+79.0,79.0,Diabetes,Take prescribed medications as directed
+80.0,80.0,Gastroenteritis,Stay hydrated
+81.0,81.0,Gastroenteritis,Consume clear fluids
+82.0,82.0,Gastroenteritis,"Follow the BRAT diet (bananas, rice, applesauce, toast)"
+83.0,83.0,Gastroenteritis,Include bland foods
+84.0,84.0,Gastroenteritis,Avoid fatty and greasy foods
+85.0,85.0,Gastroenteritis,Limit caffeine and alcohol
+86.0,86.0,Gastroenteritis,Avoid spicy foods
+87.0,87.0,Gastroenteritis,Consult a healthcare professional
+88.0,88.0,Gastroenteritis,Gradually reintroduce solid foods
+89.0,89.0,Gastroenteritis,Avoid dairy products
+90.0,90.0,Bronchial Asthma,Include anti-inflammatory foods
+91.0,91.0,Bronchial Asthma,Consume omega-3 fatty acids
+92.0,92.0,Bronchial Asthma,Limit sodium intake
+93.0,93.0,Bronchial Asthma,Stay hydrated
+94.0,94.0,Bronchial Asthma,Include antioxidant-rich foods
+95.0,95.0,Bronchial Asthma,Avoid sulfite-containing foods
+96.0,96.0,Bronchial Asthma,Limit processed foods
+97.0,97.0,Bronchial Asthma,Consume magnesium-rich foods
+98.0,98.0,Bronchial Asthma,Consult a healthcare professional
+99.0,99.0,Bronchial Asthma,Avoid trigger foods
+100.0,100.0,Hypertension,Follow the DASH diet (Dietary Approaches to Stop Hypertension)
+101.0,101.0,Hypertension,Limit sodium intake
+102.0,102.0,Hypertension,Include potassium-rich foods
+103.0,103.0,Hypertension,Stay hydrated
+104.0,104.0,Hypertension,Consume calcium-rich foods
+105.0,105.0,Hypertension,Limit alcohol consumption
+106.0,106.0,Hypertension,Include magnesium-rich foods
+107.0,107.0,Hypertension,Consume omega-3 fatty acids
+108.0,108.0,Hypertension,Limit processed foods
+109.0,109.0,Hypertension,Consult a healthcare professional
+110.0,110.0,Migraine,Identify and avoid trigger foods
+111.0,111.0,Migraine,Stay hydrated
+112.0,112.0,Migraine,Include magnesium-rich foods
+113.0,113.0,Migraine,Consume omega-3 fatty acids
+114.0,114.0,Migraine,Limit caffeine and alcohol
+115.0,115.0,Migraine,Consume riboflavin-rich foods
+116.0,116.0,Migraine,Limit processed foods
+117.0,117.0,Migraine,Maintain regular meal times
+118.0,118.0,Migraine,Consult a healthcare professional
+119.0,119.0,Migraine,Manage stress
+120.0,120.0,Cervical spondylosis,Include anti-inflammatory foods
+121.0,121.0,Cervical spondylosis,Consume omega-3 fatty acids
+122.0,122.0,Cervical spondylosis,Include vitamin D-rich foods
+123.0,123.0,Cervical spondylosis,Stay hydrated
+124.0,124.0,Cervical spondylosis,Consume antioxidant-rich foods
+125.0,125.0,Cervical spondylosis,Limit processed foods
+126.0,126.0,Cervical spondylosis,Include lean proteins
+127.0,127.0,Cervical spondylosis,Practice good posture
+128.0,128.0,Cervical spondylosis,Consult a healthcare professional
+129.0,129.0,Cervical spondylosis,Engage in regular exercise
+130.0,130.0,Paralysis (brain hemorrhage),Follow a balanced and nutritious diet
+131.0,131.0,Paralysis (brain hemorrhage),Include lean proteins
+132.0,132.0,Paralysis (brain hemorrhage),Consume nutrient-rich foods
+133.0,133.0,Paralysis (brain hemorrhage),Stay hydrated
+134.0,134.0,Paralysis (brain hemorrhage),Include healthy fats
+135.0,135.0,Paralysis (brain hemorrhage),Limit sugary foods and beverages
+136.0,136.0,Paralysis (brain hemorrhage),Include antioxidants
+137.0,137.0,Paralysis (brain hemorrhage),Consume foods rich in vitamin K
+138.0,138.0,Paralysis (brain hemorrhage),Consult a healthcare professional
+139.0,139.0,Paralysis (brain hemorrhage),Manage stress
+140.0,140.0,Jaundice,Stay hydrated
+141.0,141.0,Jaundice,Consume nutrient-rich foods
+142.0,142.0,Jaundice,Include protein-rich foods
+143.0,143.0,Jaundice,Consume easily digestible foods
+144.0,144.0,Jaundice,Limit fatty foods
+145.0,145.0,Jaundice,Avoid alcohol and caffeine
+146.0,146.0,Jaundice,Include vitamin C-rich foods
+147.0,147.0,Jaundice,Consult a healthcare professional
+148.0,148.0,Jaundice,Rest and conserve energy
+149.0,149.0,Jaundice,Gradually resume normal diet
+150.0,150.0,Malaria,Stay hydrated
+151.0,151.0,Malaria,Consume nutrient-rich foods
+152.0,152.0,Malaria,Include protein-rich foods
+153.0,153.0,Malaria,Consume foods rich in antioxidants
+154.0,154.0,Malaria,Limit fatty and greasy foods
+155.0,155.0,Malaria,Avoid alcohol and caffeine
+156.0,156.0,Malaria,Include vitamin C-rich foods
+157.0,157.0,Malaria,Consult a healthcare professional
+158.0,158.0,Malaria,Rest and conserve energy
+159.0,159.0,Malaria,Gradually resume normal diet
+160.0,160.0,Chicken pox,Stay hydrated
+161.0,161.0,Chicken pox,Include easily digestible foods
+162.0,162.0,Chicken pox,Include vitamin C-rich foods
+163.0,163.0,Chicken pox,Consume protein-rich foods
+164.0,164.0,Chicken pox,Include zinc-rich foods
+165.0,165.0,Chicken pox,Avoid spicy and acidic foods
+166.0,166.0,Chicken pox,Consult a healthcare professional
+167.0,167.0,Chicken pox,Practice good hygiene
+168.0,168.0,Chicken pox,Rest and conserve energy
+169.0,169.0,Chicken pox,Gradually resume normal diet
+170.0,170.0,Dengue,Stay hydrated
+171.0,171.0,Dengue,Include nutrient-rich foods
+172.0,172.0,Dengue,Consume foods rich in vitamin C and antioxidants
+173.0,173.0,Dengue,Limit fatty and greasy foods
+174.0,174.0,Dengue,Avoid caffeine and alcohol
+175.0,175.0,Dengue,Include soft and easily digestible foods
+176.0,176.0,Dengue,Consult a healthcare professional
+177.0,177.0,Dengue,Rest and conserve energy
+178.0,178.0,Dengue,Gradually resume normal diet
+179.0,179.0,Dengue,Follow medical recommendations
+180.0,180.0,Typhoid,Consume easily digestible foods
+181.0,181.0,Typhoid,Stay hydrated
+182.0,182.0,Typhoid,Include nutrient-rich foods
+183.0,183.0,Typhoid,Consume foods rich in vitamin C and antioxidants
+184.0,184.0,Typhoid,Include protein-rich foods
+185.0,185.0,Typhoid,Avoid fatty and greasy foods
+186.0,186.0,Typhoid,Consult a healthcare professional
+187.0,187.0,Typhoid,Gradually resume normal diet
+188.0,188.0,Typhoid,Follow medical recommendations
+189.0,189.0,Typhoid,Avoid alcohol and caffeine
+190.0,190.0,hepatitis A,Stay hydrated
+191.0,191.0,hepatitis A,Consume nutrient-rich foods
+192.0,192.0,hepatitis A,Include protein-rich foods
+193.0,193.0,hepatitis A,Consume easily digestible foods
+194.0,194.0,hepatitis A,Limit fatty foods
+195.0,195.0,hepatitis A,Avoid alcohol and caffeine
+196.0,196.0,hepatitis A,Include vitamin C-rich foods
+197.0,197.0,hepatitis A,Consult a healthcare professional
+198.0,198.0,hepatitis A,Rest and conserve energy
+199.0,199.0,hepatitis A,Gradually resume normal diet
+200.0,200.0,Hepatitis B,Follow a balanced and nutritious diet
+201.0,201.0,Hepatitis B,Stay hydrated
+202.0,202.0,Hepatitis B,Include protein-rich foods
+203.0,203.0,Hepatitis B,Consume nutrient-rich foods
+204.0,204.0,Hepatitis B,Limit fatty foods
+205.0,205.0,Hepatitis B,Avoid alcohol and caffeine
+206.0,206.0,Hepatitis B,Include vitamin C-rich foods
+207.0,207.0,Hepatitis B,Consult a healthcare professional
+208.0,208.0,Hepatitis B,Rest and conserve energy
+209.0,209.0,Hepatitis B,Gradually resume normal diet
+210.0,210.0,Hepatitis C,Follow a balanced and nutritious diet
+211.0,211.0,Hepatitis C,Stay hydrated
+212.0,212.0,Hepatitis C,Include protein-rich foods
+213.0,213.0,Hepatitis C,Consume nutrient-rich foods
+214.0,214.0,Hepatitis C,Limit fatty foods
+215.0,215.0,Hepatitis C,Avoid alcohol and caffeine
+216.0,216.0,Hepatitis C,Include vitamin C-rich foods
+217.0,217.0,Hepatitis C,Consult a healthcare professional
+218.0,218.0,Hepatitis C,Rest and conserve energy
+219.0,219.0,Hepatitis C,Gradually resume normal diet
+220.0,220.0,Hepatitis D,Follow a balanced and nutritious diet
+221.0,221.0,Hepatitis D,Stay hydrated
+222.0,222.0,Hepatitis D,Include protein-rich foods
+223.0,223.0,Hepatitis D,Consume nutrient-rich foods
+224.0,224.0,Hepatitis D,Limit fatty foods
+225.0,225.0,Hepatitis D,Avoid alcohol and caffeine
+226.0,226.0,Hepatitis D,Include vitamin C-rich foods
+227.0,227.0,Hepatitis D,Consult a healthcare professional
+228.0,228.0,Hepatitis D,Rest and conserve energy
+229.0,229.0,Hepatitis D,Gradually resume normal diet
+230.0,230.0,Hepatitis E,Stay hydrated
+231.0,231.0,Hepatitis E,Consume nutrient-rich foods
+232.0,232.0,Hepatitis E,Include protein-rich foods
+233.0,233.0,Hepatitis E,Consume easily digestible foods
+234.0,234.0,Hepatitis E,Limit fatty foods
+235.0,235.0,Hepatitis E,Avoid alcohol and caffeine
+236.0,236.0,Hepatitis E,Include vitamin C-rich foods
+237.0,237.0,Hepatitis E,Consult a healthcare professional
+238.0,238.0,Hepatitis E,Rest and conserve energy
+239.0,239.0,Hepatitis E,Gradually resume normal diet
+240.0,240.0,Alcoholic hepatitis,Avoid alcohol consumption
+241.0,241.0,Alcoholic hepatitis,Follow a balanced and nutritious diet
+242.0,242.0,Alcoholic hepatitis,Stay hydrated
+243.0,243.0,Alcoholic hepatitis,Consume nutrient-rich foods
+244.0,244.0,Alcoholic hepatitis,Include protein-rich foods
+245.0,245.0,Alcoholic hepatitis,Limit fatty foods
+246.0,246.0,Alcoholic hepatitis,Include antioxidants
+247.0,247.0,Alcoholic hepatitis,Consult a healthcare professional
+248.0,248.0,Alcoholic hepatitis,Rest and conserve energy
+249.0,249.0,Alcoholic hepatitis,Gradually resume normal diet
+250.0,250.0,Tuberculosis,Consume a high-protein diet
+251.0,251.0,Tuberculosis,Include nutrient-rich foods
+252.0,252.0,Tuberculosis,Stay hydrated
+253.0,253.0,Tuberculosis,Consume foods rich in vitamins A and C
+254.0,254.0,Tuberculosis,Include zinc-rich foods
+255.0,255.0,Tuberculosis,Limit sugary foods and beverages
+256.0,256.0,Tuberculosis,Consult a healthcare professional
+257.0,257.0,Tuberculosis,Rest and conserve energy
+258.0,258.0,Tuberculosis,Gradually resume normal diet
+259.0,259.0,Tuberculosis,Follow medical recommendations
+260.0,260.0,Common Cold,Stay hydrated
+261.0,261.0,Common Cold,Include nutrient-rich foods
+262.0,262.0,Common Cold,Consume foods rich in vitamin C and antioxidants
+263.0,263.0,Common Cold,Include zinc-rich foods
+264.0,264.0,Common Cold,Limit sugary foods and beverages
+265.0,265.0,Common Cold,Consume chicken soup
+266.0,266.0,Common Cold,Consult a healthcare professional
+267.0,267.0,Common Cold,Rest and conserve energy
+268.0,268.0,Common Cold,Gradually resume normal diet
+269.0,269.0,Common Cold,Follow medical recommendations
+270.0,270.0,Pneumonia,Stay hydrated
+271.0,271.0,Pneumonia,Include nutrient-rich foods
+272.0,272.0,Pneumonia,Consume foods rich in vitamin C and antioxidants
+273.0,273.0,Pneumonia,Include zinc-rich foods
+274.0,274.0,Pneumonia,Limit sugary foods and beverages
+275.0,275.0,Pneumonia,Consume chicken soup
+276.0,276.0,Pneumonia,Consult a healthcare professional
+277.0,277.0,Pneumonia,Rest and conserve energy
+278.0,278.0,Pneumonia,Gradually resume normal diet
+279.0,279.0,Pneumonia,Follow medical recommendations
+280.0,280.0,Dimorphic hemmorhoids(piles),Consume high-fiber foods
+281.0,281.0,Dimorphic hemmorhoids(piles),Stay hydrated
+282.0,282.0,Dimorphic hemmorhoids(piles),Include nutrient-rich foods
+283.0,283.0,Dimorphic hemmorhoids(piles),Consume foods rich in flavonoids
+284.0,284.0,Dimorphic hemmorhoids(piles),Limit processed foods
+285.0,285.0,Dimorphic hemmorhoids(piles),Avoid spicy and greasy foods
+286.0,286.0,Dimorphic hemmorhoids(piles),Consult a healthcare professional
+287.0,287.0,Dimorphic hemmorhoids(piles),Practice good hygiene
+288.0,288.0,Dimorphic hemmorhoids(piles),Gradually resume normal diet
+289.0,289.0,Dimorphic hemmorhoids(piles),Follow medical recommendations
+290.0,290.0,Heart attack,Follow a heart-healthy diet
+291.0,291.0,Heart attack,Limit sodium intake
+292.0,292.0,Heart attack,Include fiber-rich foods
+293.0,293.0,Heart attack,Consume healthy fats
+294.0,294.0,Heart attack,Include lean proteins
+295.0,295.0,Heart attack,Limit sugary foods and beverages
+296.0,296.0,Heart attack,Stay hydrated
+297.0,297.0,Heart attack,Consult a healthcare professional
+298.0,298.0,Heart attack,Follow medical recommendations
+299.0,299.0,Heart attack,Engage in regular exercise
+300.0,300.0,Varicose veins,Consume a high-fiber diet
+301.0,301.0,Varicose veins,Stay hydrated
+302.0,302.0,Varicose veins,Include nutrient-rich foods
+303.0,303.0,Varicose veins,Consume foods rich in antioxidants
+304.0,304.0,Varicose veins,Limit sodium intake
+305.0,305.0,Varicose veins,Include flavonoid-rich foods
+306.0,306.0,Varicose veins,Avoid standing or sitting for long periods
+307.0,307.0,Varicose veins,Consult a healthcare professional
+308.0,308.0,Varicose veins,Follow medical recommendations
+309.0,309.0,Varicose veins,Engage in regular exercise
+310.0,310.0,Hypothyroidism,Include iodine-rich foods
+311.0,311.0,Hypothyroidism,Consume selenium-rich foods
+312.0,312.0,Hypothyroidism,Stay hydrated
+313.0,313.0,Hypothyroidism,Include nutrient-rich foods
+314.0,314.0,Hypothyroidism,Limit processed foods
+315.0,315.0,Hypothyroidism,Consume foods rich in vitamins B and D
+316.0,316.0,Hypothyroidism,Consult a healthcare professional
+317.0,317.0,Hypothyroidism,Follow medical recommendations
+318.0,318.0,Hypothyroidism,Maintain a stable weight
+319.0,319.0,Hypothyroidism,Engage in regular exercise
+320.0,320.0,Hyperthyroidism,Limit iodine intake
+321.0,321.0,Hyperthyroidism,Consume cruciferous vegetables in moderation
+322.0,322.0,Hyperthyroidism,Stay hydrated
+323.0,323.0,Hyperthyroidism,Include nutrient-rich foods
+324.0,324.0,Hyperthyroidism,Limit caffeine and alcohol
+325.0,325.0,Hyperthyroidism,Include omega-3 fatty acids
+326.0,326.0,Hyperthyroidism,Consult a healthcare professional
+327.0,327.0,Hyperthyroidism,Follow medical recommendations
+328.0,328.0,Hyperthyroidism,Maintain a stable weight
+329.0,329.0,Hyperthyroidism,Engage in regular exercise
+330.0,330.0,Hypoglycemia,Consume complex carbohydrates
+331.0,331.0,Hypoglycemia,Include protein-rich foods
+332.0,332.0,Hypoglycemia,Stay hydrated
+333.0,333.0,Hypoglycemia,Limit sugary foods and beverages
+334.0,334.0,Hypoglycemia,Consume regular meals and snacks
+335.0,335.0,Hypoglycemia,Consult a healthcare professional
+336.0,336.0,Hypoglycemia,Monitor blood sugar levels
+337.0,337.0,Hypoglycemia,Follow medical recommendations
+338.0,338.0,Hypoglycemia,Engage in regular physical activity
+339.0,339.0,Hypoglycemia,Limit alcohol intake
+340.0,340.0,Osteoarthristis,Consume anti-inflammatory foods
+341.0,341.0,Osteoarthristis,Include omega-3 fatty acids
+342.0,342.0,Osteoarthristis,Consume antioxidant-rich foods
+343.0,343.0,Osteoarthristis,Stay hydrated
+344.0,344.0,Osteoarthristis,Limit processed foods
+345.0,345.0,Osteoarthristis,Include vitamin K-rich foods
+346.0,346.0,Osteoarthristis,Consult a healthcare professional
+347.0,347.0,Osteoarthristis,Follow medical recommendations
+348.0,348.0,Osteoarthristis,Engage in low-impact exercise
+349.0,349.0,Osteoarthristis,Maintain a healthy weight
+350.0,350.0,Arthritis,Consume anti-inflammatory foods
+351.0,351.0,Arthritis,Include omega-3 fatty acids
+352.0,352.0,Arthritis,Consume antioxidant-rich foods
+353.0,353.0,Arthritis,Stay hydrated
+354.0,354.0,Arthritis,Limit processed foods
+355.0,355.0,Arthritis,Include vitamin K-rich foods
+356.0,356.0,Arthritis,Consult a healthcare professional
+357.0,357.0,Arthritis,Follow medical recommendations
+358.0,358.0,Arthritis,Engage in low-impact exercise
+359.0,359.0,Arthritis,Maintain a healthy weight
+360.0,360.0,(vertigo) Paroymsal  Positional Vertigo,"Avoid trigger foods (caffeine, alcohol)"
+361.0,361.0,(vertigo) Paroymsal  Positional Vertigo,Limit sodium intake
+362.0,362.0,(vertigo) Paroymsal  Positional Vertigo,Stay hydrated
+363.0,363.0,(vertigo) Paroymsal  Positional Vertigo,Consume ginger and ginkgo biloba
+364.0,364.0,(vertigo) Paroymsal  Positional Vertigo,Limit artificial sweeteners
+365.0,365.0,(vertigo) Paroymsal  Positional Vertigo,Consult a healthcare professional
+366.0,366.0,(vertigo) Paroymsal  Positional Vertigo,Avoid sudden head movements
+367.0,367.0,(vertigo) Paroymsal  Positional Vertigo,Follow medical recommendations
+368.0,368.0,(vertigo) Paroymsal  Positional Vertigo,Manage stress
+369.0,369.0,(vertigo) Paroymsal  Positional Vertigo,Limit caffeine and stimulants
+370.0,370.0,Acne,Consume a balanced diet
+371.0,371.0,Acne,Limit dairy and high-glycemic foods
+372.0,372.0,Acne,Include antioxidants
+373.0,373.0,Acne,Stay hydrated
+374.0,374.0,Acne,Limit processed foods
+375.0,375.0,Acne,Include zinc-rich foods
+376.0,376.0,Acne,Consult a skincare professional
+377.0,377.0,Acne,Practice good skincare hygiene
+378.0,378.0,Acne,Limit sugary foods and beverages
+379.0,379.0,Acne,Follow medical recommendations
+380.0,380.0,Urinary tract infection,Stay hydrated
+381.0,381.0,Urinary tract infection,Consume cranberry products
+382.0,382.0,Urinary tract infection,Include vitamin C-rich foods
+383.0,383.0,Urinary tract infection,Limit caffeine and alcohol
+384.0,384.0,Urinary tract infection,Consume probiotics
+385.0,385.0,Urinary tract infection,Avoid spicy and acidic foods
+386.0,386.0,Urinary tract infection,Consult a healthcare professional
+387.0,387.0,Urinary tract infection,Follow medical recommendations
+388.0,388.0,Urinary tract infection,Maintain good hygiene
+389.0,389.0,Urinary tract infection,Limit sugary foods and beverages
+390.0,390.0,Psoriasis,Consume anti-inflammatory foods
+391.0,391.0,Psoriasis,Include omega-3 fatty acids
+392.0,392.0,Psoriasis,Include vitamin D analogues
+393.0,393.0,Psoriasis,Limit alcohol consumption
+394.0,394.0,Psoriasis,Stay hydrated
+395.0,395.0,Psoriasis,Consult a healthcare professional
+396.0,396.0,Psoriasis,Limit processed foods
+397.0,397.0,Psoriasis,Follow medical recommendations
+398.0,398.0,Psoriasis,Manage stress
+399.0,399.0,Psoriasis,Consider phototherapy under medical guidance
+400.0,400.0,Impetigo,Maintain good hygiene
+401.0,401.0,Impetigo,Stay hydrated
+402.0,402.0,Impetigo,Consume nutrient-rich foods
+403.0,403.0,Impetigo,Limit sugary foods and beverages
+404.0,404.0,Impetigo,Include foods rich in vitamin C
+405.0,405.0,Impetigo,Consult a healthcare professional
+406.0,406.0,Impetigo,Follow medical recommendations
+407.0,407.0,Impetigo,Avoid scratching
+408.0,408.0,Impetigo,Take prescribed antibiotics
+409.0,409.0,Impetigo,Practice wound care
+,,Mitral Valve Disease,Moderate aerobic exercise 30 minutes daily; Walking or light jogging; Swimming or water aerobics; Cycling on level terrain
+,,Acute Kidney Injury,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Myopia,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Chronic Fatigue Syndrome,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Syndrome of Inappropriate Secretion of ADH (SIADH),Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Bell Palsy,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Secondary Glaucoma,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Fetal Alcohol Syndrome,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Cannabis Use Disorder,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Intertrigo,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Bronchitis,Breathing exercises and techniques; Low-intensity aerobic activities; Pulmonary rehabilitation programs; Gentle yoga and stretching
+,,Insect Bites,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Astigmatism,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Vitamin B12 Deficiency,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Liver Cancer,Light walking after meals; Gentle abdominal exercises; Stress-reduction activities; Pelvic floor exercises
+,,Polycystic Kidney Disease,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Drug Withdrawal,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Goiter,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Neuralgia,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Syphilis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Chronic Headache,Physical therapy exercises; Range of motion exercises; Balance and coordination training; Cognitive rehabilitation activities
+,,Ovarian Torsion,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Myelodysplastic Syndrome,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Wharton's duct stones,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Bursitis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Stenosis of the Tear Duct,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Breast Cancer,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Injury to Internal Organ,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Antihypertensives Poisoning,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,West Nile Virus,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Chancroid,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Tension Headache,Physical therapy exercises; Range of motion exercises; Balance and coordination training; Cognitive rehabilitation activities
+,,Polycystic Ovarian Syndrome,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Poisoning due to Antidepressants,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Lymphedema,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Polycythemia Vera,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Scurvy,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Dengue Fever,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Chronic Glaucoma,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Pulmonic Valve Disease,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Intestinal Malabsorption,Light walking after meals; Gentle abdominal exercises; Stress-reduction activities; Pelvic floor exercises
+,,Drug Abuse (Cocaine),Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Complex Regional Pain Syndrome,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Lead Poisoning,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Food Allergy,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Ethylene glycol poisoning-3,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Alcohol Use Disorder,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Pulmonary Congestion,Breathing exercises and techniques; Low-intensity aerobic activities; Pulmonary rehabilitation programs; Gentle yoga and stretching
+,,Intracranial Hemorrhage,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Recurrent salivary stones,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Carpal Tunnel Syndrome,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Fracture of the Shoulder,Low-impact aerobic exercises; Strengthening exercises; Flexibility and stretching routines; Water-based exercises
+,,Coagulation (Bleeding) Disorder,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Coronary Atherosclerosis,Moderate aerobic exercise 30 minutes daily; Walking or light jogging; Swimming or water aerobics; Cycling on level terrain
+,,Viral Warts,Rest and gradual return to activity; Light stretching when appropriate; Breathing exercises; Immune-boosting activities when recovered
+,,Uterine Fibroids,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Sciatica,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Pain after an Operation,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Pregnancy-Induced Hypertension,Moderate aerobic exercise 30 minutes daily; Walking or light jogging; Swimming or water aerobics; Cycling on level terrain
+,,Scarlet Fever,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Antimicrobial Drugs Poisoning,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Scleroderma,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Thyroid Disease,Regular moderate exercise; Weight-bearing exercises; Flexibility training; Stress management activities
+,,Lateral Epicondylitis (Tennis Elbow),Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Spondylosis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Emphysema,Breathing exercises and techniques; Low-intensity aerobic activities; Pulmonary rehabilitation programs; Gentle yoga and stretching
+,,Parasitic Infections,Rest and gradual return to activity; Light stretching when appropriate; Breathing exercises; Immune-boosting activities when recovered
+,,Gum Disease,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Hepatic Encephalopathy,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Transient ischemic attack,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Cat Scratch Disease,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Bulimia Nervosa,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Normal-Tension Glaucoma,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Scabies,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Lupus,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Alcohol Intoxication,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Open-Angle Glaucoma,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Acute Bronchospasm,Breathing exercises and techniques; Low-intensity aerobic activities; Pulmonary rehabilitation programs; Gentle yoga and stretching
+,,Pterygium,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Pericarditis,Moderate aerobic exercise 30 minutes daily; Walking or light jogging; Swimming or water aerobics; Cycling on level terrain
+,,Rabies,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,"Sedative, Hypnotic, or Anxiolytic Use Disorder",Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Fungal Infection of the Skin,Rest and gradual return to activity; Light stretching when appropriate; Breathing exercises; Immune-boosting activities when recovered
+,,Nose Disorder,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Chronic Inflammatory Demyelinating Polyneuropathy (CIDP),Physical therapy exercises; Range of motion exercises; Balance and coordination training; Cognitive rehabilitation activities
+,,Vitreous Hemorrhage,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Cholesteatoma,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Eye alignment disorder,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Ocular Hypertension,Moderate aerobic exercise 30 minutes daily; Walking or light jogging; Swimming or water aerobics; Cycling on level terrain
+,,Torticollis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Flat Feet,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Hemarthrosis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Hepatitis due to a Toxin,Light walking after meals; Gentle abdominal exercises; Stress-reduction activities; Pelvic floor exercises
+,,Huntington Disease,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Stress Incontinence,Regular aerobic exercise; Yoga and mindfulness practices; Recreational activities and hobbies; Social and group activities
+,,Hypergammaglobulinemia,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Induced Abortion,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Obesity,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Esophageal Cancer,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Ependymoma,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Aplastic Anemia,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Cold Sore,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Turner syndrome,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Gestational Diabetes,Regular moderate exercise 30 minutes daily; Brisk walking after meals; Resistance training 2-3 times per week; Flexibility and balance exercises
+,,Dental Caries,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Hiatal Hernia,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Submandibular stones,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Choledocholithiasis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Achalasia,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Conductive Hearing Loss,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Mononucleosis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Acute Sinusitis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Gastrointestinal Hemorrhage,Light walking after meals; Gentle abdominal exercises; Stress-reduction activities; Pelvic floor exercises
+,,Neuropathic Pain,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Bladder Disorder,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Anorexia Nervosa,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Chronic Kidney Disease,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Dysthymic Disorder,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Vesicoureteral Reflux,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Vitamin A Deficiency,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Cranial Nerve Palsy,Physical therapy exercises; Range of motion exercises; Balance and coordination training; Cognitive rehabilitation activities
+,,Varicose Veins,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Temporomandibular Joint Disorder,Low-impact aerobic exercises; Strengthening exercises; Flexibility and stretching routines; Water-based exercises
+,,Other Specified Feeding or Eating Disorder (OSFED),Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Hyperemesis Gravidarum,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Hypertensive Heart Disease,Moderate aerobic exercise 30 minutes daily; Walking or light jogging; Swimming or water aerobics; Cycling on level terrain
+,,Parathyroid Adenoma,Regular moderate exercise; Weight-bearing exercises; Flexibility training; Stress management activities
+,,Dislocation of the Ankle,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Cirrhosis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Asthma,Breathing exercises and techniques; Low-intensity aerobic activities; Pulmonary rehabilitation programs; Gentle yoga and stretching
+,,Encephalitis,Physical therapy exercises; Range of motion exercises; Balance and coordination training; Cognitive rehabilitation activities
+,,Pulmonary Fibrosis,Breathing exercises and techniques; Low-intensity aerobic activities; Pulmonary rehabilitation programs; Gentle yoga and stretching
+,,Pituitary Adenoma,Regular moderate exercise; Weight-bearing exercises; Flexibility training; Stress management activities
+,,Rheumatoid Arthritis,Low-impact aerobic exercises; Strengthening exercises; Flexibility and stretching routines; Water-based exercises
+,,Kidney Stone,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Optic Neuritis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Premature Ventricular Contractions (PVCs),Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Priapism,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Attention Deficit Hyperactivity Disorder (ADHD),Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Cellulitis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Pseudohypoparathyroidism,Regular moderate exercise; Weight-bearing exercises; Flexibility training; Stress management activities
+,,Exfoliation Glaucoma,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Low-Tension Glaucoma,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Hemorrhoids,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Threatened Pregnancy,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Endometriosis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Congenital Glaucoma,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Primary Insomnia,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Syringomyelia,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Congenital rubella,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Leishmaniasis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Opioid Use Disorder,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Concussion,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Narcolepsy,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Normal Pressure Hydrocephalus,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Urinary Tract Infection (UTI),Rest and gradual return to activity; Light stretching when appropriate; Breathing exercises; Immune-boosting activities when recovered
+,,Herpangina,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Benign Kidney Cyst,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Dermatitis due to Sun Exposure,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Mucocele,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Amyloidosis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Abdominal Hernia,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Complex Regional Pain Syndrome (CRPS),Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Otitis Media,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Chronic Otitis Media,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Pharyngitis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Juvenile Rheumatoid Arthritis,Low-impact aerobic exercises; Strengthening exercises; Flexibility and stretching routines; Water-based exercises
+,,Stimulant Use Disorder,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Tietze Syndrome,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Binge Eating Disorder,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Von Willebrand Disease,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Parkinson Disease,Physical therapy exercises; Range of motion exercises; Balance and coordination training; Cognitive rehabilitation activities
+,,Postpartum Depression,Regular aerobic exercise; Yoga and mindfulness practices; Recreational activities and hobbies; Social and group activities
+,,Premenstrual Tension Syndrome,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Hemophilia,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Chorioretinitis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Carbon Monoxide Poisoning,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Conversion Disorder,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Vaginal Cyst,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Foreign Body in the Gastrointestinal Tract,Light walking after meals; Gentle abdominal exercises; Stress-reduction activities; Pelvic floor exercises
+,,Bipolar Disorder,Regular aerobic exercise; Yoga and mindfulness practices; Recreational activities and hobbies; Social and group activities
+,,Cryptococcosis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Hyperkalemia,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Hemolytic Anemia,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Myasthenia Gravis,Physical therapy exercises; Range of motion exercises; Balance and coordination training; Cognitive rehabilitation activities
+,,Vocal cord polyp,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Spondylitis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Hyperhidrosis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Orthorexia Nervosa,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Otosclerosis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Stroke,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Endometrial Cancer,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Influenza (Flu),Rest and gradual return to activity; Light stretching when appropriate; Breathing exercises; Immune-boosting activities when recovered
+,,Benzodiazepine Use Disorder,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Von Hippel-Lindau Disease,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Parotid stones,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Pregnancy-Related Back Pain,Low-impact aerobic exercises; Strengthening exercises; Flexibility and stretching routines; Water-based exercises
+,,Ischemia of the Bowel,Light walking after meals; Gentle abdominal exercises; Stress-reduction activities; Pelvic floor exercises
+,,Vulvodynia,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Hirschsprung Disease,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Ethylene glycol poisoning-2,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Pulmonary Eosinophilia,Breathing exercises and techniques; Low-intensity aerobic activities; Pulmonary rehabilitation programs; Gentle yoga and stretching
+,,Presbycusis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Peritonitis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Plantar Fasciitis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Cystic Fibrosis,Breathing exercises and techniques; Low-intensity aerobic activities; Pulmonary rehabilitation programs; Gentle yoga and stretching
+,,Chronic Rheumatic Fever,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Diabetic retinopathy,Regular moderate exercise 30 minutes daily; Brisk walking after meals; Resistance training 2-3 times per week; Flexibility and balance exercises
+,,Thrombocytopenia,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Hypercholesterolemia,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Chronic Knee Pain,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Warthin tumor,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Neonatal Jaundice,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Myoclonus,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Mucoepidermoid carcinoma,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Wilson Disease,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Atrophic vaginitis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Heart Block,Moderate aerobic exercise 30 minutes daily; Walking or light jogging; Swimming or water aerobics; Cycling on level terrain
+,,Drug Abuse (Methamphetamine),Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Placenta Previa,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Pyelonephritis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Anxiety,Regular aerobic exercise; Yoga and mindfulness practices; Recreational activities and hobbies; Social and group activities
+,,Mumps,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Fracture of the Patella,Low-impact aerobic exercises; Strengthening exercises; Flexibility and stretching routines; Water-based exercises
+,,Edward Syndrome,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Bone Cancer,Low-impact aerobic exercises; Strengthening exercises; Flexibility and stretching routines; Water-based exercises
+,,Gastroesophageal Reflux Disease (GERD),Light walking after meals; Gentle abdominal exercises; Stress-reduction activities; Pelvic floor exercises
+,,Corneal Abrasion,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Hashimoto Thyroiditis,Regular moderate exercise; Weight-bearing exercises; Flexibility training; Stress management activities
+,,Volvulus,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Impulse Control Disorder,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Diabetic Kidney Disease,Regular moderate exercise 30 minutes daily; Brisk walking after meals; Resistance training 2-3 times per week; Flexibility and balance exercises
+,,Idiopathic Absence of Menstruation,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Dislocation of the Elbow,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Injury to the Leg,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Conjunctivitis due to Allergy,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Cyst of the Eyelid,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Osteochondrosis,Low-impact aerobic exercises; Strengthening exercises; Flexibility and stretching routines; Water-based exercises
+,,Nonalcoholic Liver Disease (NASH),Light walking after meals; Gentle abdominal exercises; Stress-reduction activities; Pelvic floor exercises
+,,Autism,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Scleritis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Myofascial Pain Syndrome,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Anemia due to Malignancy,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Seborrheic Dermatitis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Gestational Hypertension,Moderate aerobic exercise 30 minutes daily; Walking or light jogging; Swimming or water aerobics; Cycling on level terrain
+,,Head and Neck Cancer,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Hyperosmotic Hyperketotic State,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Fibromyalgia,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Urticaria (Hives),Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Urinary Stones (Kidney Stones),Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Insulin Overdose,Regular moderate exercise 30 minutes daily; Brisk walking after meals; Resistance training 2-3 times per week; Flexibility and balance exercises
+,,Glucocorticoid Deficiency,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Female Infertility of Unknown Cause,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Round Ligament Pain,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Chronic Migraine,Physical therapy exercises; Range of motion exercises; Balance and coordination training; Cognitive rehabilitation activities
+,,Intracranial Abscess,Rest and gradual return to activity; Light stretching when appropriate; Breathing exercises; Immune-boosting activities when recovered
+,,Labyrinthitis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Extrapyramidal Effect of Drugs,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Tuberous Sclerosis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Abscess of Nose,Rest and gradual return to activity; Light stretching when appropriate; Breathing exercises; Immune-boosting activities when recovered
+,,Abscess of the Lung,Breathing exercises and techniques; Low-intensity aerobic activities; Pulmonary rehabilitation programs; Gentle yoga and stretching
+,,Anemia,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Actinic Keratosis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Injury to the Finger,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Dislocation of the Patella,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Urge Incontinence,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Hypocalcemia,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Lice,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Endophthalmitis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Type 2 Diabetes,Regular moderate exercise 30 minutes daily; Brisk walking after meals; Resistance training 2-3 times per week; Flexibility and balance exercises
+,,Eczema,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Avoidant/Restrictive Food Intake Disorder (ARFID),Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Adrenal Cancer,Regular moderate exercise; Weight-bearing exercises; Flexibility training; Stress management activities
+,,Subdural hemorrhage,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Panic disorder,Regular aerobic exercise; Yoga and mindfulness practices; Recreational activities and hobbies; Social and group activities
+,,Crushing Injury,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Macular Degeneration,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Empyema,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Colonic Polyp,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Myositis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Osteoporosis,Low-impact aerobic exercises; Strengthening exercises; Flexibility and stretching routines; Water-based exercises
+,,Dry Skin,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Acute Otitis Media,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Rotator Cuff Injury,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Muscular Dystrophy,Low-impact aerobic exercises; Strengthening exercises; Flexibility and stretching routines; Water-based exercises
+,,Ectopic Pregnancy,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Hallucinogen Use Disorder,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Omphalitis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Bladder Cancer,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Panic Attack,Regular aerobic exercise; Yoga and mindfulness practices; Recreational activities and hobbies; Social and group activities
+,,Fracture of the Neck,Low-impact aerobic exercises; Strengthening exercises; Flexibility and stretching routines; Water-based exercises
+,,Pica,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Preeclampsia,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Diverticulosis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Open Wound from Surgical Incision,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Gestational Cholestasis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Hydronephrosis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Pemphigus,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Poisoning due to Analgesics,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Atrial Fibrillation,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Hypertrophic Obstructive Cardiomyopathy (HOCM),Moderate aerobic exercise 30 minutes daily; Walking or light jogging; Swimming or water aerobics; Cycling on level terrain
+,,Sjögren's syndrome,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Anal Fissure,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Vasculitis,Moderate aerobic exercise 30 minutes daily; Walking or light jogging; Swimming or water aerobics; Cycling on level terrain
+,,Esophageal Varices,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Chronic Sinusitis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Gastroparesis,Light walking after meals; Gentle abdominal exercises; Stress-reduction activities; Pelvic floor exercises
+,,Infection of Open Wound,Rest and gradual return to activity; Light stretching when appropriate; Breathing exercises; Immune-boosting activities when recovered
+,,Gout,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Cornea Infection,Rest and gradual return to activity; Light stretching when appropriate; Breathing exercises; Immune-boosting activities when recovered
+,,Hyperopia,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Protein Deficiency,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Pigmentary Glaucoma,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Oral Leukoplakia,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Urethral Valves,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Pinguecula,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Abscess,Rest and gradual return to activity; Light stretching when appropriate; Breathing exercises; Immune-boosting activities when recovered
+,,Ethylene glycol poisoning-1,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Acute Pancreatitis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Mittelschmerz,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Pelvic Organ Prolapse,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Hydrocele of the Testicle,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Balanitis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Restless Leg Syndrome,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Acute Glaucoma,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Meniere Disease,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Vaginal Yeast Infection,Rest and gradual return to activity; Light stretching when appropriate; Breathing exercises; Immune-boosting activities when recovered
+,,Bone Spur of the Calcaneus,Low-impact aerobic exercises; Strengthening exercises; Flexibility and stretching routines; Water-based exercises
+,,Thrombophlebitis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Peritonsillar Abscess,Rest and gradual return to activity; Light stretching when appropriate; Breathing exercises; Immune-boosting activities when recovered
+,,Lymphoma,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Mastoiditis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Fracture of the Rib,Low-impact aerobic exercises; Strengthening exercises; Flexibility and stretching routines; Water-based exercises
+,,Sedatives Poisoning,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Contact Dermatitis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Muscle Spasm,Low-impact aerobic exercises; Strengthening exercises; Flexibility and stretching routines; Water-based exercises
+,,Gonorrhea,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Hirsutism,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Neuromyelitis Optica,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Ludwig's angina,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Hypospadias,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Anemia due to Chronic Kidney Disease,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Gastroenteritis (Stomach Flu),Light walking after meals; Gentle abdominal exercises; Stress-reduction activities; Pelvic floor exercises
+,,Marijuana Abuse,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Kidney Failure,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Type 1 Diabetes,Regular moderate exercise 30 minutes daily; Brisk walking after meals; Resistance training 2-3 times per week; Flexibility and balance exercises
+,,Overflow Incontinence,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Testicular Cancer,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Adenoid cystic carcinoma,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Magnesium Deficiency,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Acinic cell carcinoma,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Chagas Disease,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Chalazion,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Fracture,Low-impact aerobic exercises; Strengthening exercises; Flexibility and stretching routines; Water-based exercises
+,,Retinal Detachment,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Idiopathic Nonmenstrual Bleeding,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Thoracic Aortic Aneurysm,Moderate aerobic exercise 30 minutes daily; Walking or light jogging; Swimming or water aerobics; Cycling on level terrain
+,,Lung Contusion,Breathing exercises and techniques; Low-intensity aerobic activities; Pulmonary rehabilitation programs; Gentle yoga and stretching
+,,Alopecia,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Cryptorchidism,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Rumination Disorder,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Anemia of Chronic Disease,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Fracture of the Arm,Low-impact aerobic exercises; Strengthening exercises; Flexibility and stretching routines; Water-based exercises
+,,Foreign Body in the Throat,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Peyronie Disease,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Osteoarthritis,Low-impact aerobic exercises; Strengthening exercises; Flexibility and stretching routines; Water-based exercises
+,,Atelectasis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Headache after lumbar puncture,Physical therapy exercises; Range of motion exercises; Balance and coordination training; Cognitive rehabilitation activities
+,,Orbital Cellulitis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Pyloric stenosis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Sialolithiasis,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Fat Embolism,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Pituitary Disorder,Regular moderate exercise; Weight-bearing exercises; Flexibility training; Stress management activities
+,,Drug Abuse (Barbiturates),Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Pleomorphic adenoma,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Hypercalcemia,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Hydrocephalus,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Corneal Disorder,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Indigestion,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Pinworm Infection,Rest and gradual return to activity; Light stretching when appropriate; Breathing exercises; Immune-boosting activities when recovered
+,,Leukemia,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Pilonidal Cyst,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Polymyalgia Rheumatica,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Angle-Closure Glaucoma,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed
+,,Abdominal Injury,Light to moderate physical activity; Stretching and flexibility exercises; Walking and gentle movements; Rest and recovery as needed

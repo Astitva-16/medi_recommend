@@ -1,42 +1,436 @@
 Disease,Description
-Fungal infection,Fungal infection is a common skin condition caused by fungi.
-Allergy,Allergy is an immune system reaction to a substance in the environment.
-GERD,GERD (Gastroesophageal Reflux Disease) is a digestive disorder that affects the lower esophageal sphincter.
-Chronic cholestasis,Chronic cholestasis is a condition where bile flow from the liver is reduced for a prolonged period.
-Drug Reaction,Drug Reaction occurs when the body reacts adversely to a medication.
-Peptic ulcer disease,Peptic ulcer disease involves sores that develop on the inner lining of the stomach and small intestine.
-AIDS,AIDS (Acquired Immunodeficiency Syndrome) is a disease caused by HIV that weakens the immune system.
-Diabetes,Diabetes is a chronic condition that affects how the body processes blood sugar.
-Gastroenteritis,"Gastroenteritis is an inflammation of the stomach and intestines, typically caused by a virus or bacteria."
-Bronchial Asthma,Bronchial Asthma is a respiratory condition characterized by inflammation of the airways.
-Hypertension,"Hypertension, or high blood pressure, is a common cardiovascular condition."
-Migraine,Migraine is a type of headache that often involves severe pain and sensitivity to light and sound.
-Cervical spondylosis,Cervical spondylosis is a degenerative condition of the cervical spine.
-Paralysis (brain hemorrhage),Paralysis (brain hemorrhage) refers to the loss of muscle function due to bleeding in the brain.
-Jaundice,"Jaundice is a yellow discoloration of the skin and eyes, often indicating liver problems."
-Malaria,Malaria is a mosquito-borne infectious disease affecting humans and other animals.
-Chicken pox,Chicken pox is a highly contagious viral infection causing an itchy rash.
-Dengue,Dengue is a mosquito-borne viral infection causing flu-like symptoms.
-Typhoid,Typhoid is a bacterial infection that can lead to a high fever and gastrointestinal symptoms.
-hepatitis A,hepatitis A is a viral liver disease.
-Hepatitis B,Hepatitis B is a viral infection that attacks the liver.
-Hepatitis C,Hepatitis C is a viral infection that causes liver inflammation.
-Hepatitis D,Hepatitis D is a serious liver disease caused by the hepatitis D virus.
-Hepatitis E,Hepatitis E is a viral infection that causes liver inflammation.
-Alcoholic hepatitis,Alcoholic hepatitis is inflammation of the liver due to alcohol consumption.
-Tuberculosis,Tuberculosis is a bacterial infection that primarily affects the lungs.
-Common Cold,Common Cold is a viral infection of the upper respiratory tract.
-Pneumonia,Pneumonia is an inflammatory condition affecting the air sacs in the lungs.
-Dimorphic hemmorhoids(piles),Dimorphic hemmorhoids(piles) is a condition characterized by swollen blood vessels in the rectum.
-Heart attack,Heart attack is a sudden and severe reduction in blood flow to the heart muscle.
-Varicose veins,"Varicose veins are enlarged, twisted veins that usually appear on the legs."
-Hypothyroidism,Hypothyroidism is a condition where the thyroid gland doesn't produce enough thyroid hormone.
-Hyperthyroidism,Hyperthyroidism is a condition where the thyroid gland produces too much thyroid hormone.
-Hypoglycemia,Hypoglycemia is a condition characterized by abnormally low blood sugar levels.
-Osteoarthristis,Osteoarthristis is a degenerative joint disease that affects the cartilage in joints.
-Arthritis,"Arthritis is inflammation of one or more joints, causing pain and stiffness."
-(vertigo) Paroymsal Positional Vertigo,(Vertigo) Paroxysmal Positional Vertigo is a type of dizziness caused by specific head movements.
-Acne,Acne is a skin condition that occurs when hair follicles become clogged with oil and dead skin cells.
-Urinary tract infection,Urinary tract infection is an infection in any part of the urinary system.
-Psoriasis,"Psoriasis is a chronic skin condition characterized by red, itchy, and scaly patches."
-Impetigo,Impetigo is a highly contagious skin infection causing red sores that can break open.
+Fungal infection,"Fungal infection is an infectious disease caused by pathogenic microorganisms, potentially causing local or systemic inflammation and tissue damage."
+Allergy,"Allergy is an allergic condition where the immune system overreacts to normally harmless substances, causing inflammatory responses."
+GERD,"Gastroesophageal Reflux Disease (GERD) is a chronic condition where stomach acid frequently flows back into the esophagus, causing heartburn and potentially damaging the esophageal lining."
+Chronic cholestasis,"Chronic cholestasis is a hepatic condition affecting liver structure or function, potentially impairing the liver's ability to detoxify, synthesize proteins, and produce bile."
+Drug Reaction,Drug Reaction is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Peptic ulcer disease,"Peptic ulcer disease involves painful sores that develop on the inner lining of the stomach, small intestine, or esophagus, often caused by H. pylori bacteria or NSAIDs."
+AIDS,AIDS is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Diabetes,Diabetes is a group of metabolic disorders characterized by high blood sugar levels due to problems with insulin production or function.
+Gastroenteritis,"Gastroenteritis is inflammation of the stomach and intestines, typically caused by viral or bacterial infection, resulting in diarrhea, vomiting, and abdominal pain."
+Bronchial Asthma,"Bronchial Asthma is a respiratory disorder affecting the lungs, airways, or breathing mechanism, potentially impairing gas exchange and oxygenation."
+Hypertension,"Hypertension, or high blood pressure, is a condition where the force of blood against artery walls is consistently too high, potentially damaging blood vessels and organs."
+Migraine,"Migraine is a neurological disorder characterized by recurrent, severe headaches often accompanied by nausea, vomiting, and sensitivity to light and sound."
+Cervical spondylosis,Cervical spondylosis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Paralysis (brain hemorrhage),"Paralysis (brain hemorrhage) is a neurological disorder affecting the central or peripheral nervous system, potentially impairing motor, sensory, or cognitive function."
+Jaundice,"Jaundice is a hepatic condition affecting liver structure or function, potentially impairing the liver's ability to detoxify, synthesize proteins, and produce bile."
+Malaria,Malaria is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Chicken pox,Chicken pox is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Dengue,Dengue is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Typhoid,Typhoid is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+hepatitis A,"hepatitis A is a hepatic condition affecting liver structure or function, potentially impairing the liver's ability to detoxify, synthesize proteins, and produce bile."
+Hepatitis B,"Hepatitis B is a hepatic condition affecting liver structure or function, potentially impairing the liver's ability to detoxify, synthesize proteins, and produce bile."
+Hepatitis C,"Hepatitis C is a hepatic condition affecting liver structure or function, potentially impairing the liver's ability to detoxify, synthesize proteins, and produce bile."
+Hepatitis D,"Hepatitis D is a hepatic condition affecting liver structure or function, potentially impairing the liver's ability to detoxify, synthesize proteins, and produce bile."
+Hepatitis E,"Hepatitis E is a hepatic condition affecting liver structure or function, potentially impairing the liver's ability to detoxify, synthesize proteins, and produce bile."
+Alcoholic hepatitis,"Alcoholic hepatitis is a hepatic condition affecting liver structure or function, potentially impairing the liver's ability to detoxify, synthesize proteins, and produce bile."
+Tuberculosis,Tuberculosis is a bacterial infection caused by Mycobacterium tuberculosis that primarily affects the lungs but can spread to other organs.
+Common Cold,"The common cold is a viral infection of the upper respiratory tract, typically causing runny nose, cough, sore throat, and congestion."
+Pneumonia,"Pneumonia is an infection that inflames air sacs in the lungs, which may fill with fluid or pus, causing symptoms like fever, chills, and difficulty breathing."
+Dimorphic hemmorhoids(piles),Dimorphic hemmorhoids(piles) is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Heart attack,"Heart attack is a cardiovascular disorder affecting the heart's structure, function, or blood supply, potentially compromising cardiac output and circulation."
+Varicose veins,Varicose veins is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Hypothyroidism,"Hypothyroidism is a condition where the thyroid gland doesn't produce enough thyroid hormone, slowing down metabolism and affecting multiple body systems."
+Hyperthyroidism,Hyperthyroidism is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Hypoglycemia,Hypoglycemia is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Osteoarthristis,"Osteoarthristis is a musculoskeletal disorder affecting bones, joints, muscles, or connective tissues, potentially impairing movement and structural integrity."
+Arthritis,"Arthritis is a musculoskeletal disorder affecting bones, joints, muscles, or connective tissues, potentially impairing movement and structural integrity."
+(vertigo) Paroymsal Positional Vertigo,(vertigo) Paroymsal Positional Vertigo is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Acne,Acne is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Urinary tract infection,"Urinary tract infection (UTI) is an infection in any part of the urinary system, most commonly affecting the bladder and urethra."
+Psoriasis,"Psoriasis is an autoimmune skin condition that causes cells to build up rapidly on the skin surface, forming scales and red patches that are often itchy and painful."
+Impetigo,Impetigo is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Gestational Cholestasis,"Gestational cholestasis is a liver condition during pregnancy characterized by impaired bile flow, causing severe itching, particularly on hands and feet."
+Injury to Internal Organ,"Injury to Internal Organ is a traumatic condition resulting from external force or violence, causing structural damage to tissues, organs, or body systems."
+Scabies,"Scabies is a highly contagious skin infestation caused by microscopic mites that burrow into the skin, causing intense itching and rash."
+Congenital Glaucoma,Congenital glaucoma is a rare eye condition present at birth where increased pressure in the eye can damage the optic nerve and impair vision.
+Avoidant/Restrictive Food Intake Disorder (ARFID),Avoidant/Restrictive Food Intake Disorder (ARFID) is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Subdural hemorrhage,Subdural hemorrhage is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Poisoning due to Antidepressants,"Poisoning due to Antidepressants is a toxicological condition resulting from exposure to harmful substances, potentially causing cellular damage and organ dysfunction."
+Mittelschmerz,Mittelschmerz is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Cornea Infection,"Cornea Infection is an infectious disease caused by pathogenic microorganisms, potentially causing local or systemic inflammation and tissue damage."
+Myopia,Myopia is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Abscess of the Lung,"Abscess of the Lung is a respiratory disorder affecting the lungs, airways, or breathing mechanism, potentially impairing gas exchange and oxygenation."
+Congenital rubella,"Congenital rubella is a genetic or congenital condition present from birth, often caused by chromosomal abnormalities or inherited gene mutations."
+Intertrigo,"Intertrigo is a superficial inflammatory skin condition affecting skin folds, characterized by redness, moisture, and bacterial or fungal overgrowth."
+Insect Bites,"Insect bites are puncture wounds or lacerations caused by insects, typically resulting in localized inflammation, itching, and sometimes allergic reactions."
+Complex Regional Pain Syndrome,"Complex Regional Pain Syndrome (CRPS) is a chronic pain condition characterized by severe burning pain, swelling, and changes in skin color and temperature."
+Anxiety,"Anxiety disorders involve excessive fear or worry that interferes with daily activities, encompassing various conditions like generalized anxiety disorder and panic disorder."
+Gastroesophageal Reflux Disease (GERD),Gastroesophageal Reflux Disease (GERD) is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Crushing Injury,"Crushing Injury is a traumatic condition resulting from external force or violence, causing structural damage to tissues, organs, or body systems."
+Cellulitis,"Cellulitis is a common bacterial skin infection that affects the deeper layers of skin and subcutaneous tissue, causing redness, swelling, and pain."
+Anal Fissure,Anal Fissure is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Neuropathic Pain,"Neuropathic Pain is a neurological disorder affecting the central or peripheral nervous system, potentially impairing motor, sensory, or cognitive function."
+Food Allergy,"Food Allergy is an allergic condition where the immune system overreacts to normally harmless substances, causing inflammatory responses."
+Pulmonary Fibrosis,"Pulmonary Fibrosis is a respiratory disorder affecting the lungs, airways, or breathing mechanism, potentially impairing gas exchange and oxygenation."
+Hyperosmotic Hyperketotic State,Hyperosmotic Hyperketotic State is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Overflow Incontinence,Overflow Incontinence is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Abdominal Injury,"Abdominal Injury is a traumatic condition resulting from external force or violence, causing structural damage to tissues, organs, or body systems."
+Hirsutism,Hirsutism is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Neuralgia,Neuralgia is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Warthin tumor,Warthin tumor is a malignant neoplasm characterized by uncontrolled cell growth and potential metastasis to distant organs.
+Presbycusis,Presbycusis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Opioid Use Disorder,Opioid Use Disorder is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Panic disorder,Panic disorder is characterized by sudden episodes of intense fear (panic attacks) accompanied by physical symptoms like rapid heartbeat and sweating.
+Esophageal Cancer,Esophageal Cancer is a malignant neoplasm characterized by uncontrolled cell growth and potential metastasis to distant organs.
+Alcohol Intoxication,"Alcohol Intoxication is a toxicological condition resulting from exposure to harmful substances, potentially causing cellular damage and organ dysfunction."
+Pilonidal Cyst,"Pilonidal cyst is a fluid-filled sac that develops at the top of the tailbone, often containing hair and skin debris, prone to infection."
+Gestational Diabetes,Gestational diabetes is high blood sugar that develops during pregnancy in women who didn't previously have diabetes.
+Drug Withdrawal,Drug Withdrawal is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Fetal Alcohol Syndrome,Fetal Alcohol Syndrome is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Polycythemia Vera,Polycythemia Vera is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Osteoarthritis,"Osteoarthritis is the most common form of arthritis, occurring when cartilage that cushions joints breaks down over time, causing pain and stiffness."
+Fracture of the Neck,"Fracture of the Neck is a musculoskeletal disorder affecting bones, joints, muscles, or connective tissues, potentially impairing movement and structural integrity."
+Myoclonus,"Myoclonus refers to sudden, brief, involuntary muscle jerks that can affect any muscle group, often occurring in neurological conditions."
+Foreign Body in the Gastrointestinal Tract,Foreign Body in the Gastrointestinal Tract is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Coronary Atherosclerosis,"Coronary atherosclerosis is the buildup of fatty deposits (plaques) in the coronary arteries that supply blood to the heart muscle, potentially leading to heart attack."
+Hypertensive Heart Disease,"Hypertensive heart disease is heart damage caused by prolonged high blood pressure, leading to thickened heart muscle and potential heart failure."
+Mumps,"Mumps is a viral infection primarily affecting the salivary glands, causing swelling and pain, particularly in the parotid glands."
+Cholesteatoma,Cholesteatoma is an abnormal growth of skin cells in the middle ear that can damage hearing and potentially cause serious complications.
+Polycystic Kidney Disease,"Polycystic Kidney Disease is a urological condition affecting the structure or function of the kidneys, ureters, bladder, or urethra, potentially impairing waste elimination and fluid balance."
+Juvenile Rheumatoid Arthritis,"Juvenile Rheumatoid Arthritis is a musculoskeletal disorder affecting bones, joints, muscles, or connective tissues, potentially impairing movement and structural integrity."
+Hypospadias,Hypospadias is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Parotid stones,Parotid stones is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Achalasia,"Achalasia is a rare disorder of the esophagus where the muscle fails to relax properly, making it difficult for food and liquid to pass into the stomach."
+Rumination Disorder,Rumination Disorder is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Bronchitis,"Bronchitis is inflammation of the lining of the bronchial tubes, which carry air to the lungs, causing persistent cough and mucus production."
+Balanitis,Balanitis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Ectopic Pregnancy,"Ectopic pregnancy occurs when a fertilized egg implants outside the uterus, most commonly in a fallopian tube, requiring immediate medical attention."
+Atelectasis,Atelectasis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Anorexia Nervosa,"Anorexia nervosa is a serious eating disorder characterized by restriction of food intake, intense fear of gaining weight, and distorted body image."
+Hypergammaglobulinemia,Hypergammaglobulinemia is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Pregnancy-Induced Hypertension,"Pregnancy-Induced Hypertension is a pregnancy-related condition that can affect maternal or fetal health during gestation, labor, or the postpartum period."
+Chorioretinitis,Chorioretinitis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Open-Angle Glaucoma,"Open-angle glaucoma is the most common type of glaucoma, characterized by gradual increase in eye pressure that can damage the optic nerve and cause vision loss."
+Cranial Nerve Palsy,Cranial Nerve Palsy is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Corneal Abrasion,Corneal Abrasion is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Hiatal Hernia,Hiatal Hernia is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Type 2 Diabetes,Type 2 diabetes is a chronic condition where the body becomes resistant to insulin or doesn't produce enough insulin to maintain normal glucose levels.
+Uterine Fibroids,Uterine Fibroids is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Angle-Closure Glaucoma,"Angle-closure glaucoma is a medical emergency where the drainage angle of the eye becomes blocked, causing rapid increase in eye pressure."
+Chronic Headache,Chronic Headache is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Acute Kidney Injury,Acute kidney injury is sudden damage to the kidneys causing them to stop filtering waste from the blood effectively.
+Scarlet Fever,Scarlet Fever is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Thoracic Aortic Aneurysm,Thoracic Aortic Aneurysm is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Scleroderma,Scleroderma is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Bone Spur of the Calcaneus,"Bone Spur of the Calcaneus is a musculoskeletal disorder affecting bones, joints, muscles, or connective tissues, potentially impairing movement and structural integrity."
+Ethylene glycol poisoning-2,"Ethylene glycol poisoning-2 is a toxicological condition resulting from exposure to harmful substances, potentially causing cellular damage and organ dysfunction."
+Pica,Pica is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Induced Abortion,Induced Abortion is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Tension Headache,Tension Headache is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Urethral Valves,Urethral Valves is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Hashimoto Thyroiditis,"Hashimoto thyroiditis is an autoimmune condition where the immune system attacks the thyroid gland, leading to hypothyroidism."
+Parkinson Disease,"Parkinson disease is a progressive neurological disorder affecting movement, characterized by tremors, stiffness, slowness of movement, and balance problems."
+Cryptorchidism,Cryptorchidism is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Mucocele,Mucocele is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Empyema,Empyema is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Abdominal Hernia,Abdominal Hernia is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Hemarthrosis,Hemarthrosis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Pregnancy-Related Back Pain,"Pregnancy-Related Back Pain is a pregnancy-related condition that can affect maternal or fetal health during gestation, labor, or the postpartum period."
+Muscle Spasm,Muscle Spasm is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Diverticulosis,"Diverticulosis is a condition where small pouches (diverticula) form in the colon wall, which can become inflamed or infected (diverticulitis)."
+Dry Skin,"Dry Skin is a dermatological condition affecting skin structure, function, or appearance, potentially involving inflammation, infection, or abnormal cell growth."
+Alcohol Use Disorder,Alcohol Use Disorder is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Muscular Dystrophy,Muscular Dystrophy is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Vaginal Yeast Infection,"Vaginal Yeast Infection is an infectious disease caused by pathogenic microorganisms, potentially causing local or systemic inflammation and tissue damage."
+Osteoporosis,"Osteoporosis is a condition where bones become weak and brittle due to loss of bone density, making them more susceptible to fractures."
+Syndrome of Inappropriate Secretion of ADH (SIADH),Syndrome of Inappropriate Secretion of ADH (SIADH) is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Myasthenia Gravis,Myasthenia Gravis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Torticollis,"Torticollis is a condition where neck muscles contract involuntarily, causing the head to twist or turn to one side in an abnormal position."
+Complex Regional Pain Syndrome (CRPS),Complex Regional Pain Syndrome (CRPS) is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Gastroenteritis (Stomach Flu),Gastroenteritis (Stomach Flu) is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Scleritis,Scleritis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Cirrhosis,"Cirrhosis is severe scarring of the liver caused by prolonged liver damage, leading to impaired liver function and potentially life-threatening complications."
+Lung Contusion,"Lung Contusion is a respiratory disorder affecting the lungs, airways, or breathing mechanism, potentially impairing gas exchange and oxygenation."
+Corneal Disorder,Corneal Disorder is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Mucoepidermoid carcinoma,Mucoepidermoid carcinoma is a malignant neoplasm characterized by uncontrolled cell growth and potential metastasis to distant organs.
+Carpal Tunnel Syndrome,"Carpal tunnel syndrome is compression of the median nerve as it passes through the carpal tunnel in the wrist, causing numbness, tingling, and pain in the hand."
+Macular Degeneration,"Macular degeneration is an eye disease that affects the macula (central part of the retina), causing blurred or reduced central vision."
+Atrophic vaginitis,Atrophic vaginitis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Osteochondrosis,"Osteochondrosis is a musculoskeletal disorder affecting bones, joints, muscles, or connective tissues, potentially impairing movement and structural integrity."
+Chronic Inflammatory Demyelinating Polyneuropathy (CIDP),"Chronic Inflammatory Demyelinating Polyneuropathy (CIDP) is a neurological disorder affecting the central or peripheral nervous system, potentially impairing motor, sensory, or cognitive function."
+Parasitic Infections,"Parasitic Infections is an infectious disease caused by pathogenic microorganisms, potentially causing local or systemic inflammation and tissue damage."
+Normal Pressure Hydrocephalus,Normal Pressure Hydrocephalus is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Kidney Stone,"Kidney stones are hard deposits of minerals and salts that form inside the kidneys, causing severe pain when passing through the urinary tract."
+Pituitary Disorder,Pituitary Disorder is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Pinguecula,Pinguecula is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Influenza (Flu),Influenza (Flu) is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Cat Scratch Disease,Cat Scratch Disease is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Hyperemesis Gravidarum,Hyperemesis Gravidarum is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Diabetic retinopathy,"Diabetic retinopathy is a diabetes complication affecting the blood vessels in the retina, potentially leading to vision loss or blindness."
+Aplastic Anemia,"Aplastic anemia is a rare blood disorder where the bone marrow fails to produce sufficient blood cells, leading to fatigue and increased infection risk."
+Wilson Disease,Wilson Disease is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Drug Abuse (Barbiturates),Drug Abuse (Barbiturates) is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Primary Insomnia,Primary Insomnia is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Mastoiditis,Mastoiditis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Acinic cell carcinoma,Acinic cell carcinoma is a malignant neoplasm characterized by uncontrolled cell growth and potential metastasis to distant organs.
+Wharton's duct stones,Wharton's duct stones is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Pharyngitis,Pharyngitis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Pericarditis,Pericarditis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Antihypertensives Poisoning,"Antihypertensives Poisoning is a toxicological condition resulting from exposure to harmful substances, potentially causing cellular damage and organ dysfunction."
+Oral Leukoplakia,Oral Leukoplakia is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Seborrheic Dermatitis,"Seborrheic Dermatitis is a dermatological condition affecting skin structure, function, or appearance, potentially involving inflammation, infection, or abnormal cell growth."
+Hydrocephalus,Hydrocephalus is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Marijuana Abuse,Marijuana Abuse is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Chronic Otitis Media,Chronic Otitis Media is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Pterygium,Pterygium is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Hepatic Encephalopathy,Hepatic Encephalopathy is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Tietze Syndrome,Tietze Syndrome is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Nose Disorder,Nose Disorder is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Exfoliation Glaucoma,"Exfoliation Glaucoma is an ophthalmological condition affecting the eye's structure or visual function, potentially causing vision impairment or blindness."
+Protein Deficiency,Protein Deficiency is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Thrombocytopenia,"Thrombocytopenia is a condition with abnormally low platelet count, increasing the risk of bleeding and bruising."
+Alopecia,Alopecia is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Polymyalgia Rheumatica,Polymyalgia Rheumatica is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Bone Cancer,"Bone Cancer is a musculoskeletal disorder affecting bones, joints, muscles, or connective tissues, potentially impairing movement and structural integrity."
+Preeclampsia,"Preeclampsia is a serious pregnancy complication characterized by high blood pressure and protein in urine, potentially dangerous to mother and baby."
+Hypertrophic Obstructive Cardiomyopathy (HOCM),Hypertrophic Obstructive Cardiomyopathy (HOCM) is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Nonalcoholic Liver Disease (NASH),"Nonalcoholic Liver Disease (NASH) is a hepatic condition affecting liver structure or function, potentially impairing the liver's ability to detoxify, synthesize proteins, and produce bile."
+Amyloidosis,Amyloidosis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Ethylene glycol poisoning-3,"Ethylene glycol poisoning-3 is a toxicological condition resulting from exposure to harmful substances, potentially causing cellular damage and organ dysfunction."
+Fracture of the Rib,"Fracture of the Rib is a musculoskeletal disorder affecting bones, joints, muscles, or connective tissues, potentially impairing movement and structural integrity."
+Breast Cancer,Breast Cancer is a malignant neoplasm characterized by uncontrolled cell growth and potential metastasis to distant organs.
+Neuromyelitis Optica,"Neuromyelitis Optica is a neurological disorder affecting the central or peripheral nervous system, potentially impairing motor, sensory, or cognitive function."
+Eye alignment disorder,"Eye alignment disorder is an ophthalmological condition affecting the eye's structure or visual function, potentially causing vision impairment or blindness."
+Meniere Disease,Meniere Disease is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Pituitary Adenoma,Pituitary Adenoma is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Ischemia of the Bowel,Ischemia of the Bowel is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Hydrocele of the Testicle,Hydrocele of the Testicle is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Endometrial Cancer,Endometrial Cancer is a malignant neoplasm characterized by uncontrolled cell growth and potential metastasis to distant organs.
+Endometriosis,Endometriosis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Hydronephrosis,Hydronephrosis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Bell Palsy,"Bell palsy is sudden weakness or paralysis of facial muscles on one side of the face, caused by inflammation of the facial nerve."
+Abscess of Nose,Abscess of Nose is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Bladder Disorder,"Bladder Disorder is a urological condition affecting the structure or function of the kidneys, ureters, bladder, or urethra, potentially impairing waste elimination and fluid balance."
+Emphysema,"Emphysema is a lung condition where the air sacs (alveoli) are damaged, making it progressively more difficult to breathe due to reduced oxygen exchange."
+Extrapyramidal Effect of Drugs,Extrapyramidal Effect of Drugs is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Vasculitis,Vasculitis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Female Infertility of Unknown Cause,Female Infertility of Unknown Cause is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Syringomyelia,Syringomyelia is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Von Hippel-Lindau Disease,Von Hippel-Lindau Disease is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Hemorrhoids,Hemorrhoids is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Bursitis,Bursitis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Cannabis Use Disorder,Cannabis Use Disorder is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Heart Block,"Heart block is a condition where electrical signals controlling the heartbeat are partially or completely blocked, causing irregular heart rhythms."
+Hemolytic Anemia,"Hemolytic anemia occurs when red blood cells are destroyed faster than they can be replaced, leading to fatigue and other complications."
+Benzodiazepine Use Disorder,Benzodiazepine Use Disorder is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Mitral Valve Disease,Mitral Valve Disease is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Varicose Veins,Varicose Veins is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Recurrent salivary stones,Recurrent salivary stones is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Ocular Hypertension,Ocular Hypertension is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Colonic Polyp,Colonic Polyp is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Indigestion,Indigestion is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Acute Glaucoma,"Acute Glaucoma is an ophthalmological condition affecting the eye's structure or visual function, potentially causing vision impairment or blindness."
+Sciatica,"Sciatica is pain that radiates along the path of the sciatic nerve from the lower back through the hips and down each leg, usually affecting only one side."
+Type 2 Diabetes,Type 2 diabetes is a chronic condition where the body becomes resistant to insulin or doesn't produce enough insulin to maintain normal glucose levels.
+Cystic Fibrosis,Cystic Fibrosis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Insulin Overdose,"Insulin Overdose is a metabolic disorder characterized by elevated blood glucose levels due to defects in insulin secretion, insulin action, or both, potentially leading to serious complications affecting multiple organ systems."
+Peritonsillar Abscess,Peritonsillar Abscess is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Leishmaniasis,Leishmaniasis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Pulmonary Congestion,"Pulmonary Congestion is a respiratory disorder affecting the lungs, airways, or breathing mechanism, potentially impairing gas exchange and oxygenation."
+Magnesium Deficiency,Magnesium Deficiency is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Fracture of the Shoulder,"Fracture of the Shoulder is a musculoskeletal disorder affecting bones, joints, muscles, or connective tissues, potentially impairing movement and structural integrity."
+Thrombophlebitis,Thrombophlebitis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Encephalitis,Encephalitis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Fat Embolism,Fat Embolism is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Cyst of the Eyelid,"Cyst of the Eyelid is an ophthalmological condition affecting the eye's structure or visual function, potentially causing vision impairment or blindness."
+Dislocation of the Patella,Dislocation of the Patella is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Conjunctivitis due to Allergy,"Conjunctivitis due to Allergy is an allergic condition where the immune system overreacts to normally harmless substances, causing inflammatory responses."
+Coagulation (Bleeding) Disorder,"Coagulation (Bleeding) Disorder is a hematological disorder affecting blood cells, hemostasis, or blood circulation, potentially causing bleeding, clotting, or oxygen transport problems."
+Idiopathic Absence of Menstruation,Idiopathic Absence of Menstruation is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Temporomandibular Joint Disorder,"Temporomandibular Joint Disorder is a musculoskeletal disorder affecting bones, joints, muscles, or connective tissues, potentially impairing movement and structural integrity."
+Vitamin A Deficiency,Vitamin A Deficiency is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Glucocorticoid Deficiency,Glucocorticoid Deficiency is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Astigmatism,Astigmatism is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Low-Tension Glaucoma,"Low-Tension Glaucoma is an ophthalmological condition affecting the eye's structure or visual function, potentially causing vision impairment or blindness."
+Headache after lumbar puncture,Headache after lumbar puncture is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Flat Feet,Flat Feet is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Carbon Monoxide Poisoning,"Carbon Monoxide Poisoning is a toxicological condition resulting from exposure to harmful substances, potentially causing cellular damage and organ dysfunction."
+Orbital Cellulitis,Orbital Cellulitis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Pulmonary Eosinophilia,"Pulmonary Eosinophilia is a respiratory disorder affecting the lungs, airways, or breathing mechanism, potentially impairing gas exchange and oxygenation."
+Antimicrobial Drugs Poisoning,"Antimicrobial Drugs Poisoning is a toxicological condition resulting from exposure to harmful substances, potentially causing cellular damage and organ dysfunction."
+Eczema,"Eczema (atopic dermatitis) is a chronic skin condition causing red, itchy, inflamed skin that often occurs in people with allergies or asthma."
+Intestinal Malabsorption,Intestinal Malabsorption is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Conductive Hearing Loss,Conductive Hearing Loss is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Pinworm Infection,"Pinworm Infection is an infectious disease caused by pathogenic microorganisms, potentially causing local or systemic inflammation and tissue damage."
+Esophageal Varices,Esophageal Varices is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Dermatitis due to Sun Exposure,"Dermatitis due to Sun Exposure is a dermatological condition affecting skin structure, function, or appearance, potentially involving inflammation, infection, or abnormal cell growth."
+Gonorrhea,Gonorrhea is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Chronic Sinusitis,Chronic Sinusitis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Concussion,Concussion is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Parathyroid Adenoma,Parathyroid Adenoma is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Herpangina,Herpangina is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Conversion Disorder,Conversion Disorder is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Lymphedema,Lymphedema is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Hirschsprung Disease,Hirschsprung Disease is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Rheumatoid Arthritis,"Rheumatoid arthritis is a chronic autoimmune disorder that primarily affects joints, causing inflammation, pain, and potential joint deformity."
+Turner syndrome,Turner syndrome is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Sciatica,"Sciatica is pain that radiates along the path of the sciatic nerve from the lower back through the hips and down each leg, usually affecting only one side."
+Endophthalmitis,Endophthalmitis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Myelodysplastic Syndrome,Myelodysplastic Syndrome is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Premature Ventricular Contractions (PVCs),Premature Ventricular Contractions (PVCs) is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Ludwig's angina,Ludwig's angina is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Cryptococcosis,Cryptococcosis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Diabetic Kidney Disease,"Diabetic Kidney Disease is a urological condition affecting the structure or function of the kidneys, ureters, bladder, or urethra, potentially impairing waste elimination and fluid balance."
+Premenstrual Tension Syndrome,Premenstrual Tension Syndrome is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Drug Abuse (Methamphetamine),Drug Abuse (Methamphetamine) is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Urge Incontinence,Urge Incontinence is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Dengue Fever,Dengue Fever is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Lead Poisoning,"Lead Poisoning is a toxicological condition resulting from exposure to harmful substances, potentially causing cellular damage and organ dysfunction."
+Actinic Keratosis,Actinic Keratosis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Choledocholithiasis,Choledocholithiasis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Head and Neck Cancer,Head and Neck Cancer is a malignant neoplasm characterized by uncontrolled cell growth and potential metastasis to distant organs.
+Sjögren's syndrome,Sjögren's syndrome is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Peritonitis,Peritonitis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Anemia of Chronic Disease,"Anemia of Chronic Disease is a hematological disorder affecting blood cells, hemostasis, or blood circulation, potentially causing bleeding, clotting, or oxygen transport problems."
+Ovarian Torsion,Ovarian Torsion is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Sciatica,"Sciatica is pain that radiates along the path of the sciatic nerve from the lower back through the hips and down each leg, usually affecting only one side."
+Lupus,Lupus is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Neonatal Jaundice,"Neonatal Jaundice is a hepatic condition affecting liver structure or function, potentially impairing the liver's ability to detoxify, synthesize proteins, and produce bile."
+Gastrointestinal Hemorrhage,Gastrointestinal Hemorrhage is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Dislocation of the Ankle,Dislocation of the Ankle is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Vaginal Cyst,Vaginal Cyst is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Orthorexia Nervosa,Orthorexia Nervosa is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Urinary Tract Infection (UTI),"Urinary Tract Infection (UTI) is a urological condition affecting the structure or function of the kidneys, ureters, bladder, or urethra, potentially impairing waste elimination and fluid balance."
+Placenta Previa,Placenta Previa is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Acute Pancreatitis,Acute Pancreatitis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Gum Disease,Gum Disease is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Panic Attack,Panic Attack is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Lice,Lice is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Pyloric stenosis,Pyloric stenosis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Pigmentary Glaucoma,"Pigmentary Glaucoma is an ophthalmological condition affecting the eye's structure or visual function, potentially causing vision impairment or blindness."
+Abscess,Abscess is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Myositis,Myositis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Von Willebrand Disease,Von Willebrand Disease is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Gastroparesis,Gastroparesis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Chancroid,Chancroid is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Fungal Infection of the Skin,"Fungal Infection of the Skin is a dermatological condition affecting skin structure, function, or appearance, potentially involving inflammation, infection, or abnormal cell growth."
+Stimulant Use Disorder,Stimulant Use Disorder is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Chronic Fatigue Syndrome,Chronic Fatigue Syndrome is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Threatened Pregnancy,"Threatened Pregnancy is a pregnancy-related condition that can affect maternal or fetal health during gestation, labor, or the postpartum period."
+Chronic Glaucoma,"Chronic Glaucoma is an ophthalmological condition affecting the eye's structure or visual function, potentially causing vision impairment or blindness."
+Urticaria (Hives),Urticaria (Hives) is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Vitreous Hemorrhage,Vitreous Hemorrhage is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Binge Eating Disorder,Binge Eating Disorder is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Hypercholesterolemia,Hypercholesterolemia is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Stress Incontinence,Stress Incontinence is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Labyrinthitis,Labyrinthitis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Dysthymic Disorder,Dysthymic Disorder is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Ethylene glycol poisoning-1,"Ethylene glycol poisoning-1 is a toxicological condition resulting from exposure to harmful substances, potentially causing cellular damage and organ dysfunction."
+Impulse Control Disorder,Impulse Control Disorder is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Intracranial Hemorrhage,Intracranial Hemorrhage is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Postpartum Depression,"Postpartum Depression is a mental health disorder affecting mood, thinking, behavior, or emotional regulation, potentially impairing daily functioning and quality of life."
+Injury to the Leg,"Injury to the Leg is a traumatic condition resulting from external force or violence, causing structural damage to tissues, organs, or body systems."
+Stroke,"Stroke is a neurological disorder affecting the central or peripheral nervous system, potentially impairing motor, sensory, or cognitive function."
+Huntington Disease,Huntington Disease is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Mononucleosis,Mononucleosis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Hallucinogen Use Disorder,Hallucinogen Use Disorder is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Ependymoma,Ependymoma is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Lymphoma,Lymphoma is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Urinary Tract Infection (UTI),"Urinary Tract Infection (UTI) is a urological condition affecting the structure or function of the kidneys, ureters, bladder, or urethra, potentially impairing waste elimination and fluid balance."
+Transient ischemic attack,Transient ischemic attack is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Normal-Tension Glaucoma,"Normal-Tension Glaucoma is an ophthalmological condition affecting the eye's structure or visual function, potentially causing vision impairment or blindness."
+Thyroid Disease,Thyroid Disease is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Bladder Cancer,"Bladder Cancer is a urological condition affecting the structure or function of the kidneys, ureters, bladder, or urethra, potentially impairing waste elimination and fluid balance."
+Fracture of the Arm,"Fracture of the Arm is a musculoskeletal disorder affecting bones, joints, muscles, or connective tissues, potentially impairing movement and structural integrity."
+Mucocele,Mucocele is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Kidney Failure,"Kidney Failure is a urological condition affecting the structure or function of the kidneys, ureters, bladder, or urethra, potentially impairing waste elimination and fluid balance."
+Chagas Disease,Chagas Disease is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Leukemia,Leukemia is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Vesicoureteral Reflux,Vesicoureteral Reflux is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Endometriosis,Endometriosis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Infection of Open Wound,"Infection of Open Wound is an infectious disease caused by pathogenic microorganisms, potentially causing local or systemic inflammation and tissue damage."
+Anemia,Anemia is a condition where the body lacks enough healthy red blood cells or hemoglobin to carry adequate oxygen to tissues.
+Spondylosis,Spondylosis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Acute Otitis Media,Acute Otitis Media is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Fracture,"Fracture is a musculoskeletal disorder affecting bones, joints, muscles, or connective tissues, potentially impairing movement and structural integrity."
+Round Ligament Pain,Round Ligament Pain is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Autism,Autism is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Pleomorphic adenoma,Pleomorphic adenoma is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Otosclerosis,Otosclerosis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Bulimia Nervosa,Bulimia Nervosa is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Poisoning due to Analgesics,"Poisoning due to Analgesics is a toxicological condition resulting from exposure to harmful substances, potentially causing cellular damage and organ dysfunction."
+Pseudohypoparathyroidism,Pseudohypoparathyroidism is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Dermatitis due to Sun Exposure,"Dermatitis due to Sun Exposure is a dermatological condition affecting skin structure, function, or appearance, potentially involving inflammation, infection, or abnormal cell growth."
+Anemia due to Malignancy,"Anemia due to Malignancy is a hematological disorder affecting blood cells, hemostasis, or blood circulation, potentially causing bleeding, clotting, or oxygen transport problems."
+Hyperhidrosis,Hyperhidrosis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Otitis Media,Otitis Media is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Benign Kidney Cyst,"Benign Kidney Cyst is a urological condition affecting the structure or function of the kidneys, ureters, bladder, or urethra, potentially impairing waste elimination and fluid balance."
+Pain after an Operation,Pain after an Operation is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Chronic Knee Pain,Chronic Knee Pain is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Volvulus,Volvulus is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Scurvy,Scurvy is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Urinary Stones (Kidney Stones),"Urinary Stones (Kidney Stones) is a urological condition affecting the structure or function of the kidneys, ureters, bladder, or urethra, potentially impairing waste elimination and fluid balance."
+Injury to the Finger,"Injury to the Finger is a traumatic condition resulting from external force or violence, causing structural damage to tissues, organs, or body systems."
+Retinal Detachment,"Retinal Detachment is an ophthalmological condition affecting the eye's structure or visual function, potentially causing vision impairment or blindness."
+Chronic Rheumatic Fever,Chronic Rheumatic Fever is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Acute Bronchospasm,"Acute Bronchospasm is a respiratory disorder affecting the lungs, airways, or breathing mechanism, potentially impairing gas exchange and oxygenation."
+Vulvodynia,Vulvodynia is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Other Specified Feeding or Eating Disorder (OSFED),Other Specified Feeding or Eating Disorder (OSFED) is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Anemia due to Chronic Kidney Disease,"Anemia due to Chronic Kidney Disease is a urological condition affecting the structure or function of the kidneys, ureters, bladder, or urethra, potentially impairing waste elimination and fluid balance."
+Pemphigus,Pemphigus is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Syphilis,Syphilis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Omphalitis,Omphalitis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Idiopathic Nonmenstrual Bleeding,"Idiopathic Nonmenstrual Bleeding is a hematological disorder affecting blood cells, hemostasis, or blood circulation, potentially causing bleeding, clotting, or oxygen transport problems."
+Myofascial Pain Syndrome,Myofascial Pain Syndrome is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Vocal cord polyp,Vocal cord polyp is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Rotator Cuff Injury,"Rotator Cuff Injury is a traumatic condition resulting from external force or violence, causing structural damage to tissues, organs, or body systems."
+Fibromyalgia,Fibromyalgia is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Hypercalcemia,Hypercalcemia is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Secondary Glaucoma,"Secondary Glaucoma is an ophthalmological condition affecting the eye's structure or visual function, potentially causing vision impairment or blindness."
+Acute Sinusitis,Acute Sinusitis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Polycystic Ovarian Syndrome,Polycystic Ovarian Syndrome is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Complex Regional Pain Syndrome (CRPS),Complex Regional Pain Syndrome (CRPS) is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Optic Neuritis,Optic Neuritis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Adrenal Cancer,"Adrenal Cancer is a urological condition affecting the structure or function of the kidneys, ureters, bladder, or urethra, potentially impairing waste elimination and fluid balance."
+Intracranial Abscess,Intracranial Abscess is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Adenoid cystic carcinoma,Adenoid cystic carcinoma is a malignant neoplasm characterized by uncontrolled cell growth and potential metastasis to distant organs.
+Fracture of the Patella,"Fracture of the Patella is a musculoskeletal disorder affecting bones, joints, muscles, or connective tissues, potentially impairing movement and structural integrity."
+Restless Leg Syndrome,Restless Leg Syndrome is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Cold Sore,Cold Sore is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Chronic Kidney Disease,"Chronic Kidney Disease is a urological condition affecting the structure or function of the kidneys, ureters, bladder, or urethra, potentially impairing waste elimination and fluid balance."
+Goiter,Goiter is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Type 1 Diabetes,"Type 1 Diabetes is a metabolic disorder characterized by elevated blood glucose levels due to defects in insulin secretion, insulin action, or both, potentially leading to serious complications affecting multiple organ systems."
+Dislocation of the Elbow,Dislocation of the Elbow is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Rabies,Rabies is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Contact Dermatitis,"Contact Dermatitis is a dermatological condition affecting skin structure, function, or appearance, potentially involving inflammation, infection, or abnormal cell growth."
+Hemophilia,Hemophilia is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Open Wound from Surgical Incision,Open Wound from Surgical Incision is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Chronic Migraine,Chronic Migraine is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Hyperkalemia,Hyperkalemia is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Fibromyalgia,Fibromyalgia is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Bipolar Disorder,Bipolar disorder is a mental health condition causing extreme mood swings between emotional highs (mania) and lows (depression).
+Sedatives Poisoning,"Sedatives Poisoning is a toxicological condition resulting from exposure to harmful substances, potentially causing cellular damage and organ dysfunction."
+Plantar Fasciitis,Plantar Fasciitis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Priapism,Priapism is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Gestational Hypertension,"Gestational Hypertension is a pregnancy-related condition that can affect maternal or fetal health during gestation, labor, or the postpartum period."
+Pyelonephritis,Pyelonephritis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Drug Abuse (Cocaine),Drug Abuse (Cocaine) is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Gout,Gout is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Narcolepsy,Narcolepsy is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Submandibular stones,Submandibular stones is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Dental Caries,Dental Caries is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Vitamin B12 Deficiency,Vitamin B12 Deficiency is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Testicular Cancer,Testicular Cancer is a malignant neoplasm characterized by uncontrolled cell growth and potential metastasis to distant organs.
+Peyronie Disease,Peyronie Disease is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Hepatitis due to a Toxin,"Hepatitis due to a Toxin is a hepatic condition affecting liver structure or function, potentially impairing the liver's ability to detoxify, synthesize proteins, and produce bile."
+Foreign Body in the Throat,Foreign Body in the Throat is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Stenosis of the Tear Duct,Stenosis of the Tear Duct is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Lateral Epicondylitis (Tennis Elbow),Lateral Epicondylitis (Tennis Elbow) is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Attention Deficit Hyperactivity Disorder (ADHD),Attention Deficit Hyperactivity Disorder (ADHD) is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Tuberous Sclerosis,Tuberous Sclerosis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Pulmonic Valve Disease,Pulmonic Valve Disease is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Pelvic Organ Prolapse,Pelvic Organ Prolapse is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+"Sedative, Hypnotic, or Anxiolytic Use Disorder","Sedative, Hypnotic, or Anxiolytic Use Disorder is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings."
+Atrial Fibrillation,Atrial Fibrillation is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Asthma,"Asthma is a respiratory condition where airways narrow and swell, producing extra mucus, making breathing difficult and triggering coughing, wheezing, and shortness of breath."
+Edward Syndrome,Edward Syndrome is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+West Nile Virus,West Nile Virus is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Obesity,Obesity is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Sialolithiasis,Sialolithiasis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Hyperopia,Hyperopia is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Liver Cancer,"Liver Cancer is a hepatic condition affecting liver structure or function, potentially impairing the liver's ability to detoxify, synthesize proteins, and produce bile."
+Chalazion,Chalazion is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Hypocalcemia,Hypocalcemia is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.
+Viral Warts,"Viral Warts is an infectious disease caused by pathogenic microorganisms, potentially causing local or systemic inflammation and tissue damage."
+Spondylitis,Spondylitis is a medical condition requiring professional diagnosis and appropriate treatment based on clinical presentation and diagnostic findings.

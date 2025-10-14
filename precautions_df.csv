@@ -1,42 +1,428 @@
-,Disease,Precaution_1,Precaution_2,Precaution_3,Precaution_4
-0,Drug Reaction,stop irritation,consult nearest hospital,stop taking drug,follow up
-1,Malaria,Consult nearest hospital,avoid oily food,avoid non veg food,keep mosquitos out
-2,Allergy,apply calamine,cover area with bandage,,use ice to compress itching
-3,Hypothyroidism,reduce stress,exercise,eat healthy,get proper sleep
-4,Psoriasis,wash hands with warm soapy water,stop bleeding using pressure,consult doctor,salt baths
-5,GERD,avoid fatty spicy food,avoid lying down after eating,maintain healthy weight,exercise
-6,Chronic cholestasis,cold baths,anti itch medicine,consult doctor,eat healthy
-7,hepatitis A,Consult nearest hospital,wash hands through,avoid fatty spicy food,medication
-8,Osteoarthristis,acetaminophen,consult nearest hospital,follow up,salt baths
-9,(vertigo) Paroymsal  Positional Vertigo,lie down,avoid sudden change in body,avoid abrupt head movment,relax
-10,Hypoglycemia,lie down on side,check in pulse,drink sugary drinks,consult doctor
-11,Acne,bath twice,avoid fatty spicy food,drink plenty of water,avoid too many products
-12,Diabetes ,have balanced diet,exercise,consult doctor,follow up
-13,Impetigo,soak affected area in warm water,use antibiotics,remove scabs with wet compressed cloth,consult doctor
-14,Hypertension ,meditation,salt baths,reduce stress,get proper sleep
-15,Peptic ulcer diseae,avoid fatty spicy food,consume probiotic food,eliminate milk,limit alcohol
-16,Dimorphic hemmorhoids(piles),avoid fatty spicy food,consume witch hazel,warm bath with epsom salt,consume alovera juice
-17,Common Cold,drink vitamin c rich drinks,take vapour,avoid cold food,keep fever in check
-18,Chicken pox,use neem in bathing ,consume neem leaves,take vaccine,avoid public places
-19,Cervical spondylosis,use heating pad or cold pack,exercise,take otc pain reliver,consult doctor
-20,Hyperthyroidism,eat healthy,massage,use lemon balm,take radioactive iodine treatment
-21,Urinary tract infection,drink plenty of water,increase vitamin c intake,drink cranberry juice,take probiotics
-22,Varicose veins,lie down flat and raise the leg high,use oinments,use vein compression,dont stand still for long
-23,AIDS,avoid open cuts,wear ppe if possible,consult doctor,follow up
-24,Paralysis (brain hemorrhage),massage,eat healthy,exercise,consult doctor
-25,Typhoid,eat high calorie vegitables,antiboitic therapy,consult doctor,medication
-26,Hepatitis B,consult nearest hospital,vaccination,eat healthy,medication
-27,Fungal infection,bath twice,use detol or neem in bathing water,keep infected area dry,use clean cloths
-28,Hepatitis C,Consult nearest hospital,vaccination,eat healthy,medication
-29,Migraine,meditation,reduce stress,use poloroid glasses in sun,consult doctor
-30,Bronchial Asthma,switch to loose cloothing,take deep breaths,get away from trigger,seek help
-31,Alcoholic hepatitis,stop alcohol consumption,consult doctor,medication,follow up
-32,Jaundice,drink plenty of water,consume milk thistle,eat fruits and high fiberous food,medication
-33,Hepatitis E,stop alcohol consumption,rest,consult doctor,medication
-34,Dengue,drink papaya leaf juice,avoid fatty spicy food,keep mosquitos away,keep hydrated
-35,Hepatitis D,consult doctor,medication,eat healthy,follow up
-36,Heart attack,call ambulance,chew or swallow asprin,keep calm,
-37,Pneumonia,consult doctor,medication,rest,follow up
-38,Arthritis,exercise,use hot and cold therapy,try acupuncture,massage
-39,Gastroenteritis,stop eating solid food for while,try taking small sips of water,rest,ease back into eating
-40,Tuberculosis,cover mouth,consult doctor,medication,rest
+Unnamed: 0,Disease,Precaution_1,Precaution_2,Precaution_3,Precaution_4
+0.0,Drug Reaction,stop irritation,consult nearest hospital,stop taking drug,follow up
+1.0,Malaria,Consult nearest hospital,avoid oily food,avoid non veg food,keep mosquitos out
+2.0,Allergy,apply calamine,cover area with bandage,,use ice to compress itching
+3.0,Hypothyroidism,reduce stress,exercise,eat healthy,get proper sleep
+4.0,Psoriasis,wash hands with warm soapy water,stop bleeding using pressure,consult doctor,salt baths
+5.0,GERD,avoid fatty spicy food,avoid lying down after eating,maintain healthy weight,exercise
+6.0,Chronic cholestasis,cold baths,anti itch medicine,consult doctor,eat healthy
+7.0,hepatitis A,Consult nearest hospital,wash hands through,avoid fatty spicy food,medication
+8.0,Osteoarthristis,acetaminophen,consult nearest hospital,follow up,salt baths
+9.0,(vertigo) Paroymsal  Positional Vertigo,lie down,avoid sudden change in body,avoid abrupt head movment,relax
+10.0,Hypoglycemia,lie down on side,check in pulse,drink sugary drinks,consult doctor
+11.0,Acne,bath twice,avoid fatty spicy food,drink plenty of water,avoid too many products
+12.0,Diabetes ,have balanced diet,exercise,consult doctor,follow up
+13.0,Impetigo,soak affected area in warm water,use antibiotics,remove scabs with wet compressed cloth,consult doctor
+14.0,Hypertension ,meditation,salt baths,reduce stress,get proper sleep
+15.0,Peptic ulcer diseae,avoid fatty spicy food,consume probiotic food,eliminate milk,limit alcohol
+16.0,Dimorphic hemmorhoids(piles),avoid fatty spicy food,consume witch hazel,warm bath with epsom salt,consume alovera juice
+17.0,Common Cold,drink vitamin c rich drinks,take vapour,avoid cold food,keep fever in check
+18.0,Chicken pox,use neem in bathing ,consume neem leaves,take vaccine,avoid public places
+19.0,Cervical spondylosis,use heating pad or cold pack,exercise,take otc pain reliver,consult doctor
+20.0,Hyperthyroidism,eat healthy,massage,use lemon balm,take radioactive iodine treatment
+21.0,Urinary tract infection,drink plenty of water,increase vitamin c intake,drink cranberry juice,take probiotics
+22.0,Varicose veins,lie down flat and raise the leg high,use oinments,use vein compression,dont stand still for long
+23.0,AIDS,avoid open cuts,wear ppe if possible,consult doctor,follow up
+24.0,Paralysis (brain hemorrhage),massage,eat healthy,exercise,consult doctor
+25.0,Typhoid,eat high calorie vegitables,antiboitic therapy,consult doctor,medication
+26.0,Hepatitis B,consult nearest hospital,vaccination,eat healthy,medication
+27.0,Fungal infection,bath twice,use detol or neem in bathing water,keep infected area dry,use clean cloths
+28.0,Hepatitis C,Consult nearest hospital,vaccination,eat healthy,medication
+29.0,Migraine,meditation,reduce stress,use poloroid glasses in sun,consult doctor
+30.0,Bronchial Asthma,switch to loose cloothing,take deep breaths,get away from trigger,seek help
+31.0,Alcoholic hepatitis,stop alcohol consumption,consult doctor,medication,follow up
+32.0,Jaundice,drink plenty of water,consume milk thistle,eat fruits and high fiberous food,medication
+33.0,Hepatitis E,stop alcohol consumption,rest,consult doctor,medication
+34.0,Dengue,drink papaya leaf juice,avoid fatty spicy food,keep mosquitos away,keep hydrated
+35.0,Hepatitis D,consult doctor,medication,eat healthy,follow up
+36.0,Heart attack,call ambulance,chew or swallow asprin,keep calm,
+37.0,Pneumonia,consult doctor,medication,rest,follow up
+38.0,Arthritis,exercise,use hot and cold therapy,try acupuncture,massage
+39.0,Gastroenteritis,stop eating solid food for while,try taking small sips of water,rest,ease back into eating
+40.0,Tuberculosis,cover mouth,consult doctor,medication,rest
+,Mitral Valve Disease,Monitor blood pressure regularly,"Follow a heart-healthy diet (low sodium, low saturated fat)",Maintain healthy cholesterol levels,Avoid smoking and excessive alcohol consumption
+,Acute Kidney Injury,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Myopia,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Chronic Fatigue Syndrome,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Syndrome of Inappropriate Secretion of ADH (SIADH),Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Bell Palsy,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Secondary Glaucoma,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Fetal Alcohol Syndrome,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Cannabis Use Disorder,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Intertrigo,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Bronchitis,Avoid triggers like allergens and pollutants,Get annual flu vaccinations,Practice proper hand hygiene,Use air purifiers when needed
+,Insect Bites,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Astigmatism,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Vitamin B12 Deficiency,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Liver Cancer,Follow dietary modifications,Avoid trigger foods,Maintain proper hydration,Practice good food hygiene
+,Polycystic Kidney Disease,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Drug Withdrawal,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Goiter,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Neuralgia,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Syphilis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Chronic Headache,Take medications consistently as prescribed,Maintain regular sleep schedule,Avoid known seizure triggers,Wear medical identification when appropriate
+,Ovarian Torsion,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Myelodysplastic Syndrome,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Wharton's duct stones,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Bursitis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Stenosis of the Tear Duct,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Breast Cancer,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Injury to Internal Organ,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Antihypertensives Poisoning,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,West Nile Virus,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Chancroid,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Tension Headache,Take medications consistently as prescribed,Maintain regular sleep schedule,Avoid known seizure triggers,Wear medical identification when appropriate
+,Polycystic Ovarian Syndrome,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Poisoning due to Antidepressants,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Hypertension,Monitor blood pressure regularly,"Follow a heart-healthy diet (low sodium, low saturated fat)",Maintain healthy cholesterol levels,Avoid smoking and excessive alcohol consumption
+,Lymphedema,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Polycythemia Vera,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Scurvy,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Dengue Fever,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Chronic Glaucoma,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Pulmonic Valve Disease,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Intestinal Malabsorption,Follow dietary modifications,Avoid trigger foods,Maintain proper hydration,Practice good food hygiene
+,Drug Abuse (Cocaine),Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Complex Regional Pain Syndrome,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Lead Poisoning,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Food Allergy,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Ethylene glycol poisoning-3,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Alcohol Use Disorder,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Pulmonary Congestion,Avoid triggers like allergens and pollutants,Get annual flu vaccinations,Practice proper hand hygiene,Use air purifiers when needed
+,Intracranial Hemorrhage,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Recurrent salivary stones,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Carpal Tunnel Syndrome,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Fracture of the Shoulder,Maintain good posture,Use proper body mechanics,Avoid repetitive strain,Apply heat/cold therapy as appropriate
+,Coagulation (Bleeding) Disorder,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Coronary Atherosclerosis,Monitor blood pressure regularly,"Follow a heart-healthy diet (low sodium, low saturated fat)",Maintain healthy cholesterol levels,Avoid smoking and excessive alcohol consumption
+,Viral Warts,Complete full course of antibiotics,Practice proper isolation measures,Maintain good hygiene practices,Boost immune system with proper nutrition
+,Uterine Fibroids,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Sciatica,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Pain after an Operation,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Pregnancy-Induced Hypertension,Monitor blood pressure regularly,"Follow a heart-healthy diet (low sodium, low saturated fat)",Maintain healthy cholesterol levels,Avoid smoking and excessive alcohol consumption
+,Scarlet Fever,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Antimicrobial Drugs Poisoning,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Scleroderma,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Thyroid Disease,Regular hormone level monitoring,Consistent medication timing,Dietary modifications as prescribed,Regular medical follow-ups
+,Lateral Epicondylitis (Tennis Elbow),Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Spondylosis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Emphysema,Avoid triggers like allergens and pollutants,Get annual flu vaccinations,Practice proper hand hygiene,Use air purifiers when needed
+,Parasitic Infections,Complete full course of antibiotics,Practice proper isolation measures,Maintain good hygiene practices,Boost immune system with proper nutrition
+,Gum Disease,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Hepatic Encephalopathy,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Transient ischemic attack,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Cat Scratch Disease,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Bulimia Nervosa,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Normal-Tension Glaucoma,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Scabies,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Lupus,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Alcohol Intoxication,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Open-Angle Glaucoma,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Acute Bronchospasm,Avoid triggers like allergens and pollutants,Get annual flu vaccinations,Practice proper hand hygiene,Use air purifiers when needed
+,Pterygium,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Pericarditis,Monitor blood pressure regularly,"Follow a heart-healthy diet (low sodium, low saturated fat)",Maintain healthy cholesterol levels,Avoid smoking and excessive alcohol consumption
+,Rabies,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,"Sedative, Hypnotic, or Anxiolytic Use Disorder",Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Fungal Infection of the Skin,Complete full course of antibiotics,Practice proper isolation measures,Maintain good hygiene practices,Boost immune system with proper nutrition
+,Nose Disorder,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Chronic Inflammatory Demyelinating Polyneuropathy (CIDP),Take medications consistently as prescribed,Maintain regular sleep schedule,Avoid known seizure triggers,Wear medical identification when appropriate
+,Vitreous Hemorrhage,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Cholesteatoma,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Eye alignment disorder,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Ocular Hypertension,Monitor blood pressure regularly,"Follow a heart-healthy diet (low sodium, low saturated fat)",Maintain healthy cholesterol levels,Avoid smoking and excessive alcohol consumption
+,Torticollis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Flat Feet,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Hemarthrosis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Hepatitis due to a Toxin,Follow dietary modifications,Avoid trigger foods,Maintain proper hydration,Practice good food hygiene
+,Huntington Disease,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Stress Incontinence,Maintain regular therapy appointments,Practice stress management techniques,Maintain social connections,Monitor mood changes and triggers
+,Hypergammaglobulinemia,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Induced Abortion,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Obesity,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Esophageal Cancer,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Ependymoma,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Aplastic Anemia,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Cold Sore,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Turner syndrome,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Gestational Diabetes,Monitor blood glucose levels regularly,Follow prescribed meal plans and timing,Maintain proper foot care and hygiene,Keep emergency glucose sources available
+,Dental Caries,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Hiatal Hernia,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Submandibular stones,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Choledocholithiasis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Achalasia,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Conductive Hearing Loss,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Mononucleosis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Acute Sinusitis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Gastrointestinal Hemorrhage,Follow dietary modifications,Avoid trigger foods,Maintain proper hydration,Practice good food hygiene
+,Neuropathic Pain,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Bladder Disorder,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Anorexia Nervosa,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Chronic Kidney Disease,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Dysthymic Disorder,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Vesicoureteral Reflux,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Vitamin A Deficiency,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Cranial Nerve Palsy,Take medications consistently as prescribed,Maintain regular sleep schedule,Avoid known seizure triggers,Wear medical identification when appropriate
+,Varicose Veins,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Temporomandibular Joint Disorder,Maintain good posture,Use proper body mechanics,Avoid repetitive strain,Apply heat/cold therapy as appropriate
+,Other Specified Feeding or Eating Disorder (OSFED),Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Hyperemesis Gravidarum,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Hypertensive Heart Disease,Monitor blood pressure regularly,"Follow a heart-healthy diet (low sodium, low saturated fat)",Maintain healthy cholesterol levels,Avoid smoking and excessive alcohol consumption
+,Parathyroid Adenoma,Regular hormone level monitoring,Consistent medication timing,Dietary modifications as prescribed,Regular medical follow-ups
+,Dislocation of the Ankle,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Cirrhosis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Asthma,Avoid triggers like allergens and pollutants,Get annual flu vaccinations,Practice proper hand hygiene,Use air purifiers when needed
+,Encephalitis,Take medications consistently as prescribed,Maintain regular sleep schedule,Avoid known seizure triggers,Wear medical identification when appropriate
+,Pulmonary Fibrosis,Avoid triggers like allergens and pollutants,Get annual flu vaccinations,Practice proper hand hygiene,Use air purifiers when needed
+,Pituitary Adenoma,Regular hormone level monitoring,Consistent medication timing,Dietary modifications as prescribed,Regular medical follow-ups
+,Rheumatoid Arthritis,Maintain good posture,Use proper body mechanics,Avoid repetitive strain,Apply heat/cold therapy as appropriate
+,Kidney Stone,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Optic Neuritis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Premature Ventricular Contractions (PVCs),Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Priapism,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Attention Deficit Hyperactivity Disorder (ADHD),Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Cellulitis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Pseudohypoparathyroidism,Regular hormone level monitoring,Consistent medication timing,Dietary modifications as prescribed,Regular medical follow-ups
+,Exfoliation Glaucoma,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Low-Tension Glaucoma,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Hemorrhoids,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Threatened Pregnancy,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Endometriosis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Congenital Glaucoma,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Primary Insomnia,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Syringomyelia,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Congenital rubella,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Leishmaniasis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Opioid Use Disorder,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Concussion,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Narcolepsy,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Normal Pressure Hydrocephalus,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Urinary Tract Infection (UTI),Complete full course of antibiotics,Practice proper isolation measures,Maintain good hygiene practices,Boost immune system with proper nutrition
+,Herpangina,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Benign Kidney Cyst,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Dermatitis due to Sun Exposure,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Mucocele,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Amyloidosis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Abdominal Hernia,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Complex Regional Pain Syndrome (CRPS),Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Otitis Media,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Chronic Otitis Media,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Pharyngitis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Juvenile Rheumatoid Arthritis,Maintain good posture,Use proper body mechanics,Avoid repetitive strain,Apply heat/cold therapy as appropriate
+,Stimulant Use Disorder,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Tietze Syndrome,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Binge Eating Disorder,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Von Willebrand Disease,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Parkinson Disease,Take medications consistently as prescribed,Maintain regular sleep schedule,Avoid known seizure triggers,Wear medical identification when appropriate
+,Postpartum Depression,Maintain regular therapy appointments,Practice stress management techniques,Maintain social connections,Monitor mood changes and triggers
+,Premenstrual Tension Syndrome,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Hemophilia,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Chorioretinitis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Carbon Monoxide Poisoning,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Conversion Disorder,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Vaginal Cyst,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Foreign Body in the Gastrointestinal Tract,Follow dietary modifications,Avoid trigger foods,Maintain proper hydration,Practice good food hygiene
+,Bipolar Disorder,Maintain regular therapy appointments,Practice stress management techniques,Maintain social connections,Monitor mood changes and triggers
+,Cryptococcosis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Hyperkalemia,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Hemolytic Anemia,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Myasthenia Gravis,Take medications consistently as prescribed,Maintain regular sleep schedule,Avoid known seizure triggers,Wear medical identification when appropriate
+,Vocal cord polyp,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Spondylitis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Hyperhidrosis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Orthorexia Nervosa,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Otosclerosis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Stroke,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Endometrial Cancer,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Influenza (Flu),Complete full course of antibiotics,Practice proper isolation measures,Maintain good hygiene practices,Boost immune system with proper nutrition
+,Benzodiazepine Use Disorder,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Von Hippel-Lindau Disease,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Parotid stones,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Pregnancy-Related Back Pain,Maintain good posture,Use proper body mechanics,Avoid repetitive strain,Apply heat/cold therapy as appropriate
+,Ischemia of the Bowel,Follow dietary modifications,Avoid trigger foods,Maintain proper hydration,Practice good food hygiene
+,Vulvodynia,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Hirschsprung Disease,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Ethylene glycol poisoning-2,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Pulmonary Eosinophilia,Avoid triggers like allergens and pollutants,Get annual flu vaccinations,Practice proper hand hygiene,Use air purifiers when needed
+,Presbycusis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Peritonitis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Plantar Fasciitis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Cystic Fibrosis,Avoid triggers like allergens and pollutants,Get annual flu vaccinations,Practice proper hand hygiene,Use air purifiers when needed
+,Chronic Rheumatic Fever,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Diabetic retinopathy,Monitor blood glucose levels regularly,Follow prescribed meal plans and timing,Maintain proper foot care and hygiene,Keep emergency glucose sources available
+,Thrombocytopenia,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Hypercholesterolemia,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Chronic Knee Pain,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Warthin tumor,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Neonatal Jaundice,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Myoclonus,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Mucoepidermoid carcinoma,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Wilson Disease,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Atrophic vaginitis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Heart Block,Monitor blood pressure regularly,"Follow a heart-healthy diet (low sodium, low saturated fat)",Maintain healthy cholesterol levels,Avoid smoking and excessive alcohol consumption
+,Drug Abuse (Methamphetamine),Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Placenta Previa,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Pyelonephritis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Anxiety,Maintain regular therapy appointments,Practice stress management techniques,Maintain social connections,Monitor mood changes and triggers
+,Mumps,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Fracture of the Patella,Maintain good posture,Use proper body mechanics,Avoid repetitive strain,Apply heat/cold therapy as appropriate
+,Edward Syndrome,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Bone Cancer,Maintain good posture,Use proper body mechanics,Avoid repetitive strain,Apply heat/cold therapy as appropriate
+,Gastroesophageal Reflux Disease (GERD),Follow dietary modifications,Avoid trigger foods,Maintain proper hydration,Practice good food hygiene
+,Corneal Abrasion,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Hashimoto Thyroiditis,Regular hormone level monitoring,Consistent medication timing,Dietary modifications as prescribed,Regular medical follow-ups
+,Volvulus,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Impulse Control Disorder,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Diabetic Kidney Disease,Monitor blood glucose levels regularly,Follow prescribed meal plans and timing,Maintain proper foot care and hygiene,Keep emergency glucose sources available
+,Idiopathic Absence of Menstruation,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Dislocation of the Elbow,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Injury to the Leg,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Conjunctivitis due to Allergy,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Cyst of the Eyelid,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Osteochondrosis,Maintain good posture,Use proper body mechanics,Avoid repetitive strain,Apply heat/cold therapy as appropriate
+,Nonalcoholic Liver Disease (NASH),Follow dietary modifications,Avoid trigger foods,Maintain proper hydration,Practice good food hygiene
+,Autism,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Scleritis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Myofascial Pain Syndrome,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Anemia due to Malignancy,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Seborrheic Dermatitis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Gestational Hypertension,Monitor blood pressure regularly,"Follow a heart-healthy diet (low sodium, low saturated fat)",Maintain healthy cholesterol levels,Avoid smoking and excessive alcohol consumption
+,Head and Neck Cancer,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Hyperosmotic Hyperketotic State,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Fibromyalgia,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Urticaria (Hives),Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Urinary Stones (Kidney Stones),Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Insulin Overdose,Monitor blood glucose levels regularly,Follow prescribed meal plans and timing,Maintain proper foot care and hygiene,Keep emergency glucose sources available
+,Glucocorticoid Deficiency,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Female Infertility of Unknown Cause,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Round Ligament Pain,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Chronic Migraine,Take medications consistently as prescribed,Maintain regular sleep schedule,Avoid known seizure triggers,Wear medical identification when appropriate
+,Intracranial Abscess,Complete full course of antibiotics,Practice proper isolation measures,Maintain good hygiene practices,Boost immune system with proper nutrition
+,Labyrinthitis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Extrapyramidal Effect of Drugs,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Tuberous Sclerosis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Abscess of Nose,Complete full course of antibiotics,Practice proper isolation measures,Maintain good hygiene practices,Boost immune system with proper nutrition
+,Abscess of the Lung,Avoid triggers like allergens and pollutants,Get annual flu vaccinations,Practice proper hand hygiene,Use air purifiers when needed
+,Anemia,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Actinic Keratosis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Injury to the Finger,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Dislocation of the Patella,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Urge Incontinence,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Hypocalcemia,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Lice,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Endophthalmitis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Type 2 Diabetes,Monitor blood glucose levels regularly,Follow prescribed meal plans and timing,Maintain proper foot care and hygiene,Keep emergency glucose sources available
+,Eczema,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Avoidant/Restrictive Food Intake Disorder (ARFID),Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Adrenal Cancer,Regular hormone level monitoring,Consistent medication timing,Dietary modifications as prescribed,Regular medical follow-ups
+,Subdural hemorrhage,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Panic disorder,Maintain regular therapy appointments,Practice stress management techniques,Maintain social connections,Monitor mood changes and triggers
+,Crushing Injury,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Macular Degeneration,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Empyema,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Colonic Polyp,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Myositis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Osteoporosis,Maintain good posture,Use proper body mechanics,Avoid repetitive strain,Apply heat/cold therapy as appropriate
+,Dry Skin,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Acute Otitis Media,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Rotator Cuff Injury,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Muscular Dystrophy,Maintain good posture,Use proper body mechanics,Avoid repetitive strain,Apply heat/cold therapy as appropriate
+,Ectopic Pregnancy,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Hallucinogen Use Disorder,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Omphalitis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Bladder Cancer,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Panic Attack,Maintain regular therapy appointments,Practice stress management techniques,Maintain social connections,Monitor mood changes and triggers
+,Fracture of the Neck,Maintain good posture,Use proper body mechanics,Avoid repetitive strain,Apply heat/cold therapy as appropriate
+,Pica,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Preeclampsia,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Diverticulosis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Open Wound from Surgical Incision,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Gestational Cholestasis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Hydronephrosis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Pemphigus,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Poisoning due to Analgesics,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Atrial Fibrillation,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Hypertrophic Obstructive Cardiomyopathy (HOCM),Monitor blood pressure regularly,"Follow a heart-healthy diet (low sodium, low saturated fat)",Maintain healthy cholesterol levels,Avoid smoking and excessive alcohol consumption
+,Sjögren's syndrome,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Anal Fissure,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Vasculitis,Monitor blood pressure regularly,"Follow a heart-healthy diet (low sodium, low saturated fat)",Maintain healthy cholesterol levels,Avoid smoking and excessive alcohol consumption
+,Esophageal Varices,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Chronic Sinusitis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Gastroparesis,Follow dietary modifications,Avoid trigger foods,Maintain proper hydration,Practice good food hygiene
+,Infection of Open Wound,Complete full course of antibiotics,Practice proper isolation measures,Maintain good hygiene practices,Boost immune system with proper nutrition
+,Gout,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Cornea Infection,Complete full course of antibiotics,Practice proper isolation measures,Maintain good hygiene practices,Boost immune system with proper nutrition
+,Hyperopia,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Protein Deficiency,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Pigmentary Glaucoma,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Oral Leukoplakia,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Urethral Valves,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Pinguecula,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Abscess,Complete full course of antibiotics,Practice proper isolation measures,Maintain good hygiene practices,Boost immune system with proper nutrition
+,Ethylene glycol poisoning-1,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Acute Pancreatitis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Mittelschmerz,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Pelvic Organ Prolapse,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Hydrocele of the Testicle,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Balanitis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Restless Leg Syndrome,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Acute Glaucoma,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Meniere Disease,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Vaginal Yeast Infection,Complete full course of antibiotics,Practice proper isolation measures,Maintain good hygiene practices,Boost immune system with proper nutrition
+,Bone Spur of the Calcaneus,Maintain good posture,Use proper body mechanics,Avoid repetitive strain,Apply heat/cold therapy as appropriate
+,Thrombophlebitis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Peritonsillar Abscess,Complete full course of antibiotics,Practice proper isolation measures,Maintain good hygiene practices,Boost immune system with proper nutrition
+,Lymphoma,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Mastoiditis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Fracture of the Rib,Maintain good posture,Use proper body mechanics,Avoid repetitive strain,Apply heat/cold therapy as appropriate
+,Sedatives Poisoning,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Contact Dermatitis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Muscle Spasm,Maintain good posture,Use proper body mechanics,Avoid repetitive strain,Apply heat/cold therapy as appropriate
+,Gonorrhea,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Hirsutism,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Neuromyelitis Optica,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Ludwig's angina,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Hypospadias,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Anemia due to Chronic Kidney Disease,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Gastroenteritis (Stomach Flu),Follow dietary modifications,Avoid trigger foods,Maintain proper hydration,Practice good food hygiene
+,Marijuana Abuse,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Kidney Failure,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Type 1 Diabetes,Monitor blood glucose levels regularly,Follow prescribed meal plans and timing,Maintain proper foot care and hygiene,Keep emergency glucose sources available
+,Overflow Incontinence,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Testicular Cancer,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Adenoid cystic carcinoma,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Magnesium Deficiency,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Acinic cell carcinoma,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Chagas Disease,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Chalazion,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Fracture,Maintain good posture,Use proper body mechanics,Avoid repetitive strain,Apply heat/cold therapy as appropriate
+,Retinal Detachment,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Idiopathic Nonmenstrual Bleeding,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Thoracic Aortic Aneurysm,Monitor blood pressure regularly,"Follow a heart-healthy diet (low sodium, low saturated fat)",Maintain healthy cholesterol levels,Avoid smoking and excessive alcohol consumption
+,Lung Contusion,Avoid triggers like allergens and pollutants,Get annual flu vaccinations,Practice proper hand hygiene,Use air purifiers when needed
+,Alopecia,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Cryptorchidism,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Rumination Disorder,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Anemia of Chronic Disease,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Fracture of the Arm,Maintain good posture,Use proper body mechanics,Avoid repetitive strain,Apply heat/cold therapy as appropriate
+,Foreign Body in the Throat,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Peyronie Disease,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Osteoarthritis,Maintain good posture,Use proper body mechanics,Avoid repetitive strain,Apply heat/cold therapy as appropriate
+,Atelectasis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Headache after lumbar puncture,Take medications consistently as prescribed,Maintain regular sleep schedule,Avoid known seizure triggers,Wear medical identification when appropriate
+,Orbital Cellulitis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Pyloric stenosis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Sialolithiasis,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Fat Embolism,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Pituitary Disorder,Regular hormone level monitoring,Consistent medication timing,Dietary modifications as prescribed,Regular medical follow-ups
+,Drug Abuse (Barbiturates),Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Pleomorphic adenoma,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Hypercalcemia,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Hydrocephalus,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Corneal Disorder,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Indigestion,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Pinworm Infection,Complete full course of antibiotics,Practice proper isolation measures,Maintain good hygiene practices,Boost immune system with proper nutrition
+,Leukemia,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Pilonidal Cyst,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Polymyalgia Rheumatica,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Angle-Closure Glaucoma,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes
+,Abdominal Injury,Follow medical advice and treatment plans,Maintain regular medical check-ups,Practice good hygiene and health habits,Monitor symptoms and report changes

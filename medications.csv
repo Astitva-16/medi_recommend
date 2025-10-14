@@ -40,3 +40,388 @@ Acne,"['Antibiotics', 'Pain relievers', 'Antihistamines', 'Corticosteroids', 'To
 Urinary tract infection,"['Antibiotics', 'Urinary analgesics', 'Phenazopyridine', 'Antispasmodics', 'Probiotics']"
 Psoriasis,"['Topical treatments', 'Phototherapy', 'Systemic medications', 'Biologics', 'Coal tar']"
 Impetigo,"['Topical antibiotics', 'Oral antibiotics', 'Antiseptics', 'Ointments', 'Warm compresses']"
+Mitral Valve Disease,"ACE inhibitors (Lisinopril, Enalapril); Beta-blockers (Metoprolol, Atenolol); Calcium channel blockers (Amlodipine); Statins (Atorvastatin, Simvastatin)"
+Acute Kidney Injury,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Myopia,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Chronic Fatigue Syndrome,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Syndrome of Inappropriate Secretion of ADH (SIADH),Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Bell Palsy,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Secondary Glaucoma,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Fetal Alcohol Syndrome,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Cannabis Use Disorder,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Intertrigo,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Bronchitis,"Bronchodilators (Albuterol, Salmeterol); Corticosteroids (Prednisone, Fluticasone); Antibiotics for bacterial infections; Expectorants and mucolytics"
+Insect Bites,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Astigmatism,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Vitamin B12 Deficiency,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Liver Cancer,Proton pump inhibitors (Omeprazole); H2 receptor blockers (Ranitidine); Antispasmodics (Dicyclomine); Probiotics and digestive enzymes
+Polycystic Kidney Disease,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Drug Withdrawal,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Goiter,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Neuralgia,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Syphilis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Chronic Headache,"Anticonvulsants (Phenytoin, Carbamazepine); Dopamine agonists (Levodopa); Cholinesterase inhibitors (Donepezil); Muscle relaxants (Baclofen)"
+Ovarian Torsion,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Myelodysplastic Syndrome,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Wharton's duct stones,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Bursitis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Stenosis of the Tear Duct,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Breast Cancer,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Injury to Internal Organ,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Antihypertensives Poisoning,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+West Nile Virus,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Chancroid,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Tension Headache,"Anticonvulsants (Phenytoin, Carbamazepine); Dopamine agonists (Levodopa); Cholinesterase inhibitors (Donepezil); Muscle relaxants (Baclofen)"
+Polycystic Ovarian Syndrome,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Poisoning due to Antidepressants,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Lymphedema,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Polycythemia Vera,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Scurvy,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Dengue Fever,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Chronic Glaucoma,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Pulmonic Valve Disease,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Intestinal Malabsorption,Proton pump inhibitors (Omeprazole); H2 receptor blockers (Ranitidine); Antispasmodics (Dicyclomine); Probiotics and digestive enzymes
+Drug Abuse (Cocaine),Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Complex Regional Pain Syndrome,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Lead Poisoning,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Food Allergy,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Ethylene glycol poisoning-3,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Alcohol Use Disorder,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Pulmonary Congestion,"Bronchodilators (Albuterol, Salmeterol); Corticosteroids (Prednisone, Fluticasone); Antibiotics for bacterial infections; Expectorants and mucolytics"
+Intracranial Hemorrhage,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Recurrent salivary stones,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Carpal Tunnel Syndrome,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Fracture of the Shoulder,"NSAIDs (Ibuprofen, Naproxen); Topical analgesics (Capsaicin cream); Muscle relaxants (Cyclobenzaprine); Disease-modifying antirheumatic drugs (DMARDs)"
+Coagulation (Bleeding) Disorder,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Coronary Atherosclerosis,"ACE inhibitors (Lisinopril, Enalapril); Beta-blockers (Metoprolol, Atenolol); Calcium channel blockers (Amlodipine); Statins (Atorvastatin, Simvastatin)"
+Viral Warts,"Antibiotics (Amoxicillin, Azithromycin); Antivirals (Acyclovir, Oseltamivir); Antifungals (Fluconazole, Clotrimazole); Supportive medications for symptoms"
+Uterine Fibroids,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Sciatica,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Pain after an Operation,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Pregnancy-Induced Hypertension,"ACE inhibitors (Lisinopril, Enalapril); Beta-blockers (Metoprolol, Atenolol); Calcium channel blockers (Amlodipine); Statins (Atorvastatin, Simvastatin)"
+Scarlet Fever,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Antimicrobial Drugs Poisoning,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Scleroderma,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Thyroid Disease,Hormone replacement therapy; Thyroid medications (Levothyroxine); Corticosteroids (Hydrocortisone); Insulin and glucose-regulating drugs
+Lateral Epicondylitis (Tennis Elbow),Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Spondylosis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Emphysema,"Bronchodilators (Albuterol, Salmeterol); Corticosteroids (Prednisone, Fluticasone); Antibiotics for bacterial infections; Expectorants and mucolytics"
+Parasitic Infections,"Antibiotics (Amoxicillin, Azithromycin); Antivirals (Acyclovir, Oseltamivir); Antifungals (Fluconazole, Clotrimazole); Supportive medications for symptoms"
+Gum Disease,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Hepatic Encephalopathy,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Transient ischemic attack,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Cat Scratch Disease,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Bulimia Nervosa,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Normal-Tension Glaucoma,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Scabies,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Lupus,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Alcohol Intoxication,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Open-Angle Glaucoma,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Acute Bronchospasm,"Bronchodilators (Albuterol, Salmeterol); Corticosteroids (Prednisone, Fluticasone); Antibiotics for bacterial infections; Expectorants and mucolytics"
+Pterygium,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Pericarditis,"ACE inhibitors (Lisinopril, Enalapril); Beta-blockers (Metoprolol, Atenolol); Calcium channel blockers (Amlodipine); Statins (Atorvastatin, Simvastatin)"
+Rabies,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+"Sedative, Hypnotic, or Anxiolytic Use Disorder",Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Fungal Infection of the Skin,"Antibiotics (Amoxicillin, Azithromycin); Antivirals (Acyclovir, Oseltamivir); Antifungals (Fluconazole, Clotrimazole); Supportive medications for symptoms"
+Nose Disorder,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Chronic Inflammatory Demyelinating Polyneuropathy (CIDP),"Anticonvulsants (Phenytoin, Carbamazepine); Dopamine agonists (Levodopa); Cholinesterase inhibitors (Donepezil); Muscle relaxants (Baclofen)"
+Vitreous Hemorrhage,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Cholesteatoma,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Eye alignment disorder,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Ocular Hypertension,"ACE inhibitors (Lisinopril, Enalapril); Beta-blockers (Metoprolol, Atenolol); Calcium channel blockers (Amlodipine); Statins (Atorvastatin, Simvastatin)"
+Torticollis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Flat Feet,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Hemarthrosis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Hepatitis due to a Toxin,Proton pump inhibitors (Omeprazole); H2 receptor blockers (Ranitidine); Antispasmodics (Dicyclomine); Probiotics and digestive enzymes
+Huntington Disease,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Stress Incontinence,"SSRIs (Sertraline, Fluoxetine); SNRIs (Venlafaxine, Duloxetine); Mood stabilizers (Lithium, Valproate); Antipsychotics (Risperidone, Olanzapine)"
+Hypergammaglobulinemia,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Induced Abortion,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Obesity,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Esophageal Cancer,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Ependymoma,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Aplastic Anemia,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Cold Sore,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Turner syndrome,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Gestational Diabetes,"Metformin for blood sugar control; Insulin (rapid-acting, long-acting); Sulfonylureas (Glipizide, Glyburide); DPP-4 inhibitors (Sitagliptin)"
+Dental Caries,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Hiatal Hernia,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Submandibular stones,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Choledocholithiasis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Achalasia,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Conductive Hearing Loss,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Mononucleosis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Acute Sinusitis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Gastrointestinal Hemorrhage,Proton pump inhibitors (Omeprazole); H2 receptor blockers (Ranitidine); Antispasmodics (Dicyclomine); Probiotics and digestive enzymes
+Neuropathic Pain,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Bladder Disorder,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Anorexia Nervosa,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Chronic Kidney Disease,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Dysthymic Disorder,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Vesicoureteral Reflux,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Vitamin A Deficiency,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Cranial Nerve Palsy,"Anticonvulsants (Phenytoin, Carbamazepine); Dopamine agonists (Levodopa); Cholinesterase inhibitors (Donepezil); Muscle relaxants (Baclofen)"
+Varicose Veins,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Temporomandibular Joint Disorder,"NSAIDs (Ibuprofen, Naproxen); Topical analgesics (Capsaicin cream); Muscle relaxants (Cyclobenzaprine); Disease-modifying antirheumatic drugs (DMARDs)"
+Other Specified Feeding or Eating Disorder (OSFED),Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Hyperemesis Gravidarum,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Hypertensive Heart Disease,"ACE inhibitors (Lisinopril, Enalapril); Beta-blockers (Metoprolol, Atenolol); Calcium channel blockers (Amlodipine); Statins (Atorvastatin, Simvastatin)"
+Parathyroid Adenoma,Hormone replacement therapy; Thyroid medications (Levothyroxine); Corticosteroids (Hydrocortisone); Insulin and glucose-regulating drugs
+Dislocation of the Ankle,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Cirrhosis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Asthma,"Bronchodilators (Albuterol, Salmeterol); Corticosteroids (Prednisone, Fluticasone); Antibiotics for bacterial infections; Expectorants and mucolytics"
+Encephalitis,"Anticonvulsants (Phenytoin, Carbamazepine); Dopamine agonists (Levodopa); Cholinesterase inhibitors (Donepezil); Muscle relaxants (Baclofen)"
+Pulmonary Fibrosis,"Bronchodilators (Albuterol, Salmeterol); Corticosteroids (Prednisone, Fluticasone); Antibiotics for bacterial infections; Expectorants and mucolytics"
+Pituitary Adenoma,Hormone replacement therapy; Thyroid medications (Levothyroxine); Corticosteroids (Hydrocortisone); Insulin and glucose-regulating drugs
+Rheumatoid Arthritis,"NSAIDs (Ibuprofen, Naproxen); Topical analgesics (Capsaicin cream); Muscle relaxants (Cyclobenzaprine); Disease-modifying antirheumatic drugs (DMARDs)"
+Kidney Stone,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Optic Neuritis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Premature Ventricular Contractions (PVCs),Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Priapism,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Attention Deficit Hyperactivity Disorder (ADHD),Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Cellulitis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Pseudohypoparathyroidism,Hormone replacement therapy; Thyroid medications (Levothyroxine); Corticosteroids (Hydrocortisone); Insulin and glucose-regulating drugs
+Exfoliation Glaucoma,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Low-Tension Glaucoma,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Hemorrhoids,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Threatened Pregnancy,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Endometriosis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Congenital Glaucoma,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Primary Insomnia,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Syringomyelia,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Congenital rubella,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Leishmaniasis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Opioid Use Disorder,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Concussion,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Narcolepsy,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Normal Pressure Hydrocephalus,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Urinary Tract Infection (UTI),"Antibiotics (Amoxicillin, Azithromycin); Antivirals (Acyclovir, Oseltamivir); Antifungals (Fluconazole, Clotrimazole); Supportive medications for symptoms"
+Herpangina,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Benign Kidney Cyst,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Dermatitis due to Sun Exposure,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Mucocele,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Amyloidosis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Abdominal Hernia,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Complex Regional Pain Syndrome (CRPS),Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Otitis Media,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Chronic Otitis Media,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Pharyngitis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Juvenile Rheumatoid Arthritis,"NSAIDs (Ibuprofen, Naproxen); Topical analgesics (Capsaicin cream); Muscle relaxants (Cyclobenzaprine); Disease-modifying antirheumatic drugs (DMARDs)"
+Stimulant Use Disorder,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Tietze Syndrome,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Binge Eating Disorder,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Von Willebrand Disease,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Parkinson Disease,"Anticonvulsants (Phenytoin, Carbamazepine); Dopamine agonists (Levodopa); Cholinesterase inhibitors (Donepezil); Muscle relaxants (Baclofen)"
+Postpartum Depression,"SSRIs (Sertraline, Fluoxetine); SNRIs (Venlafaxine, Duloxetine); Mood stabilizers (Lithium, Valproate); Antipsychotics (Risperidone, Olanzapine)"
+Premenstrual Tension Syndrome,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Hemophilia,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Chorioretinitis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Carbon Monoxide Poisoning,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Conversion Disorder,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Vaginal Cyst,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Foreign Body in the Gastrointestinal Tract,Proton pump inhibitors (Omeprazole); H2 receptor blockers (Ranitidine); Antispasmodics (Dicyclomine); Probiotics and digestive enzymes
+Bipolar Disorder,"SSRIs (Sertraline, Fluoxetine); SNRIs (Venlafaxine, Duloxetine); Mood stabilizers (Lithium, Valproate); Antipsychotics (Risperidone, Olanzapine)"
+Cryptococcosis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Hyperkalemia,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Hemolytic Anemia,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Myasthenia Gravis,"Anticonvulsants (Phenytoin, Carbamazepine); Dopamine agonists (Levodopa); Cholinesterase inhibitors (Donepezil); Muscle relaxants (Baclofen)"
+Vocal cord polyp,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Spondylitis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Hyperhidrosis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Orthorexia Nervosa,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Otosclerosis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Stroke,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Endometrial Cancer,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Influenza (Flu),"Antibiotics (Amoxicillin, Azithromycin); Antivirals (Acyclovir, Oseltamivir); Antifungals (Fluconazole, Clotrimazole); Supportive medications for symptoms"
+Benzodiazepine Use Disorder,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Von Hippel-Lindau Disease,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Parotid stones,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Pregnancy-Related Back Pain,"NSAIDs (Ibuprofen, Naproxen); Topical analgesics (Capsaicin cream); Muscle relaxants (Cyclobenzaprine); Disease-modifying antirheumatic drugs (DMARDs)"
+Ischemia of the Bowel,Proton pump inhibitors (Omeprazole); H2 receptor blockers (Ranitidine); Antispasmodics (Dicyclomine); Probiotics and digestive enzymes
+Vulvodynia,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Hirschsprung Disease,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Ethylene glycol poisoning-2,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Pulmonary Eosinophilia,"Bronchodilators (Albuterol, Salmeterol); Corticosteroids (Prednisone, Fluticasone); Antibiotics for bacterial infections; Expectorants and mucolytics"
+Presbycusis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Peritonitis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Plantar Fasciitis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Cystic Fibrosis,"Bronchodilators (Albuterol, Salmeterol); Corticosteroids (Prednisone, Fluticasone); Antibiotics for bacterial infections; Expectorants and mucolytics"
+Chronic Rheumatic Fever,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Diabetic retinopathy,"Metformin for blood sugar control; Insulin (rapid-acting, long-acting); Sulfonylureas (Glipizide, Glyburide); DPP-4 inhibitors (Sitagliptin)"
+Thrombocytopenia,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Hypercholesterolemia,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Chronic Knee Pain,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Warthin tumor,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Neonatal Jaundice,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Myoclonus,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Mucoepidermoid carcinoma,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Wilson Disease,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Atrophic vaginitis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Heart Block,"ACE inhibitors (Lisinopril, Enalapril); Beta-blockers (Metoprolol, Atenolol); Calcium channel blockers (Amlodipine); Statins (Atorvastatin, Simvastatin)"
+Drug Abuse (Methamphetamine),Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Placenta Previa,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Pyelonephritis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Anxiety,"SSRIs (Sertraline, Fluoxetine); SNRIs (Venlafaxine, Duloxetine); Mood stabilizers (Lithium, Valproate); Antipsychotics (Risperidone, Olanzapine)"
+Mumps,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Fracture of the Patella,"NSAIDs (Ibuprofen, Naproxen); Topical analgesics (Capsaicin cream); Muscle relaxants (Cyclobenzaprine); Disease-modifying antirheumatic drugs (DMARDs)"
+Edward Syndrome,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Bone Cancer,"NSAIDs (Ibuprofen, Naproxen); Topical analgesics (Capsaicin cream); Muscle relaxants (Cyclobenzaprine); Disease-modifying antirheumatic drugs (DMARDs)"
+Gastroesophageal Reflux Disease (GERD),Proton pump inhibitors (Omeprazole); H2 receptor blockers (Ranitidine); Antispasmodics (Dicyclomine); Probiotics and digestive enzymes
+Corneal Abrasion,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Hashimoto Thyroiditis,Hormone replacement therapy; Thyroid medications (Levothyroxine); Corticosteroids (Hydrocortisone); Insulin and glucose-regulating drugs
+Volvulus,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Impulse Control Disorder,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Diabetic Kidney Disease,"Metformin for blood sugar control; Insulin (rapid-acting, long-acting); Sulfonylureas (Glipizide, Glyburide); DPP-4 inhibitors (Sitagliptin)"
+Idiopathic Absence of Menstruation,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Dislocation of the Elbow,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Injury to the Leg,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Conjunctivitis due to Allergy,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Cyst of the Eyelid,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Osteochondrosis,"NSAIDs (Ibuprofen, Naproxen); Topical analgesics (Capsaicin cream); Muscle relaxants (Cyclobenzaprine); Disease-modifying antirheumatic drugs (DMARDs)"
+Nonalcoholic Liver Disease (NASH),Proton pump inhibitors (Omeprazole); H2 receptor blockers (Ranitidine); Antispasmodics (Dicyclomine); Probiotics and digestive enzymes
+Autism,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Scleritis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Myofascial Pain Syndrome,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Anemia due to Malignancy,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Seborrheic Dermatitis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Gestational Hypertension,"ACE inhibitors (Lisinopril, Enalapril); Beta-blockers (Metoprolol, Atenolol); Calcium channel blockers (Amlodipine); Statins (Atorvastatin, Simvastatin)"
+Head and Neck Cancer,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Hyperosmotic Hyperketotic State,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Fibromyalgia,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Urticaria (Hives),Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Urinary Stones (Kidney Stones),Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Insulin Overdose,"Metformin for blood sugar control; Insulin (rapid-acting, long-acting); Sulfonylureas (Glipizide, Glyburide); DPP-4 inhibitors (Sitagliptin)"
+Glucocorticoid Deficiency,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Female Infertility of Unknown Cause,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Round Ligament Pain,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Chronic Migraine,"Anticonvulsants (Phenytoin, Carbamazepine); Dopamine agonists (Levodopa); Cholinesterase inhibitors (Donepezil); Muscle relaxants (Baclofen)"
+Intracranial Abscess,"Antibiotics (Amoxicillin, Azithromycin); Antivirals (Acyclovir, Oseltamivir); Antifungals (Fluconazole, Clotrimazole); Supportive medications for symptoms"
+Labyrinthitis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Extrapyramidal Effect of Drugs,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Tuberous Sclerosis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Abscess of Nose,"Antibiotics (Amoxicillin, Azithromycin); Antivirals (Acyclovir, Oseltamivir); Antifungals (Fluconazole, Clotrimazole); Supportive medications for symptoms"
+Abscess of the Lung,"Bronchodilators (Albuterol, Salmeterol); Corticosteroids (Prednisone, Fluticasone); Antibiotics for bacterial infections; Expectorants and mucolytics"
+Anemia,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Actinic Keratosis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Injury to the Finger,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Dislocation of the Patella,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Urge Incontinence,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Hypocalcemia,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Lice,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Endophthalmitis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Type 2 Diabetes,"Metformin for blood sugar control; Insulin (rapid-acting, long-acting); Sulfonylureas (Glipizide, Glyburide); DPP-4 inhibitors (Sitagliptin)"
+Eczema,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Avoidant/Restrictive Food Intake Disorder (ARFID),Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Adrenal Cancer,Hormone replacement therapy; Thyroid medications (Levothyroxine); Corticosteroids (Hydrocortisone); Insulin and glucose-regulating drugs
+Subdural hemorrhage,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Panic disorder,"SSRIs (Sertraline, Fluoxetine); SNRIs (Venlafaxine, Duloxetine); Mood stabilizers (Lithium, Valproate); Antipsychotics (Risperidone, Olanzapine)"
+Crushing Injury,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Macular Degeneration,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Empyema,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Colonic Polyp,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Myositis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Osteoporosis,"NSAIDs (Ibuprofen, Naproxen); Topical analgesics (Capsaicin cream); Muscle relaxants (Cyclobenzaprine); Disease-modifying antirheumatic drugs (DMARDs)"
+Dry Skin,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Acute Otitis Media,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Rotator Cuff Injury,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Muscular Dystrophy,"NSAIDs (Ibuprofen, Naproxen); Topical analgesics (Capsaicin cream); Muscle relaxants (Cyclobenzaprine); Disease-modifying antirheumatic drugs (DMARDs)"
+Ectopic Pregnancy,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Hallucinogen Use Disorder,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Omphalitis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Bladder Cancer,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Panic Attack,"SSRIs (Sertraline, Fluoxetine); SNRIs (Venlafaxine, Duloxetine); Mood stabilizers (Lithium, Valproate); Antipsychotics (Risperidone, Olanzapine)"
+Fracture of the Neck,"NSAIDs (Ibuprofen, Naproxen); Topical analgesics (Capsaicin cream); Muscle relaxants (Cyclobenzaprine); Disease-modifying antirheumatic drugs (DMARDs)"
+Pica,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Preeclampsia,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Diverticulosis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Open Wound from Surgical Incision,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Gestational Cholestasis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Hydronephrosis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Pemphigus,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Poisoning due to Analgesics,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Atrial Fibrillation,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Hypertrophic Obstructive Cardiomyopathy (HOCM),"ACE inhibitors (Lisinopril, Enalapril); Beta-blockers (Metoprolol, Atenolol); Calcium channel blockers (Amlodipine); Statins (Atorvastatin, Simvastatin)"
+Sjögren's syndrome,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Anal Fissure,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Vasculitis,"ACE inhibitors (Lisinopril, Enalapril); Beta-blockers (Metoprolol, Atenolol); Calcium channel blockers (Amlodipine); Statins (Atorvastatin, Simvastatin)"
+Esophageal Varices,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Chronic Sinusitis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Gastroparesis,Proton pump inhibitors (Omeprazole); H2 receptor blockers (Ranitidine); Antispasmodics (Dicyclomine); Probiotics and digestive enzymes
+Infection of Open Wound,"Antibiotics (Amoxicillin, Azithromycin); Antivirals (Acyclovir, Oseltamivir); Antifungals (Fluconazole, Clotrimazole); Supportive medications for symptoms"
+Gout,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Cornea Infection,"Antibiotics (Amoxicillin, Azithromycin); Antivirals (Acyclovir, Oseltamivir); Antifungals (Fluconazole, Clotrimazole); Supportive medications for symptoms"
+Hyperopia,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Protein Deficiency,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Pigmentary Glaucoma,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Oral Leukoplakia,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Urethral Valves,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Pinguecula,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Abscess,"Antibiotics (Amoxicillin, Azithromycin); Antivirals (Acyclovir, Oseltamivir); Antifungals (Fluconazole, Clotrimazole); Supportive medications for symptoms"
+Ethylene glycol poisoning-1,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Acute Pancreatitis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Mittelschmerz,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Pelvic Organ Prolapse,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Hydrocele of the Testicle,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Balanitis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Restless Leg Syndrome,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Acute Glaucoma,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Meniere Disease,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Vaginal Yeast Infection,"Antibiotics (Amoxicillin, Azithromycin); Antivirals (Acyclovir, Oseltamivir); Antifungals (Fluconazole, Clotrimazole); Supportive medications for symptoms"
+Bone Spur of the Calcaneus,"NSAIDs (Ibuprofen, Naproxen); Topical analgesics (Capsaicin cream); Muscle relaxants (Cyclobenzaprine); Disease-modifying antirheumatic drugs (DMARDs)"
+Thrombophlebitis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Peritonsillar Abscess,"Antibiotics (Amoxicillin, Azithromycin); Antivirals (Acyclovir, Oseltamivir); Antifungals (Fluconazole, Clotrimazole); Supportive medications for symptoms"
+Lymphoma,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Mastoiditis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Fracture of the Rib,"NSAIDs (Ibuprofen, Naproxen); Topical analgesics (Capsaicin cream); Muscle relaxants (Cyclobenzaprine); Disease-modifying antirheumatic drugs (DMARDs)"
+Sedatives Poisoning,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Contact Dermatitis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Muscle Spasm,"NSAIDs (Ibuprofen, Naproxen); Topical analgesics (Capsaicin cream); Muscle relaxants (Cyclobenzaprine); Disease-modifying antirheumatic drugs (DMARDs)"
+Gonorrhea,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Hirsutism,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Neuromyelitis Optica,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Ludwig's angina,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Hypospadias,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Anemia due to Chronic Kidney Disease,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Gastroenteritis (Stomach Flu),Proton pump inhibitors (Omeprazole); H2 receptor blockers (Ranitidine); Antispasmodics (Dicyclomine); Probiotics and digestive enzymes
+Marijuana Abuse,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Kidney Failure,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Type 1 Diabetes,"Metformin for blood sugar control; Insulin (rapid-acting, long-acting); Sulfonylureas (Glipizide, Glyburide); DPP-4 inhibitors (Sitagliptin)"
+Overflow Incontinence,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Testicular Cancer,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Adenoid cystic carcinoma,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Magnesium Deficiency,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Acinic cell carcinoma,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Chagas Disease,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Chalazion,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Fracture,"NSAIDs (Ibuprofen, Naproxen); Topical analgesics (Capsaicin cream); Muscle relaxants (Cyclobenzaprine); Disease-modifying antirheumatic drugs (DMARDs)"
+Retinal Detachment,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Idiopathic Nonmenstrual Bleeding,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Thoracic Aortic Aneurysm,"ACE inhibitors (Lisinopril, Enalapril); Beta-blockers (Metoprolol, Atenolol); Calcium channel blockers (Amlodipine); Statins (Atorvastatin, Simvastatin)"
+Lung Contusion,"Bronchodilators (Albuterol, Salmeterol); Corticosteroids (Prednisone, Fluticasone); Antibiotics for bacterial infections; Expectorants and mucolytics"
+Alopecia,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Cryptorchidism,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Rumination Disorder,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Anemia of Chronic Disease,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Fracture of the Arm,"NSAIDs (Ibuprofen, Naproxen); Topical analgesics (Capsaicin cream); Muscle relaxants (Cyclobenzaprine); Disease-modifying antirheumatic drugs (DMARDs)"
+Foreign Body in the Throat,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Peyronie Disease,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Osteoarthritis,"NSAIDs (Ibuprofen, Naproxen); Topical analgesics (Capsaicin cream); Muscle relaxants (Cyclobenzaprine); Disease-modifying antirheumatic drugs (DMARDs)"
+Atelectasis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Headache after lumbar puncture,"Anticonvulsants (Phenytoin, Carbamazepine); Dopamine agonists (Levodopa); Cholinesterase inhibitors (Donepezil); Muscle relaxants (Baclofen)"
+Orbital Cellulitis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Pyloric stenosis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Sialolithiasis,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Fat Embolism,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Pituitary Disorder,Hormone replacement therapy; Thyroid medications (Levothyroxine); Corticosteroids (Hydrocortisone); Insulin and glucose-regulating drugs
+Drug Abuse (Barbiturates),Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Pleomorphic adenoma,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Hypercalcemia,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Hydrocephalus,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Corneal Disorder,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Indigestion,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Pinworm Infection,"Antibiotics (Amoxicillin, Azithromycin); Antivirals (Acyclovir, Oseltamivir); Antifungals (Fluconazole, Clotrimazole); Supportive medications for symptoms"
+Leukemia,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Pilonidal Cyst,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Polymyalgia Rheumatica,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Angle-Closure Glaucoma,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms
+Abdominal Injury,Over-the-counter pain relievers as needed; Prescription medications as directed; Vitamins and supplements if recommended; Topical treatments for local symptoms

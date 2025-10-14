@@ -1,46 +1,47 @@
 {% extends 'base.html' %}
-{% block title %}SymptoCare Blog{% endblock %}
+{% block title %}symptocare Blog{% endblock %}
 {% block hero %}
 <section class="hero text-center">
     <div class="container position-relative">
-        <h1 class="fade-slide">SymptoCare Blog</h1>
-        <p class="lead fade-slide">Engineering notes & roadmap snippets.</p>
+        <h1 class="fade-slide">symptocare Blog</h1>
+        <p class="lead fade-slide">AI Architecture & Medical Enhancement Insights</p>
     </div>
 </section>
 {% endblock %}
 {% block content %}
 <div class="card-glass fade-slide">
-    <h2 class="section-title mb-3"><i class="fas fa-code-branch me-2"></i>Architecture Snapshot</h2>
-    <p>The inference stack couples a symptom normalization layer with a binary vectorizer feeding a Support Vector Classifier. Enrichment joins pull structured guidance— description, precautions, diet, workouts and medication references— from CSV data tables loaded at startup. This keeps latency low for repeated requests.</p>
+    <h2 class="section-title mb-3"><i class="fas fa-code-branch me-2"></i>Enhanced AI Architecture</h2>
+    <p>The inference pipeline combines advanced TF-IDF vectorization with LinearSVC classification for optimal symptom analysis. Enhanced medical data for 405+ diseases provides comprehensive recommendations including evidence-based medications, detailed precautions, therapeutic exercises, and nutritional guidance— all loaded from enriched CSV datasets with web-researched medical information.</p>
     <ul class="ps-3" style="line-height:1.55;">
-        <li><strong>Normalization:</strong> remove punctuation, lower case, convert spaces to underscores.</li>
-        <li><strong>Model:</strong> SVC (pickle) with feature index mapping dictionary.</li>
-        <li><strong>Planned:</strong> multi-condition scoring, exposure of feature influence signals.</li>
+        <li><strong>Vectorization:</strong> TF-IDF (Term Frequency-Inverse Document Frequency) for advanced text processing.</li>
+        <li><strong>Model:</strong> LinearSVC with joblib serialization for optimal ML model performance.</li>
+        <li><strong>Enhancement:</strong> 405+ diseases with comprehensive medical data and SMOTE balancing.</li>
+        <li><strong>Data:</strong> Evidence-based recommendations from enhanced CSV datasets.</li>
     </ul>
 </div>
 
 <div class="row g-4 mt-2 fade-slide">
     <div class="col-md-6">
         <div class="card-glass h-100">
-            <h3 class="section-title mb-2" style="font-size:1.05rem;"><i class="fas fa-road me-2"></i>Roadmap</h3>
+            <h3 class="section-title mb-2" style="font-size:1.05rem;"><i class="fas fa-road me-2"></i>Technical Stack</h3>
             <ol class="ps-3 mb-0" style="line-height:1.55;">
-                <li>Confidence tiers & disclaimers alignment.</li>
-                <li>Synonym expansion / fuzzy matching.</li>
-                <li>Lightweight metrics dashboard.</li>
-                <li>Versioned model banner metadata.</li>
+                <li><strong>Backend:</strong> Flask 2.3.2 with Python 3.x</li>
+                <li><strong>ML:</strong> scikit-learn 1.3.0 (LinearSVC + TF-IDF)</li>
+                <li><strong>Frontend:</strong> Bootstrap 5.3.1 with voice input</li>
+                <li><strong>Data:</strong> Enhanced medical datasets (180.54MB)</li>
             </ol>
         </div>
     </div>
     <div class="col-md-6">
         <div class="card-glass h-100">
-            <h3 class="section-title mb-2" style="font-size:1.05rem;"><i class="fas fa-shield-heart me-2"></i>Ethics & Safety</h3>
-            <p class="small mb-0">We frame predictions as possibilities, not diagnoses. No storage of personal identifiers. UI reinforces escalation to professional care when symptoms are severe or persistent.</p>
+            <h3 class="section-title mb-2" style="font-size:1.05rem;"><i class="fas fa-shield-heart me-2"></i>Medical Enhancement</h3>
+            <p class="small mb-0">Our system now includes comprehensive web-researched medical data for 405+ diseases, providing evidence-based medications, detailed precautionary measures, therapeutic exercise routines, and nutritional guidance. All predictions emphasize the importance of professional medical consultation.</p>
         </div>
     </div>
 </div>
 
 <div class="card-glass mt-4 fade-slide">
-    <h3 class="section-title mb-2" style="font-size:1.05rem;"><i class="fas fa-circle-info me-2"></i>Disclaimer</h3>
-    <p class="small mb-0">All content is for informational & developmental context only.</p>
+    <h3 class="section-title mb-2" style="font-size:1.05rem;"><i class="fas fa-circle-info me-2"></i>Medical Disclaimer</h3>
+    <p class="small mb-0">This AI system is for educational and informational purposes only. Always consult qualified healthcare professionals for medical advice, diagnosis, and treatment decisions.</p>
 </div>
 {% endblock %}
