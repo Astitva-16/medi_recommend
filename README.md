@@ -32,7 +32,6 @@ A personalized medical recommendation system that uses advanced machine learning
 - **🎨 HTML5, CSS3**: Modern web standards
 - **🎨 Bootstrap 5.3.1**: Responsive UI framework
 - **⚡ JavaScript**: Interactive features and voice input
-- **📱 Responsive Design**: Mobile-friendly interface
 
 ### Data & Models
 - **📋 Enhanced CSV datasets**: Comprehensive medical information
