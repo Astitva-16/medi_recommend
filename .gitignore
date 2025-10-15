@@ -87,5 +87,5 @@ coverage.xml
 .pytest_cache/
 
 # Specific files to ignore
-teast-00000
-train-00000
+test-00000-of-00001.csv
+train-00000-of-00001.csv
