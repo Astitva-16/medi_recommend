@@ -1,47 +1,409 @@
 {% extends 'base.html' %}
-{% block title %}symptocare Blog{% endblock %}
+{% block title %}SymptoCare Blog{% endblock %}
 {% block hero %}
 <section class="hero text-center">
     <div class="container position-relative">
-        <h1 class="fade-slide">symptocare Blog</h1>
-        <p class="lead fade-slide">AI Architecture & Medical Enhancement Insights</p>
+        <h1 class="fade-slide">📰 SymptoCare Blog</h1>
+        <p class="lead fade-slide">Your trusted space for reliable, AI-backed health insights</p>
     </div>
 </section>
 {% endblock %}
 {% block content %}
+
+<!-- Introduction Section -->
+<div class="card-glass mb-4 fade-slide">
+    <h2 class="section-title mb-3"><i class="fas fa-newspaper me-2"></i>Welcome to the SymptoCare Blog</h2>
+    <p class="mb-0">Welcome to the SymptoCare Blog — your trusted space for reliable, AI-backed health insights. Our goal is to simplify complex medical information and help you make better health decisions every day.</p>
+</div>
+
+<!-- Featured Blog Categories -->
+<div class="card-glass mb-4 fade-slide">
+    <h2 class="section-title mb-3"><i class="fas fa-layer-group me-2"></i>Featured Blog Categories</h2>
+    <div class="row g-3">
+        <div class="col-md-6 col-lg-4">
+            <div class="blog-category" data-target="health-wellness">
+                <i class="fas fa-heart-pulse category-icon"></i>
+                <h5>Health & Wellness Tips</h5>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="blog-category" data-target="disease-awareness">
+                <i class="fas fa-virus category-icon"></i>
+                <h5>Disease Awareness</h5>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="blog-category" data-target="ai-healthcare">
+                <i class="fas fa-robot category-icon"></i>
+                <h5>AI in Healthcare</h5>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="blog-category" data-target="fitness-exercise">
+                <i class="fas fa-dumbbell category-icon"></i>
+                <h5>Fitness & Exercise</h5>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="blog-category" data-target="nutrition">
+                <i class="fas fa-apple-alt category-icon"></i>
+                <h5>Healthy Diet & Nutrition</h5>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="blog-category" data-target="mental-health">
+                <i class="fas fa-brain category-icon"></i>
+                <h5>Mental Health</h5>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="blog-category" data-target="project-updates">
+                <i class="fas fa-code-branch category-icon"></i>
+                <h5>Project Updates & Innovations</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Sample Blog Posts -->
+<div class="row g-4 mb-4 fade-slide">
+    <div class="col-lg-8">
+        <div class="card-glass h-100">
+            <h2 class="section-title mb-3"><i class="fas fa-blog me-2"></i>Latest Blog Posts</h2>
+            
+            <!-- Health & Wellness -->
+            <div class="blog-section mb-4" id="health-wellness">
+                <h4 class="blog-category-title"><i class="fas fa-heart-pulse me-2"></i>Health & Wellness</h4>
+                <div class="blog-posts">
+                    <div class="blog-post-item">
+                        <h6>"5 Early Signs You Shouldn't Ignore: When to Seek Medical Help"</h6>
+                        <p class="text-muted small">Learn to identify critical symptoms that require immediate medical attention.</p>
+                    </div>
+                    <div class="blog-post-item">
+                        <h6>"Simple Lifestyle Changes to Boost Your Immunity"</h6>
+                        <p class="text-muted small">Discover evidence-based practices to strengthen your immune system naturally.</p>
+                    </div>
+                    <div class="blog-post-item">
+                        <h6>"Understanding the Link Between Sleep and Mental Health"</h6>
+                        <p class="text-muted small">Explore how quality sleep impacts your psychological well-being.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Disease Awareness -->
+            <div class="blog-section mb-4" id="disease-awareness">
+                <h4 class="blog-category-title"><i class="fas fa-virus me-2"></i>Disease Awareness</h4>
+                <div class="blog-posts">
+                    <div class="blog-post-item">
+                        <h6>"Understanding Diabetes: Symptoms, Prevention, and Diet Tips"</h6>
+                        <p class="text-muted small">Comprehensive guide to managing and preventing diabetes through lifestyle choices.</p>
+                    </div>
+                    <div class="blog-post-item">
+                        <h6>"Common Cold vs. Flu: How to Know the Difference"</h6>
+                        <p class="text-muted small">Learn to distinguish between cold and flu symptoms for proper treatment.</p>
+                    </div>
+                    <div class="blog-post-item">
+                        <h6>"Managing Hypertension with Simple Home Remedies"</h6>
+                        <p class="text-muted small">Natural approaches to support blood pressure management alongside medical care.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI in Healthcare -->
+            <div class="blog-section mb-4" id="ai-healthcare">
+                <h4 class="blog-category-title"><i class="fas fa-robot me-2"></i>AI in Healthcare</h4>
+                <div class="blog-posts">
+                    <div class="blog-post-item">
+                        <h6>"How Machine Learning is Revolutionizing Symptom Analysis"</h6>
+                        <p class="text-muted small">Discover how AI algorithms transform traditional medical diagnosis approaches.</p>
+                    </div>
+                    <div class="blog-post-item">
+                        <h6>"Behind the Scenes of SymptoCare: How Our ML Model Works"</h6>
+                        <p class="text-muted small">Technical insights into our TF-IDF and LinearSVC implementation.</p>
+                    </div>
+                    <div class="blog-post-item">
+                        <h6>"The Future of Healthcare: Predictive Medicine with AI"</h6>
+                        <p class="text-muted small">Exploring emerging trends in AI-powered healthcare solutions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fitness & Exercise -->
+            <div class="blog-section mb-4" id="fitness-exercise">
+                <h4 class="blog-category-title"><i class="fas fa-dumbbell me-2"></i>Fitness & Exercise</h4>
+                <div class="blog-posts">
+                    <div class="blog-post-item">
+                        <h6>"Top 10 Exercises for a Healthy Heart"</h6>
+                        <p class="text-muted small">Cardiovascular exercises that promote heart health and overall fitness.</p>
+                    </div>
+                    <div class="blog-post-item">
+                        <h6>"Morning vs. Evening Workouts: Which Is Better?"</h6>
+                        <p class="text-muted small">Scientific comparison of workout timing and its impact on health benefits.</p>
+                    </div>
+                    <div class="blog-post-item">
+                        <h6>"Yoga Poses to Reduce Stress and Improve Focus"</h6>
+                        <p class="text-muted small">Mindful movement practices for mental clarity and stress relief.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nutrition -->
+            <div class="blog-section mb-4" id="nutrition">
+                <h4 class="blog-category-title"><i class="fas fa-apple-alt me-2"></i>Nutrition</h4>
+                <div class="blog-posts">
+                    <div class="blog-post-item">
+                        <h6>"Foods That Help Build Immunity Naturally"</h6>
+                        <p class="text-muted small">Nutrient-rich foods that support your body's natural defense systems.</p>
+                    </div>
+                    <div class="blog-post-item">
+                        <h6>"Balanced Diet Plans for Working Professionals"</h6>
+                        <p class="text-muted small">Practical nutrition strategies for busy lifestyles and office workers.</p>
+                    </div>
+                    <div class="blog-post-item">
+                        <h6>"Superfoods You Should Add to Your Meals Today"</h6>
+                        <p class="text-muted small">Evidence-based guide to nutrient-dense foods and their health benefits.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mental Health -->
+            <div class="blog-section mb-4" id="mental-health">
+                <h4 class="blog-category-title"><i class="fas fa-brain me-2"></i>Mental Health</h4>
+                <div class="blog-posts">
+                    <div class="blog-post-item">
+                        <h6>"How to Manage Anxiety with Breathing Exercises"</h6>
+                        <p class="text-muted small">Practical techniques for managing anxiety through mindful breathing.</p>
+                    </div>
+                    <div class="blog-post-item">
+                        <h6>"Digital Detox: Why Your Mind Needs a Break from Screens"</h6>
+                        <p class="text-muted small">Understanding the mental health impact of excessive screen time.</p>
+                    </div>
+                    <div class="blog-post-item">
+                        <h6>"Simple Daily Habits to Improve Emotional Well-being"</h6>
+                        <p class="text-muted small">Small changes that can make a big difference in your mental health.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SymptoCare Updates -->
+            <div class="blog-section" id="project-updates">
+                <h4 class="blog-category-title"><i class="fas fa-code-branch me-2"></i>SymptoCare Updates</h4>
+                <div class="blog-posts">
+                    <div class="blog-post-item">
+                        <h6>"What's New in SymptoCare 2.0 – Smarter, Faster, and More Personalized!"</h6>
+                        <p class="text-muted small">Exciting new features and improvements in our latest update.</p>
+                    </div>
+                    <div class="blog-post-item">
+                        <h6>"Meet the Team Behind SymptoCare – Our Journey from Idea to Prototype"</h6>
+                        <p class="text-muted small">The story of how SymptoCare was conceived and developed.</p>
+                    </div>
+                    <div class="blog-post-item">
+                        <h6>"Expanding Accessibility: SymptoCare Goes Multilingual"</h6>
+                        <p class="text-muted small">Making healthcare AI accessible to more people worldwide.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="col-lg-4">
+        <div class="blog-sidebar">
+            <!-- Health Tip of the Week -->
+            <div class="card-glass mb-4">
+                <h5 class="sidebar-title"><i class="fas fa-lightbulb me-2"></i>🩺 Health Tip of the Week</h5>
+                <p class="small mb-0">Stay hydrated! Drinking 8 glasses of water daily helps maintain optimal body function and supports your immune system.</p>
+            </div>
+
+            <!-- Did You Know -->
+            <div class="card-glass mb-4">
+                <h5 class="sidebar-title"><i class="fas fa-chart-bar me-2"></i>📊 Did You Know?</h5>
+                <p class="small mb-0">Regular exercise can reduce the risk of chronic diseases by up to 50% and add years to your life expectancy.</p>
+            </div>
+
+            <!-- User Stories -->
+            <div class="card-glass mb-4">
+                <h5 class="sidebar-title"><i class="fas fa-comments me-2"></i>💬 User Stories</h5>
+                <blockquote class="small mb-0">
+                    "SymptoCare helped me understand my symptoms better before visiting my doctor. The recommendations were spot-on!"
+                    <footer class="text-muted mt-2">- Sarah K., Beta User</footer>
+                </blockquote>
+            </div>
+
+            <!-- Latest Updates -->
+            <div class="card-glass">
+                <h5 class="sidebar-title"><i class="fas fa-bullhorn me-2"></i>📢 Latest Updates</h5>
+                <ul class="small ps-3 mb-0">
+                    <li>Enhanced voice input feature</li>
+                    <li>405+ diseases now supported</li>
+                    <li>Improved mobile responsiveness</li>
+                    <li>Better medication recommendations</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Call-to-Action -->
 <div class="card-glass fade-slide">
-    <h2 class="section-title mb-3"><i class="fas fa-code-branch me-2"></i>Enhanced AI Architecture</h2>
-    <p>The inference pipeline combines advanced TF-IDF vectorization with LinearSVC classification for optimal symptom analysis. Enhanced medical data for 405+ diseases provides comprehensive recommendations including evidence-based medications, detailed precautions, therapeutic exercises, and nutritional guidance— all loaded from enriched CSV datasets with web-researched medical information.</p>
-    <ul class="ps-3" style="line-height:1.55;">
-        <li><strong>Vectorization:</strong> TF-IDF (Term Frequency-Inverse Document Frequency) for advanced text processing.</li>
-        <li><strong>Model:</strong> LinearSVC with joblib serialization for optimal ML model performance.</li>
-        <li><strong>Enhancement:</strong> 405+ diseases with comprehensive medical data and SMOTE balancing.</li>
-        <li><strong>Data:</strong> Evidence-based recommendations from enhanced CSV datasets.</li>
-    </ul>
-</div>
-
-<div class="row g-4 mt-2 fade-slide">
-    <div class="col-md-6">
-        <div class="card-glass h-100">
-            <h3 class="section-title mb-2" style="font-size:1.05rem;"><i class="fas fa-road me-2"></i>Technical Stack</h3>
-            <ol class="ps-3 mb-0" style="line-height:1.55;">
-                <li><strong>Backend:</strong> Flask 2.3.2 with Python 3.x</li>
-                <li><strong>ML:</strong> scikit-learn 1.3.0 (LinearSVC + TF-IDF)</li>
-                <li><strong>Frontend:</strong> Bootstrap 5.3.1 with voice input</li>
-                <li><strong>Data:</strong> Enhanced medical datasets (180.54MB)</li>
-            </ol>
-        </div>
-    </div>
-    <div class="col-md-6">
-        <div class="card-glass h-100">
-            <h3 class="section-title mb-2" style="font-size:1.05rem;"><i class="fas fa-shield-heart me-2"></i>Medical Enhancement</h3>
-            <p class="small mb-0">Our system now includes comprehensive web-researched medical data for 405+ diseases, providing evidence-based medications, detailed precautionary measures, therapeutic exercise routines, and nutritional guidance. All predictions emphasize the importance of professional medical consultation.</p>
-        </div>
+    <div class="text-center">
+        <h3 class="mb-3"><i class="fas fa-stethoscope me-2"></i>Got questions about your symptoms?</h3>
+        <p class="mb-3">Try SymptoCare today and get personalized insights instantly.</p>
+        <a href="/#diagnosis" class="btn btn-primary-custom btn-lg">
+            <i class="fas fa-rocket me-2"></i>Use SymptoCare Now →
+        </a>
     </div>
 </div>
 
-<div class="card-glass mt-4 fade-slide">
-    <h3 class="section-title mb-2" style="font-size:1.05rem;"><i class="fas fa-circle-info me-2"></i>Medical Disclaimer</h3>
-    <p class="small mb-0">This AI system is for educational and informational purposes only. Always consult qualified healthcare professionals for medical advice, diagnosis, and treatment decisions.</p>
-</div>
+<style>
+.blog-category {
+    background: var(--surface-glass);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    height: 100%;
+    cursor: pointer;
+}
+
+.blog-category:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary);
+}
+
+.blog-category.active {
+    background: rgba(52, 152, 219, 0.1);
+    border-color: var(--primary);
+    transform: translateY(-3px);
+}
+
+.category-icon {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.blog-category h5 {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--text-main);
+}
+
+.blog-section {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 1.5rem;
+    scroll-margin-top: 100px;
+}
+
+.blog-section:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.blog-category-title {
+    color: var(--primary);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.blog-post-item {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    border-left: 3px solid var(--primary-light);
+}
+
+.blog-post-item:last-child {
+    margin-bottom: 0;
+}
+
+.blog-post-item h6 {
+    color: var(--text-main);
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.sidebar-title {
+    color: var(--primary);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.blog-sidebar .card-glass {
+    padding: 1.5rem;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 3px solid var(--primary-light);
+    padding-left: 1rem;
+}
+
+/* Highlight animation for target section */
+.blog-section.highlight {
+    animation: highlightPulse 2s ease-in-out;
+}
+
+@keyframes highlightPulse {
+    0% {
+        background: transparent;
+    }
+    50% {
+        background: rgba(52, 152, 219, 0.1);
+        box-shadow: 0 0 20px rgba(52, 152, 219, 0.3);
+    }
+    100% {
+        background: transparent;
+    }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all category buttons
+    const categoryButtons = document.querySelectorAll('.blog-category');
+
+    // Add click event listeners to category buttons
+    categoryButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Remove active class from all buttons
+            categoryButtons.forEach(btn => btn.classList.remove('active'));
+            
+            // Add active class to clicked button
+            this.classList.add('active');
+            
+            // Get target section ID
+            const targetId = this.dataset.target;
+            const targetSection = document.getElementById(targetId);
+            
+            if (targetSection) {
+                // Remove highlight from all sections
+                document.querySelectorAll('.blog-section').forEach(section => {
+                    section.classList.remove('highlight');
+                });
+                
+                // Smooth scroll to target section
+                targetSection.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+                
+                // Add highlight animation to target section
+                setTimeout(() => {
+                    targetSection.classList.add('highlight');
+                }, 800);
+                
+                // Remove highlight after animation
+                setTimeout(() => {
+                    targetSection.classList.remove('highlight');
+                }, 3000);
+            }
+        });
+    });
+});
+</script>
+
 {% endblock %}

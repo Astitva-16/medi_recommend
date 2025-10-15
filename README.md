@@ -1,10 +1,10 @@
-# 🏥 Symptocare - AI-Powered Medical Recommendation System
+# 🏥 SymptoCare - AI-Powered Medical Recommendation System
 
 A comprehensive machine learning-based health recommendation system that provides intelligent medical insights based on symptom analysis with enhanced medical data for 405+ diseases.
 
 ## 🌟 Overview
 
-Symptocare leverages advanced machine learning algorithms to analyze user symptoms and provide personalized health recommendations. The system offers a complete health management solution with predictive capabilities, comprehensive medical data, and actionable insights for better healthcare decisions.
+SymptoCare leverages advanced machine learning algorithms to analyze user symptoms and provide personalized health recommendations. The system offers a complete health management solution with predictive capabilities, comprehensive medical data, and actionable insights for better healthcare decisions.
 
 ## ✨ Key Features
 

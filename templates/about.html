@@ -1,48 +1,182 @@
 {% extends 'base.html' %}
-{% block title %}About symptocare{% endblock %}
+{% block title %}About SymptoCare{% endblock %}
 {% block hero %}
 <section class="hero text-center">
   <div class="container position-relative">
-    <h1 class="fade-slide">About symptocare</h1>
+    <h1 class="fade-slide">About SymptoCare</h1>
     <p class="lead fade-slide">AI‑powered medical recommendation system for comprehensive health insights.</p>
   </div>
 </section>
 {% endblock %}
 {% block content %}
+
+<!-- Overview Section -->
 <div class="card-glass mb-4 fade-slide">
-  <h2 class="section-title mb-3"><i class="fas fa-heartbeat me-2"></i>Our Mission</h2>
-  <p class="mb-3">symptocare transforms symptom analysis through advanced machine learning, providing evidence-based medical recommendations including medications, precautions, therapeutic exercises, and dietary guidance. Our enhanced system covers 405+ diseases with comprehensive medical information to support informed healthcare decisions.</p>
-  <p class="mb-0">We emphasize the importance of professional medical consultation and provide educational information to enhance doctor-patient communication.</p>
+  <h2 class="section-title mb-3"><i class="fas fa-eye me-2"></i>Overview</h2>
+  <p class="mb-3">SymptoCare leverages advanced machine learning algorithms to analyze user symptoms and provide personalized health recommendations. The system offers a complete health management solution with predictive capabilities, comprehensive medical data, and actionable insights for better healthcare decisions.</p>
+  <p class="mb-0">Our comprehensive machine learning-based health recommendation system provides intelligent medical insights based on symptom analysis with enhanced medical data for 405+ diseases.</p>
 </div>
 
+<!-- Key Features Section -->
+<div class="card-glass mb-4 fade-slide">
+  <h2 class="section-title mb-3"><i class="fas fa-star me-2"></i>Key Features</h2>
+  
+  <div class="row g-4 mb-4">
+    <div class="col-md-6">
+      <div class="feature-card h-100">
+        <h4 class="mb-2"><i class="fas fa-search me-2 text-primary"></i>Advanced Symptom Analysis</h4>
+        <ul class="ps-3 mb-0">
+          <li>Intelligent symptom input through intuitive web interface</li>
+          <li>TF-IDF vectorization for accurate text processing</li>
+          <li>LinearSVC classifier for high-precision disease prediction</li>
+          <li>Support for 405+ diseases with comprehensive symptom mapping</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="feature-card h-100">
+        <h4 class="mb-2"><i class="fas fa-pills me-2 text-primary"></i>Comprehensive Medical Recommendations</h4>
+        <p class="mb-2">Our enhanced system provides detailed recommendations including:</p>
+        <ul class="ps-3 mb-0">
+          <li><strong>Medications:</strong> Evidence-based pharmaceutical recommendations</li>
+          <li><strong>Precautions:</strong> Detailed preventive measures and safety guidelines</li>
+          <li><strong>Exercise:</strong> Customized workout plans and physical therapy suggestions</li>
+          <li><strong>Dietary Plans:</strong> Nutritional guidance and therapeutic diets</li>
+          <li><strong>Disease Information:</strong> Comprehensive descriptions and severity assessments</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="feature-card">
+    <h4 class="mb-2"><i class="fas fa-globe me-2 text-primary"></i>Modern Web Interface</h4>
+    <ul class="ps-3 mb-0">
+      <li>Responsive Flask-based web application</li>
+      <li>Bootstrap 5.3.1 integration for modern UI/UX</li>
+      <li>Voice input capabilities for accessibility</li>
+      <li>Real-time prediction results</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Usage Section -->
+<div class="card-glass mb-4 fade-slide">
+  <h2 class="section-title mb-3"><i class="fas fa-rocket me-2"></i>Usage</h2>
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="usage-step">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <h5>Access the Web Interface</h5>
+          <p class="mb-0">Open the application in your browser and navigate to the symptom input section</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="usage-step">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <h5>Input Symptoms</h5>
+          <p class="mb-0">Enter your symptoms using the intuitive interface or voice input feature</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="usage-step">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <h5>Get AI Predictions</h5>
+          <p class="mb-0">The ML model analyzes your input using TF-IDF and LinearSVC algorithms</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="usage-step">
+        <div class="step-number">4</div>
+        <div class="step-content">
+          <h5>Review Comprehensive Recommendations</h5>
+          <p class="mb-0">Receive personalized suggestions for medications, precautions, exercise routines, and dietary plans</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Technical Implementation Section -->
 <div class="row g-4 fade-slide">
   <div class="col-md-6">
     <div class="card-glass h-100">
-      <h3 class="section-title mb-2" style="font-size:1.1rem;"><i class="fas fa-bullseye me-2"></i>Principles</h3>
+      <h3 class="section-title mb-2" style="font-size:1.1rem;"><i class="fas fa-cogs me-2"></i>Machine Learning Pipeline</h3>
       <ul class="ps-3 mb-0" style="line-height:1.55;">
-        <li><strong>Clarity:</strong> Plain language outputs.</li>
-        <li><strong>Context:</strong> Surround predictions with lifestyle & precaution hints.</li>
-        <li><strong>Non‑diagnostic:</strong> Present probabilities, not certainties.</li>
-        <li><strong>Privacy‑lean:</strong> No persistence layer in this demo build.</li>
+        <li><strong>Algorithm:</strong> LinearSVC (Linear Support Vector Classifier)</li>
+        <li><strong>Vectorization:</strong> TF-IDF (Term Frequency-Inverse Document Frequency)</li>
+        <li><strong>Training Data:</strong> Enhanced dataset with 405+ diseases</li>
+        <li><strong>Accuracy:</strong> High-precision predictions with SMOTE balancing</li>
+        <li><strong>Model Persistence:</strong> Serialized using joblib</li>
       </ul>
     </div>
   </div>
   <div class="col-md-6">
     <div class="card-glass h-100">
-      <h3 class="section-title mb-2" style="font-size:1.1rem;"><i class="fas fa-gears me-2"></i>Pipeline</h3>
-      <ol class="ps-3 mb-0" style="line-height:1.55;">
-        <li>Normalize user symptom string.</li>
-        <li>Vectorize into binary feature map.</li>
-        <li>Model inference (SVC index → disease label).</li>
-        <li>Lookup enrichment tables for description & recommendations.</li>
-      </ol>
+      <h3 class="section-title mb-2" style="font-size:1.1rem;"><i class="fas fa-layer-group me-2"></i>Technology Stack</h3>
+      <ul class="ps-3 mb-0" style="line-height:1.55;">
+        <li><strong>Backend:</strong> Python 3.x, Flask 2.3.2</li>
+        <li><strong>ML Libraries:</strong> scikit-learn, pandas, numpy</li>
+        <li><strong>Frontend:</strong> HTML5, CSS3, Bootstrap 5.3.1</li>
+        <li><strong>Data Storage:</strong> Enhanced CSV datasets</li>
+        <li><strong>Web Server:</strong> Werkzeug WSGI server</li>
+      </ul>
     </div>
   </div>
 </div>
 
+<!-- Disclaimer Section -->
 <div class="card-glass mt-4 fade-slide">
-  <h3 class="section-title mb-2" style="font-size:1.1rem;"><i class="fas fa-triangle-exclamation me-2"></i>Disclaimer</h3>
-  <div class="alert alert-warning mb-2"><i class="fas fa-circle-info me-1"></i>Outputs may be incomplete or inaccurate. Consult a licensed professional for diagnosis and treatment decisions.</div>
-  <p class="small mb-0 text-muted">Planned upgrades: symptom synonym expansion, multi‑label scoring, feature attribution surfaces.</p>
+  <h3 class="section-title mb-2" style="font-size:1.1rem;"><i class="fas fa-triangle-exclamation me-2"></i>Important Disclaimer</h3>
+  <div class="alert alert-warning mb-2">
+    <i class="fas fa-exclamation-triangle me-1"></i>
+    <strong>Important:</strong> This system is for educational and informational purposes only. It should not be used as a substitute for professional medical advice, diagnosis, or treatment. Always consult with qualified healthcare professionals for medical concerns and before making any healthcare decisions.
+  </div>
+  <p class="small mb-0 text-muted">Our AI-powered recommendations are designed to supplement, not replace, professional medical consultation.</p>
 </div>
+
+<style>
+.feature-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.usage-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.step-number {
+  background: var(--gradient-hero);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.step-content h5 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.step-content p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+</style>
+
 {% endblock %}
