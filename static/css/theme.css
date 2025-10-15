@@ -143,9 +143,76 @@ body::-webkit-scrollbar-thumb { background:var(--primary-light); border-radius:2
 .fade-slide { animation:fadeSlide .6s ease; }
 @keyframes fadeSlide { 0% { opacity:0; transform:translateY(28px);} 100% { opacity:1; transform:translateY(0);} }
 
+/* Health Tips Moving Taskbar */
+.health-tips-taskbar {
+    background: linear-gradient(135deg, #5FD3C6, #7FDCA4);
+    border-radius: 16px;
+    padding: 12px 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    box-shadow: 0 4px 15px rgba(95, 211, 198, 0.3);
+    animation: taskbarGlow 3s ease-in-out infinite;
+    overflow: hidden;
+    position: relative;
+}
+
+.health-tip-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    animation: slideInOut 20s ease-in-out infinite;
+}
+
+.health-tip-icon {
+    color: #ffffff;
+    font-size: 1.2rem;
+    animation: heartbeat 2s ease-in-out infinite;
+    flex-shrink: 0;
+}
+
+.health-tip-text {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    animation: textFadeIn 1s ease-in-out;
+}
+
+/* Animations for the taskbar */
+@keyframes taskbarGlow {
+    0%, 100% { box-shadow: 0 4px 15px rgba(95, 211, 198, 0.3); }
+    50% { box-shadow: 0 6px 25px rgba(95, 211, 198, 0.5); }
+}
+
+@keyframes slideInOut {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+@keyframes textFadeIn {
+    0% { opacity: 0; transform: translateY(5px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
 /* Responsive tweaks */
 @media (max-width: 768px) {
   .card-glass { padding:1.85rem 1.55rem 2rem; }
   .results-grid { gap:1rem; }
   .result-tile { padding:1rem .8rem .9rem; }
+  
+  .health-tips-taskbar {
+    padding: 10px 16px;
+    margin: 0 16px;
+  }
+  
+  .health-tip-text {
+    font-size: 0.85rem;
+  }
 }

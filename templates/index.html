@@ -16,6 +16,15 @@
                 <a href="#diagnosis" id="startDiagnosisBtn" class="btn btn-primary-custom me-2"><i class="fas fa-stethoscope me-1"></i> Start Diagnosis</a>
                 <a href="/about" id="learnMoreBtn" class="btn btn-secondary-custom"><i class="fas fa-circle-info me-1"></i> Learn More</a>
             </div>
+            
+            <!-- Health Tips Moving Taskbar -->
+            <div class="health-tips-taskbar mt-4">
+                <div class="health-tip-container">
+                    <i class="fas fa-heart health-tip-icon"></i>
+                    <span id="healthTipText" class="health-tip-text">Eat Balanced Meals – Include fruits, vegetables, whole grains, and proteins in your diet. 🍎</span>
+                </div>
+            </div>
+            
                 <!-- Scroll indicator removed as requested -->
         </div>
     </section>
@@ -192,6 +201,44 @@
                 rec.start();
             });
         }
+        
+        // Health Tips Rotation
+        const healthTips = [
+            "Eat Balanced Meals – Include fruits, vegetables, whole grains, and proteins in your diet. Avoid too much junk or sugary food. 🍎",
+            "Drink Enough Water – Stay hydrated throughout the day; aim for about 8 glasses daily. 💧",
+            "Exercise Regularly – Do at least 30 minutes of physical activity like walking, jogging, or yoga. 🏃‍♀️",
+            "Sleep Well – Get 7–9 hours of proper sleep every night to help your body recover. 😴",
+            "Maintain Good Hygiene – Wash your hands often, brush twice daily, and keep yourself clean. 🧼",
+            "Avoid Smoking & Limit Alcohol – Both harm your organs and weaken your immunity. 🚭",
+            "Manage Stress – Practice relaxation techniques like meditation, deep breathing, or hobbies. 🧘‍♂️",
+            "Go for Regular Check-ups – Visit your doctor for routine health screenings. 🩸",
+            "Maintain a Healthy Weight – Eat mindfully and stay active to keep your weight in a healthy range. ⚖️",
+            "Stay Positive & Connected – Keep a good mindset and spend time with friends and family for mental well-being. 😊"
+        ];
+        
+        let currentTipIndex = 0;
+        const healthTipText = document.getElementById('healthTipText');
+        
+        function rotateHealthTips() {
+            if (healthTipText) {
+                // Fade out current tip
+                healthTipText.style.opacity = '0';
+                healthTipText.style.transform = 'translateY(10px)';
+                
+                setTimeout(() => {
+                    // Change to next tip
+                    currentTipIndex = (currentTipIndex + 1) % healthTips.length;
+                    healthTipText.textContent = healthTips[currentTipIndex];
+                    
+                    // Fade in new tip
+                    healthTipText.style.opacity = '1';
+                    healthTipText.style.transform = 'translateY(0)';
+                }, 300);
+            }
+        }
+        
+        // Start rotating tips every 3 seconds
+        setInterval(rotateHealthTips, 3000);
     });
 
     // Form submission feedback
