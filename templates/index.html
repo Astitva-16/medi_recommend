@@ -99,10 +99,12 @@
         <div class="results-grid">
             <div class="result-tile tile-disease" data-bs-toggle="modal" data-bs-target="#diseaseModal"><i class="fas fa-disease"></i> Predicted Disease</div>
             <div class="result-tile tile-description" data-bs-toggle="modal" data-bs-target="#descriptionModal"><i class="fas fa-info-circle"></i> Description</div>
+            <div class="result-tile tile-causes" data-bs-toggle="modal" data-bs-target="#causesModal"><i class="fas fa-search-plus"></i> Causes</div>
             <div class="result-tile tile-precautions" data-bs-toggle="modal" data-bs-target="#precautionModal"><i class="fas fa-shield-alt"></i> Precautions</div>
             <div class="result-tile tile-medications" data-bs-toggle="modal" data-bs-target="#medicationsModal"><i class="fas fa-pills"></i> Medications</div>
             <div class="result-tile tile-workouts" data-bs-toggle="modal" data-bs-target="#workoutsModal"><i class="fas fa-dumbbell"></i> Exercise</div>
             <div class="result-tile tile-diets" data-bs-toggle="modal" data-bs-target="#dietsModal"><i class="fas fa-apple-alt"></i> Diet Plan</div>
+            <div class="result-tile tile-pharmacy" data-bs-toggle="modal" data-bs-target="#pharmacyModal"><i class="fas fa-map-marker-alt"></i> Pharmacy Near Me</div>
         </div>
     </div>
     {% endif %}
@@ -113,6 +115,9 @@
     </div>
     <div class="modal fade" id="descriptionModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><h5 class="modal-title"><i class="fas fa-info-circle me-1"></i> Disease Description</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="alert alert-light" style="border-left:4px solid var(--primary-light);"><p class="mb-0">{{ dis_des }}</p></div></div></div></div>
+    </div>
+    <div class="modal fade" id="causesModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><h5 class="modal-title"><i class="fas fa-search-plus me-1"></i> Probable Causes</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="alert alert-info"><p class="mb-3"><i class="fas fa-lightbulb me-2"></i>Understanding potential causes can help in prevention and management.</p><ul class="mb-0 ps-3">{% for cause in disease_causes %}<li class="mb-2"><i class="fas fa-arrow-right text-primary me-2"></i>{{ cause }}</li>{% endfor %}</ul></div></div></div></div>
     </div>
     <div class="modal fade" id="precautionModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><h5 class="modal-title"><i class="fas fa-shield-alt me-1"></i> Recommended Precautions</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="alert alert-warning"><ul class="mb-0 ps-3">{% for i in my_precautions %}<li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>{{ i }}</li>{% endfor %}</ul></div></div></div></div>
@@ -125,6 +130,72 @@
     </div>
     <div class="modal fade" id="dietsModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><h5 class="modal-title"><i class="fas fa-apple-alt me-1"></i> Recommended Diet Plan</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="alert alert-warning"><ul class="mb-0 ps-3">{% for i in my_diet %}<li class="mb-2"><i class="fas fa-utensils text-warning me-2"></i>{{ i }}</li>{% endfor %}</ul></div></div></div></div>
+    </div>
+
+    <!-- Pharmacy Near Me Modal -->
+    <div class="modal fade" id="pharmacyModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="fas fa-map-marker-alt me-1"></i> Find Pharmacy Near You</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle me-2"></i>Find pharmacies near your location to get your prescribed medications.
+                    </div>
+                    
+                    <!-- Location Options -->
+                    <div class="location-options mb-4">
+                        <h6 class="mb-3"><i class="fas fa-location-arrow me-2"></i>Choose Location Method</h6>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary-custom w-100" id="useCurrentLocation">
+                                    <i class="fas fa-crosshairs me-2"></i>Use Current Location
+                                </button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-secondary-custom w-100" id="enterCityBtn">
+                                    <i class="fas fa-keyboard me-2"></i>Enter City Manually
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Manual City Input -->
+                    <div class="city-input-section" id="cityInputSection" style="display: none;">
+                        <div class="mb-3">
+                            <label for="cityInput" class="form-label">Enter City Name</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="cityInput" placeholder="e.g., New York, London, Mumbai">
+                                <button class="btn btn-primary-custom" type="button" id="searchByCity">
+                                    <i class="fas fa-search"></i> Search
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Location Status -->
+                    <div id="locationStatus" class="alert" style="display: none;"></div>
+
+                    <!-- Loading State -->
+                    <div id="pharmacyLoading" class="text-center" style="display: none;">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="visually-hidden">Searching...</span>
+                        </div>
+                        <p class="mt-2">Finding pharmacies near you...</p>
+                    </div>
+
+                    <!-- Pharmacy Results -->
+                    <div id="pharmacyResults" style="display: none;">
+                        <h6 class="mb-3"><i class="fas fa-building me-2"></i>Nearby Pharmacies</h6>
+                        <div id="pharmacyList" class="pharmacy-list">
+                            <!-- Results will be populated here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     {% endblock %}
@@ -266,7 +337,233 @@
                     learnMoreBtn.addEventListener('click', ()=> showToast('Opening About page...')); }
 
         if(btn){ btn.disabled=true; btn.innerHTML='<i class="fas fa-spinner fa-spin me-1"></i>Analyzing...'; }
+
+        // Pharmacy Near Me functionality
+        initPharmacySearch();
     });
+
+    // Pharmacy Search Functions
+    function initPharmacySearch() {
+        const useLocationBtn = document.getElementById('useCurrentLocation');
+        const enterCityBtn = document.getElementById('enterCityBtn');
+        const cityInputSection = document.getElementById('cityInputSection');
+        const searchByCityBtn = document.getElementById('searchByCity');
+        const cityInput = document.getElementById('cityInput');
+
+        if (useLocationBtn) {
+            useLocationBtn.addEventListener('click', getCurrentLocation);
+        }
+
+        if (enterCityBtn) {
+            enterCityBtn.addEventListener('click', () => {
+                const isVisible = cityInputSection.style.display !== 'none';
+                cityInputSection.style.display = isVisible ? 'none' : 'block';
+                enterCityBtn.innerHTML = isVisible ? 
+                    '<i class="fas fa-keyboard me-2"></i>Enter City Manually' : 
+                    '<i class="fas fa-times me-2"></i>Cancel';
+            });
+        }
+
+        if (searchByCityBtn) {
+            searchByCityBtn.addEventListener('click', () => {
+                const city = cityInput.value.trim();
+                if (city) {
+                    searchPharmaciesByCity(city);
+                } else {
+                    showLocationStatus('Please enter a city name', 'danger');
+                }
+            });
+        }
+
+        if (cityInput) {
+            cityInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    searchByCityBtn.click();
+                }
+            });
+        }
+    }
+
+    function getCurrentLocation() {
+        if (!navigator.geolocation) {
+            showLocationStatus('Geolocation is not supported by this browser', 'danger');
+            return;
+        }
+
+        showLocationStatus('Getting your location...', 'info');
+        
+        navigator.geolocation.getCurrentPosition(
+            (position) => {
+                const lat = position.coords.latitude;
+                const lng = position.coords.longitude;
+                showLocationStatus(`Location found: ${lat.toFixed(4)}, ${lng.toFixed(4)}`, 'success');
+                searchPharmaciesByCoordinates(lat, lng);
+            },
+            (error) => {
+                let message = 'Unable to get your location. ';
+                switch (error.code) {
+                    case error.PERMISSION_DENIED:
+                        message += 'Please allow location access or enter your city manually.';
+                        break;
+                    case error.POSITION_UNAVAILABLE:
+                        message += 'Location information unavailable.';
+                        break;
+                    case error.TIMEOUT:
+                        message += 'Location request timed out.';
+                        break;
+                    default:
+                        message += 'An unknown error occurred.';
+                        break;
+                }
+                showLocationStatus(message, 'warning');
+            }
+        );
+    }
+
+    function searchPharmaciesByCity(city) {
+        showPharmacyLoading(true);
+        showLocationStatus(`Searching for pharmacies in ${city}...`, 'info');
+        
+        fetch('/pharmacy_search', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ 
+                search_type: 'city',
+                city: city 
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            showPharmacyLoading(false);
+            if (data.success) {
+                displayPharmacyResults(data.pharmacies);
+            } else {
+                showLocationStatus(data.error || 'Failed to find pharmacies', 'danger');
+            }
+        })
+        .catch(error => {
+            showPharmacyLoading(false);
+            showLocationStatus('Network error. Please try again.', 'danger');
+            console.error('Error:', error);
+        });
+    }
+
+    function searchPharmaciesByCoordinates(lat, lng) {
+        showPharmacyLoading(true);
+        
+        fetch('/pharmacy_search', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ 
+                search_type: 'coordinates',
+                latitude: lat,
+                longitude: lng 
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            showPharmacyLoading(false);
+            if (data.success) {
+                displayPharmacyResults(data.pharmacies);
+            } else {
+                showLocationStatus(data.error || 'Failed to find pharmacies', 'danger');
+            }
+        })
+        .catch(error => {
+            showPharmacyLoading(false);
+            showLocationStatus('Network error. Please try again.', 'danger');
+            console.error('Error:', error);
+        });
+    }
+
+    function displayPharmacyResults(pharmacies) {
+        const resultsDiv = document.getElementById('pharmacyResults');
+        const listDiv = document.getElementById('pharmacyList');
+        
+        if (!pharmacies || pharmacies.length === 0) {
+            showLocationStatus('No pharmacies found in this area', 'warning');
+            return;
+        }
+
+        listDiv.innerHTML = '';
+        
+        pharmacies.forEach(pharmacy => {
+            const pharmacyCard = createPharmacyCard(pharmacy);
+            listDiv.appendChild(pharmacyCard);
+        });
+
+        resultsDiv.style.display = 'block';
+        showLocationStatus(`Found ${pharmacies.length} pharmacy(s)`, 'success');
+    }
+
+    function createPharmacyCard(pharmacy) {
+        const card = document.createElement('div');
+        card.className = 'pharmacy-card mb-3';
+        
+        card.innerHTML = `
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div class="flex-grow-1">
+                            <h6 class="card-title mb-1">
+                                <i class="fas fa-building text-primary me-2"></i>
+                                ${pharmacy.name}
+                            </h6>
+                            <p class="card-text text-muted mb-2">
+                                <i class="fas fa-map-marker-alt me-1"></i>
+                                ${pharmacy.address}
+                            </p>
+                            ${pharmacy.phone ? `
+                                <p class="card-text mb-2">
+                                    <i class="fas fa-phone me-1"></i>
+                                    <a href="tel:${pharmacy.phone}" class="text-decoration-none">${pharmacy.phone}</a>
+                                </p>
+                            ` : ''}
+                            ${pharmacy.rating ? `
+                                <div class="mb-2">
+                                    <span class="badge bg-success">
+                                        <i class="fas fa-star me-1"></i>${pharmacy.rating}/5
+                                    </span>
+                                </div>
+                            ` : ''}
+                        </div>
+                        <div class="text-end">
+                            ${pharmacy.distance ? `
+                                <small class="text-muted">${pharmacy.distance}</small><br>
+                            ` : ''}
+                            <button class="btn btn-sm btn-outline-primary mt-1" onclick="openDirections('${pharmacy.address}')">
+                                <i class="fas fa-directions me-1"></i>Directions
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        return card;
+    }
+
+    function openDirections(address) {
+        const encodedAddress = encodeURIComponent(address);
+        const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodedAddress}`;
+        window.open(directionsUrl, '_blank');
+    }
+
+    function showPharmacyLoading(show) {
+        const loadingDiv = document.getElementById('pharmacyLoading');
+        loadingDiv.style.display = show ? 'block' : 'none';
+    }
+
+    function showLocationStatus(message, type) {
+        const statusDiv = document.getElementById('locationStatus');
+        statusDiv.className = `alert alert-${type}`;
+        statusDiv.innerHTML = `<i class="fas fa-info-circle me-2"></i>${message}`;
+        statusDiv.style.display = 'block';
+    }
     </script>
     {% endblock %}
         }

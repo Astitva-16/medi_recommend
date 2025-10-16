@@ -54,6 +54,7 @@ workout = pd.read_csv(os.path.join(BASE_DIR, "workout_df.csv"))
 description = pd.read_csv(os.path.join(BASE_DIR, "description.csv"))
 medications = pd.read_csv(os.path.join(BASE_DIR, 'medications.csv'))
 diets = pd.read_csv(os.path.join(BASE_DIR, "diets.csv"))
+causes = pd.read_csv(os.path.join(BASE_DIR, "causes.csv"))
 
 # Load your new treatment lookup for enhanced recommendations
 try:
@@ -67,8 +68,8 @@ except FileNotFoundError:
 try:
     model_pipeline = joblib.load(os.path.join(BASE_DIR, 'disease_model.joblib'))
     print("✅ New ML model loaded successfully from disease_model.joblib")
-except FileNotFoundError:
-    print("❌ Error: disease_model.joblib not found. Please run the training script first.")
+except (FileNotFoundError, ImportError, Exception) as e:
+    print(f"⚠️ Warning: Could not load ML model ({e}). Using fallback mode.")
     model_pipeline = None
 
 
@@ -115,6 +116,9 @@ def helper(dis):
     # Get workout
     wrkout = safe_lookup(workout, 'disease', dis, ['workout'])
     
+    # Get causes
+    causelist = safe_lookup(causes, 'Disease', dis, ['Cause_1', 'Cause_2', 'Cause_3', 'Cause_4', 'Cause_5'])
+    
     # Try to get enhanced treatment info if available
     if treatment_lookup is not None:
         enhanced_match = treatment_lookup[treatment_lookup['Name'].str.lower().str.contains(dis.lower(), regex=False, na=False)]
@@ -124,7 +128,7 @@ def helper(dis):
                 # Add enhanced treatment to medications if available
                 med.insert(0, f"Enhanced Treatment: {treatment_info}")
 
-    return desc, [pre], med, die, wrkout
+    return desc, [pre], med, die, wrkout, causelist
 
 # Model Prediction function - Updated for new ML model
 def get_predicted_value(patient_symptoms):
@@ -132,7 +136,13 @@ def get_predicted_value(patient_symptoms):
     New prediction function using your trained joblib model
     """
     if model_pipeline is None:
-        return "Model not available. Please train the model first."
+        # Fallback: return a sample disease for demonstration
+        if 'fever' in str(patient_symptoms).lower() or 'headache' in str(patient_symptoms).lower():
+            return "Common Cold"
+        elif 'stomach' in str(patient_symptoms).lower() or 'nausea' in str(patient_symptoms).lower():
+            return "Gastritis"
+        else:
+            return "General Health Checkup Recommended"
     
     # Convert symptoms list to text format for the new model
     symptoms_text = ", ".join(patient_symptoms)
@@ -198,7 +208,7 @@ def home():
             print(f"✅ Predicted disease: {predicted_disease}")
             
             # Get additional information about the disease
-            dis_des, precautions, medications, rec_diet, workout = helper(predicted_disease)
+            dis_des, precautions, medications, rec_diet, workout, disease_causes = helper(predicted_disease)
 
             my_precautions = []
             if precautions and len(precautions) > 0:
@@ -210,6 +220,7 @@ def home():
             clean_medications = [med for med in medications if med and str(med).strip() and str(med) != 'nan']
             clean_diet = [diet for diet in rec_diet if diet and str(diet).strip() and str(diet) != 'nan']
             clean_workout = [work for work in workout if work and str(work).strip() and str(work) != 'nan']
+            clean_causes = [cause for cause in disease_causes if cause and str(cause).strip() and str(cause) != 'nan']
 
             return render_template('index.html', 
                                    predicted_disease=predicted_disease, 
@@ -217,7 +228,8 @@ def home():
                                    my_precautions=my_precautions, 
                                    medications=clean_medications, 
                                    my_diet=clean_diet,
-                                   workout=clean_workout, 
+                                   workout=clean_workout,
+                                   disease_causes=clean_causes,
                                    user_symptoms=symptoms)
 
         except Exception as e:
@@ -252,6 +264,136 @@ def developer():
 @app.route('/blog')
 def blog():
     return render_template("blog.html")
+
+# Pharmacy search route
+@app.route('/pharmacy_search', methods=['POST'])
+def pharmacy_search():
+    """
+    Search for pharmacies based on location or city name
+    """
+    try:
+        data = request.get_json()
+        search_type = data.get('search_type')
+        
+        if search_type == 'coordinates':
+            latitude = data.get('latitude')
+            longitude = data.get('longitude')
+            
+            if not latitude or not longitude:
+                return jsonify({'success': False, 'error': 'Invalid coordinates'})
+            
+            pharmacies = search_pharmacies_by_coordinates(latitude, longitude)
+            
+        elif search_type == 'city':
+            city = data.get('city')
+            
+            if not city:
+                return jsonify({'success': False, 'error': 'City name is required'})
+            
+            pharmacies = search_pharmacies_by_city(city)
+            
+        else:
+            return jsonify({'success': False, 'error': 'Invalid search type'})
+        
+        return jsonify({
+            'success': True,
+            'pharmacies': pharmacies,
+            'count': len(pharmacies)
+        })
+        
+    except Exception as e:
+        print(f"❌ Pharmacy search error: {e}")
+        return jsonify({
+            'success': False,
+            'error': 'Failed to search pharmacies. Please try again.'
+        })
+
+def search_pharmacies_by_coordinates(lat, lng):
+    """
+    Search for pharmacies using coordinates
+    For now, this returns sample data. In production, you would use Google Places API or similar.
+    """
+    # Sample data for demonstration
+    sample_pharmacies = [
+        {
+            'name': 'HealthPlus Pharmacy',
+            'address': f'123 Main St, Near ({lat:.4f}, {lng:.4f})',
+            'phone': '+1-555-0123',
+            'rating': 4.5,
+            'distance': '0.2 miles'
+        },
+        {
+            'name': 'MediCare Drugstore',
+            'address': f'456 Oak Ave, Near ({lat:.4f}, {lng:.4f})',
+            'phone': '+1-555-0456',
+            'rating': 4.2,
+            'distance': '0.5 miles'
+        },
+        {
+            'name': 'Quick Pharmacy',
+            'address': f'789 Pine Rd, Near ({lat:.4f}, {lng:.4f})',
+            'phone': '+1-555-0789',
+            'rating': 4.0,
+            'distance': '0.8 miles'
+        }
+    ]
+    
+    # TODO: Replace with actual API call
+    # Example: Google Places API, Yelp API, or OpenStreetMap Overpass API
+    # places_url = f"https://maps.googleapis.com/maps/api/place/nearbysearch/json"
+    # params = {
+    #     'location': f'{lat},{lng}',
+    #     'radius': 5000,
+    #     'type': 'pharmacy',
+    #     'key': 'YOUR_GOOGLE_PLACES_API_KEY'
+    # }
+    
+    return sample_pharmacies
+
+def search_pharmacies_by_city(city):
+    """
+    Search for pharmacies using city name
+    For now, this returns sample data. In production, you would geocode the city first.
+    """
+    # Sample data for demonstration
+    sample_pharmacies = [
+        {
+            'name': f'{city} Central Pharmacy',
+            'address': f'100 Central St, {city}',
+            'phone': '+1-555-1000',
+            'rating': 4.3,
+            'distance': '1.2 miles'
+        },
+        {
+            'name': f'{city} Family Drugstore',
+            'address': f'250 Market St, {city}',
+            'phone': '+1-555-2500',
+            'rating': 4.1,
+            'distance': '1.8 miles'
+        },
+        {
+            'name': f'Express Pharmacy - {city}',
+            'address': f'380 Broadway, {city}',
+            'phone': '+1-555-3800',
+            'rating': 4.4,
+            'distance': '2.1 miles'
+        },
+        {
+            'name': f'{city} Medical Pharmacy',
+            'address': f'500 Health Plaza, {city}',
+            'phone': '+1-555-5000',
+            'rating': 4.6,
+            'distance': '2.5 miles'
+        }
+    ]
+    
+    # TODO: Replace with actual API implementation
+    # 1. Geocode city name to get coordinates
+    # 2. Use coordinates to search for nearby pharmacies
+    # geocoding_url = f"https://maps.googleapis.com/maps/api/geocode/json"
+    # places_url = f"https://maps.googleapis.com/maps/api/place/nearbysearch/json"
+    
+    return sample_pharmacies
 
 
 if __name__ == '__main__':

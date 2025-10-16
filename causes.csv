@@ -1,0 +1,28 @@
+Disease,Cause_1,Cause_2,Cause_3,Cause_4,Cause_5
+Common Cold,Viral infection (rhinovirus),Weakened immune system,Exposure to infected individuals,Cold weather stress,Poor hand hygiene
+Flu,Influenza virus infection,Seasonal outbreaks,Airborne transmission,Compromised immunity,Close contact with infected persons
+Diabetes,Genetic predisposition,Sedentary lifestyle,Obesity,Poor diet high in sugar,Insulin resistance
+Hypertension,High sodium intake,Obesity,Genetic factors,Chronic stress,Lack of physical activity
+Gastritis,Helicobacter pylori infection,Excessive alcohol consumption,NSAIDs overuse,Chronic stress,Spicy food irritation
+Migraine,Genetic predisposition,Hormonal changes,Stress and anxiety,Certain foods triggers,Sleep disturbances
+Asthma,Genetic predisposition,Environmental allergens,Air pollution exposure,Respiratory infections,Exercise triggers
+Pneumonia,Bacterial infection,Viral infection,Compromised immune system,Smoking habits,Age-related vulnerability
+Bronchitis,Viral infections,Bacterial infections,Smoking,Air pollution,Chemical fume exposure
+Malaria,Mosquito bite transmission,Plasmodium parasite,Travel to endemic areas,Poor sanitation,Stagnant water breeding
+Dengue,Aedes mosquito bite,Flavivirus infection,Urban breeding sites,Poor waste management,Climate conditions
+Tuberculosis,Mycobacterium tuberculosis,Airborne transmission,Overcrowded living,Malnutrition,HIV co-infection
+Chickenpox,Varicella-zoster virus,Direct contact transmission,Respiratory droplets,Compromised immunity,School outbreaks
+Measles,Measles virus infection,Airborne transmission,Lack of vaccination,Crowded conditions,Vitamin A deficiency
+Hepatitis,Viral infection,Contaminated food/water,Unsafe blood transfusion,Drug injection sharing,Poor sanitation
+Arthritis,Joint wear and tear,Autoimmune disorders,Genetic predisposition,Previous injuries,Age-related changes
+Osteoporosis,Calcium deficiency,Vitamin D deficiency,Hormonal changes,Sedentary lifestyle,Genetic factors
+Heart Disease,High cholesterol,High blood pressure,Smoking habits,Diabetes complications,Family history
+Stroke,High blood pressure,Blood clots,Atrial fibrillation,Diabetes complications,Smoking habits
+Kidney Disease,High blood pressure,Diabetes complications,Genetic disorders,Autoimmune diseases,Drug toxicity
+Depression,Chemical imbalance,Genetic predisposition,Life stressors,Traumatic experiences,Chronic illness
+Anxiety,Genetic factors,Environmental stress,Traumatic events,Medical conditions,Substance abuse
+Insomnia,Stress and anxiety,Poor sleep habits,Medical conditions,Caffeine consumption,Environmental factors
+Obesity,Poor diet choices,Sedentary lifestyle,Genetic predisposition,Hormonal imbalances,Metabolic disorders
+Anemia,Iron deficiency,Vitamin B12 deficiency,Chronic diseases,Blood loss,Genetic disorders
+Cancer,Genetic mutations,Environmental toxins,Lifestyle factors,Viral infections,Age-related changes
+COVID-19,SARS-CoV-2 virus,Airborne transmission,Close contact exposure,Poor ventilation,Compromised immunity
