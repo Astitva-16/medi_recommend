@@ -21,12 +21,14 @@ Our enhanced system provides detailed recommendations including:
 - **Exercise**: Customized workout plans and physical therapy suggestions
 - **Dietary Plans**: Nutritional guidance and therapeutic diets
 - **Disease Information**: Comprehensive descriptions and severity assessments
+- **🆕 Find Nearby Doctors**: Location-based search to find nearby clinics and healthcare providers with contact information
 
 ### 🌐 Modern Web Interface
 - Responsive Flask-based web application
 - Bootstrap 5.3.1 integration for modern UI/UX
 - Voice input capabilities for accessibility
 - Real-time prediction results
+- Location-based doctor/clinic finder with phone contacts
 
 ## 🔬 Technical Implementation
 
@@ -93,6 +95,22 @@ python main.py
    - Detailed precautionary measures
    - Customized exercise routines
    - Therapeutic dietary plans
+5. **🆕 Find Nearby Doctors**: Click the "Find Nearby Doctors" button to:
+   - Access nearby clinics and hospitals based on your location
+   - View contact information and phone numbers
+   - Get directions to healthcare facilities
+   - See ratings, opening hours, and distance information
+
+### Setting Up Location-Based Doctor Search
+
+The application currently shows demo data. To enable real location search with Google Places API:
+
+1. See `GOOGLE_PLACES_API_SETUP.md` for detailed setup instructions
+2. Get a Google Maps API key from Google Cloud Console
+3. Set your API key as an environment variable
+4. The feature will automatically find real doctors/clinics near the user's location
+
+For development/testing, the system provides realistic mock data.
 
 ## 📊 Enhanced Dataset Information
 

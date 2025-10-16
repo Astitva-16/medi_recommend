@@ -104,6 +104,7 @@
             <div class="result-tile tile-medications" data-bs-toggle="modal" data-bs-target="#medicationsModal"><i class="fas fa-pills"></i> Medications</div>
             <div class="result-tile tile-workouts" data-bs-toggle="modal" data-bs-target="#workoutsModal"><i class="fas fa-dumbbell"></i> Exercise</div>
             <div class="result-tile tile-diets" data-bs-toggle="modal" data-bs-target="#dietsModal"><i class="fas fa-apple-alt"></i> Diet Plan</div>
+            <div class="result-tile tile-doctors" id="findDoctorsBtn"><i class="fas fa-user-md"></i> Find Nearby Doctors</div>
             <div class="result-tile tile-pharmacy" data-bs-toggle="modal" data-bs-target="#pharmacyModal"><i class="fas fa-map-marker-alt"></i> Pharmacy Near Me</div>
         </div>
     </div>
@@ -130,6 +131,41 @@
     </div>
     <div class="modal fade" id="dietsModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><h5 class="modal-title"><i class="fas fa-apple-alt me-1"></i> Recommended Diet Plan</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="alert alert-warning"><ul class="mb-0 ps-3">{% for i in my_diet %}<li class="mb-2"><i class="fas fa-utensils text-warning me-2"></i>{{ i }}</li>{% endfor %}</ul></div></div></div></div>
+    </div>
+
+    <!-- Nearby Doctors Modal -->
+    <div class="modal fade" id="doctorsModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="fas fa-user-md me-2"></i>Nearby Doctors & Clinics</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="doctorsLoadingState" class="text-center py-5">
+                        <div class="spinner-border text-primary mb-3" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <p class="text-muted">Requesting location access...</p>
+                        <small class="text-muted">Please allow location access to find nearby doctors</small>
+                    </div>
+                    <div id="doctorsErrorState" class="alert alert-danger" style="display:none;">
+                        <i class="fas fa-exclamation-triangle me-2"></i>
+                        <span id="doctorsErrorMessage">Unable to access location. Please enable location services.</span>
+                    </div>
+                    <div id="doctorsListContainer" style="display:none;">
+                        <div class="alert alert-info mb-4">
+                            <i class="fas fa-info-circle me-2"></i>
+                            <strong>Showing results near your location</strong>
+                            <p class="mb-0 mt-2"><small>Click on phone numbers to call and book an appointment</small></p>
+                        </div>
+                        <div id="doctorsList" class="row g-3">
+                            <!-- Doctors will be populated here by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Pharmacy Near Me Modal -->
@@ -341,6 +377,137 @@
         // Pharmacy Near Me functionality
         initPharmacySearch();
     });
+
+    // Find Nearby Doctors functionality
+    const findDoctorsBtn = document.getElementById('findDoctorsBtn');
+    if (findDoctorsBtn) {
+        findDoctorsBtn.addEventListener('click', function() {
+            // Show the modal
+            const doctorsModal = new bootstrap.Modal(document.getElementById('doctorsModal'));
+            doctorsModal.show();
+            
+            // Reset states
+            document.getElementById('doctorsLoadingState').style.display = 'block';
+            document.getElementById('doctorsErrorState').style.display = 'none';
+            document.getElementById('doctorsListContainer').style.display = 'none';
+            
+            // Request location access
+            if (!navigator.geolocation) {
+                showDoctorsError('Geolocation is not supported by your browser');
+                return;
+            }
+            
+            navigator.geolocation.getCurrentPosition(
+                // Success callback
+                function(position) {
+                    const latitude = position.coords.latitude;
+                    const longitude = position.coords.longitude;
+                    
+                    // Send location to backend
+                    fetch('/find-doctors', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            latitude: latitude,
+                            longitude: longitude
+                        })
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success && data.doctors) {
+                            displayDoctors(data.doctors);
+                        } else {
+                            showDoctorsError(data.error || 'Unable to find nearby doctors');
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        showDoctorsError('An error occurred while searching for doctors');
+                    });
+                },
+                // Error callback
+                function(error) {
+                    let errorMessage = 'Unable to access your location. ';
+                    switch(error.code) {
+                        case error.PERMISSION_DENIED:
+                            errorMessage += 'Please enable location access in your browser settings.';
+                            break;
+                        case error.POSITION_UNAVAILABLE:
+                            errorMessage += 'Location information is unavailable.';
+                            break;
+                        case error.TIMEOUT:
+                            errorMessage += 'Location request timed out.';
+                            break;
+                        default:
+                            errorMessage += 'An unknown error occurred.';
+                    }
+                    showDoctorsError(errorMessage);
+                }
+            );
+        });
+    }
+    
+    function showDoctorsError(message) {
+        document.getElementById('doctorsLoadingState').style.display = 'none';
+        document.getElementById('doctorsErrorState').style.display = 'block';
+        document.getElementById('doctorsListContainer').style.display = 'none';
+        document.getElementById('doctorsErrorMessage').textContent = message;
+    }
+    
+    function displayDoctors(doctors) {
+        document.getElementById('doctorsLoadingState').style.display = 'none';
+        document.getElementById('doctorsErrorState').style.display = 'none';
+        document.getElementById('doctorsListContainer').style.display = 'block';
+        
+        const doctorsList = document.getElementById('doctorsList');
+        doctorsList.innerHTML = '';
+        
+        doctors.forEach((doctor, index) => {
+            const openBadge = doctor.open_now 
+                ? '<span class="badge bg-success ms-2"><i class="fas fa-check-circle me-1"></i>Open Now</span>'
+                : '<span class="badge bg-secondary ms-2">Closed</span>';
+            
+            const stars = '★'.repeat(Math.floor(doctor.rating)) + '☆'.repeat(5 - Math.floor(doctor.rating));
+            
+            const doctorCard = `
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm border-0" style="border-left: 4px solid var(--primary-light) !important;">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="card-title mb-0">
+                                    <i class="fas fa-${doctor.type === 'Hospital' ? 'hospital' : 'clinic-medical'} me-2 text-primary"></i>
+                                    ${doctor.name}
+                                </h5>
+                                ${openBadge}
+                            </div>
+                            <p class="text-muted small mb-2">
+                                <i class="fas fa-map-marker-alt me-1"></i>${doctor.address}
+                                <span class="badge bg-light text-dark ms-2">${doctor.distance}</span>
+                            </p>
+                            <div class="mb-3">
+                                <span class="text-warning">${stars}</span>
+                                <span class="text-muted ms-1">(${doctor.rating})</span>
+                                <span class="badge bg-info text-white ms-2">${doctor.type}</span>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <a href="tel:${doctor.phone}" class="btn btn-primary btn-sm">
+                                    <i class="fas fa-phone me-2"></i>Call: ${doctor.phone}
+                                </a>
+                                <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(doctor.name + ' ' + doctor.address)}" 
+                                   target="_blank" 
+                                   class="btn btn-outline-secondary btn-sm">
+                                    <i class="fas fa-directions me-2"></i>Get Directions
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+            doctorsList.innerHTML += doctorCard;
+        });
+    }
 
     // Pharmacy Search Functions
     function initPharmacySearch() {

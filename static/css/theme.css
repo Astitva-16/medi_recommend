@@ -159,6 +159,7 @@ body::-webkit-scrollbar-thumb { background:var(--primary-light); border-radius:2
 .tile-precautions,.tile-workouts { background:linear-gradient(135deg,var(--success) 0%,#1F7E56 100%); color:#fff; }
 .tile-medications { background:linear-gradient(135deg,var(--danger) 0%,#C23948 100%); color:#fff; }
 .tile-diets { background:linear-gradient(135deg,var(--warning) 0%,#E7B630 100%); color:#3E2F00; }
+.tile-doctors { background:linear-gradient(135deg,#6366F1 0%,#4F46E5 100%); color:#fff; }
 
 /* Alerts refinement */
 .alert { border-radius:18px; border:none; }

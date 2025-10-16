@@ -265,6 +265,99 @@ def developer():
 def blog():
     return render_template("blog.html")
 
+# Find nearby doctors/clinics route
+@app.route('/find-doctors', methods=['POST'])
+def find_doctors():
+    """
+    Endpoint to find nearby doctors/clinics based on user's location
+    Uses Google Places API
+    """
+    try:
+        data = request.get_json()
+        latitude = data.get('latitude')
+        longitude = data.get('longitude')
+        
+        if not latitude or not longitude:
+            return jsonify({'error': 'Location coordinates are required'}), 400
+        
+        # In a production environment, you would use Google Places API here
+        # For now, we'll return mock data that you can replace with actual API calls
+        
+        # Example of what the Google Places API call would look like:
+        # import requests
+        # API_KEY = 'YOUR_GOOGLE_MAPS_API_KEY'
+        # url = f'https://maps.googleapis.com/maps/api/place/nearbysearch/json'
+        # params = {
+        #     'location': f'{latitude},{longitude}',
+        #     'radius': 5000,  # 5km radius
+        #     'type': 'doctor|hospital|health',
+        #     'key': API_KEY
+        # }
+        # response = requests.get(url, params=params)
+        # places = response.json().get('results', [])
+        
+        # Mock data for demonstration (replace with actual API call)
+        mock_doctors = [
+            {
+                'name': 'City Medical Center',
+                'address': '123 Main Street',
+                'phone': '+1 (555) 123-4567',
+                'rating': 4.5,
+                'distance': '0.8 km',
+                'type': 'Hospital',
+                'open_now': True
+            },
+            {
+                'name': 'Dr. Sarah Johnson - General Physician',
+                'address': '456 Oak Avenue',
+                'phone': '+1 (555) 234-5678',
+                'rating': 4.8,
+                'distance': '1.2 km',
+                'type': 'Clinic',
+                'open_now': True
+            },
+            {
+                'name': 'HealthCare Plus Clinic',
+                'address': '789 Pine Road',
+                'phone': '+1 (555) 345-6789',
+                'rating': 4.3,
+                'distance': '1.5 km',
+                'type': 'Clinic',
+                'open_now': False
+            },
+            {
+                'name': 'Emergency Medical Services',
+                'address': '321 Elm Street',
+                'phone': '+1 (555) 456-7890',
+                'rating': 4.6,
+                'distance': '2.1 km',
+                'type': 'Hospital',
+                'open_now': True
+            },
+            {
+                'name': 'Dr. Michael Chen - Specialist',
+                'address': '654 Maple Drive',
+                'phone': '+1 (555) 567-8901',
+                'rating': 4.9,
+                'distance': '2.8 km',
+                'type': 'Clinic',
+                'open_now': True
+            }
+        ]
+        
+        return jsonify({
+            'success': True,
+            'doctors': mock_doctors,
+            'location': {
+                'latitude': latitude,
+                'longitude': longitude
+            }
+        })
+        
+    except Exception as e:
+        print(f"Error finding doctors: {e}")
+        return jsonify({'error': 'An error occurred while searching for doctors'}), 500
+
 # Pharmacy search route
 @app.route('/pharmacy_search', methods=['POST'])
 def pharmacy_search():
