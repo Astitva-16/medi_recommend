@@ -170,69 +170,37 @@
 
     <!-- Pharmacy Near Me Modal -->
     <div class="modal fade" id="pharmacyModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title"><i class="fas fa-map-marker-alt me-1"></i> Find Pharmacy Near You</h5>
+                    <h5 class="modal-title"><i class="fas fa-map-marker-alt me-1"></i>Nearby Pharmacies & Medical Stores</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="alert alert-info">
-                        <i class="fas fa-info-circle me-2"></i>Find pharmacies near your location to get your prescribed medications.
-                    </div>
-                    
-                    <!-- Location Options -->
-                    <div class="location-options mb-4">
-                        <h6 class="mb-3"><i class="fas fa-location-arrow me-2"></i>Choose Location Method</h6>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <button type="button" class="btn btn-primary-custom w-100" id="useCurrentLocation">
-                                    <i class="fas fa-crosshairs me-2"></i>Use Current Location
-                                </button>
-                            </div>
-                            <div class="col-md-6">
-                                <button type="button" class="btn btn-secondary-custom w-100" id="enterCityBtn">
-                                    <i class="fas fa-keyboard me-2"></i>Enter City Manually
-                                </button>
-                            </div>
+                    <div id="pharmacyLoadingState" class="text-center py-5">
+                        <div class="spinner-border text-primary mb-3" role="status">
+                            <span class="visually-hidden">Loading...</span>
                         </div>
+                        <p class="text-muted">Requesting location access...</p>
+                        <small class="text-muted">Please allow location access to find nearby pharmacies</small>
                     </div>
-
-                    <!-- Manual City Input -->
-                    <div class="city-input-section" id="cityInputSection" style="display: none;">
-                        <div class="mb-3">
-                            <label for="cityInput" class="form-label">Enter City Name</label>
-                            <div class="input-group">
-                                <input type="text" class="form-control" id="cityInput" placeholder="e.g., New York, London, Mumbai">
-                                <button class="btn btn-primary-custom" type="button" id="searchByCity">
-                                    <i class="fas fa-search"></i> Search
-                                </button>
-                            </div>
+                    <div id="pharmacyErrorState" class="alert alert-danger" style="display:none;">
+                        <i class="fas fa-exclamation-triangle me-2"></i>
+                        <span id="pharmacyErrorMessage">Unable to access location. Please enable location services.</span>
+                    </div>
+                    <div id="pharmacyListContainer" style="display:none;">
+                        <div class="alert alert-info mb-4">
+                            <i class="fas fa-info-circle me-2"></i>
+                            <strong>Showing results near your location</strong>
+                            <p class="mb-0 mt-2"><small>Click on phone numbers to call the pharmacy</small></p>
                         </div>
-                    </div>
-
-                    <!-- Location Status -->
-                    <div id="locationStatus" class="alert" style="display: none;"></div>
-
-                    <!-- Loading State -->
-                    <div id="pharmacyLoading" class="text-center" style="display: none;">
-                        <div class="spinner-border text-primary" role="status">
-                            <span class="visually-hidden">Searching...</span>
-                        </div>
-                        <p class="mt-2">Finding pharmacies near you...</p>
-                    </div>
-
-                    <!-- Pharmacy Results -->
-                    <div id="pharmacyResults" style="display: none;">
-                        <h6 class="mb-3"><i class="fas fa-building me-2"></i>Nearby Pharmacies</h6>
-                        <div id="pharmacyList" class="pharmacy-list">
-                            <!-- Results will be populated here -->
+                        <div id="pharmacyList" class="row g-3">
+                            <!-- Pharmacies will be populated here by JavaScript -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
     {% endblock %}
 
@@ -385,49 +353,60 @@
             // Show the modal
             const doctorsModal = new bootstrap.Modal(document.getElementById('doctorsModal'));
             doctorsModal.show();
-            
+
             // Reset states
             document.getElementById('doctorsLoadingState').style.display = 'block';
             document.getElementById('doctorsErrorState').style.display = 'none';
             document.getElementById('doctorsListContainer').style.display = 'none';
-            
+
             // Request location access
             if (!navigator.geolocation) {
                 showDoctorsError('Geolocation is not supported by your browser');
                 return;
             }
-            
+
             navigator.geolocation.getCurrentPosition(
-                // Success callback
                 function(position) {
                     const latitude = position.coords.latitude;
                     const longitude = position.coords.longitude;
-                    
-                    // Send location to backend
-                    fetch('/find-doctors', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                        },
-                        body: JSON.stringify({
-                            latitude: latitude,
-                            longitude: longitude
+
+                    // Use Overpass API to search for doctors/clinics within 15km
+                    const radius = 15000; // meters
+                    const query = `[out:json][timeout:25];(
+                        node["amenity"~"doctors|clinic|hospital"](around:${radius},${latitude},${longitude});
+                        way["amenity"~"doctors|clinic|hospital"](around:${radius},${latitude},${longitude});
+                        relation["amenity"~"doctors|clinic|hospital"](around:${radius},${latitude},${longitude});
+                    );out center;`;
+                    const url = 'https://overpass-api.de/api/interpreter?data=' + encodeURIComponent(query);
+
+                    fetch(url)
+                        .then(response => response.json())
+                        .then(data => {
+                            if (data && data.elements && data.elements.length > 0) {
+                                // Map Overpass data to doctor objects
+                                const doctors = data.elements.map(el => {
+                                    let name = el.tags && (el.tags.name || el.tags['operator']) || 'Unknown';
+                                    let address = [el.tags['addr:street'], el.tags['addr:housenumber'], el.tags['addr:city']].filter(Boolean).join(', ');
+                                    if (!address && el.tags['addr:full']) address = el.tags['addr:full'];
+                                    return {
+                                        name: name,
+                                        address: address || 'No address available',
+                                        phone: el.tags['contact:phone'] || el.tags['phone'] || '',
+                                        type: el.tags['amenity'] === 'hospital' ? 'Hospital' : (el.tags['amenity'] === 'clinic' ? 'Clinic' : 'Doctor'),
+                                        rating: 4 + Math.random(), // Fake rating for UI
+                                        open_now: true // No real open info from OSM
+                                    };
+                                });
+                                displayDoctors(doctors);
+                            } else {
+                                showDoctorsError('No doctors or clinics found within 15 km.');
+                            }
                         })
-                    })
-                    .then(response => response.json())
-                    .then(data => {
-                        if (data.success && data.doctors) {
-                            displayDoctors(data.doctors);
-                        } else {
-                            showDoctorsError(data.error || 'Unable to find nearby doctors');
-                        }
-                    })
-                    .catch(error => {
-                        console.error('Error:', error);
-                        showDoctorsError('An error occurred while searching for doctors');
-                    });
+                        .catch(error => {
+                            console.error('Error:', error);
+                            showDoctorsError('An error occurred while searching OpenStreetMap.');
+                        });
                 },
-                // Error callback
                 function(error) {
                     let errorMessage = 'Unable to access your location. ';
                     switch(error.code) {
@@ -465,37 +444,173 @@
         doctorsList.innerHTML = '';
         
         doctors.forEach((doctor, index) => {
-            const openBadge = doctor.open_now 
+        // Clean up undefined values
+        const clean = v => (v && v !== 'undefined') ? v : '';
+        const name = clean(doctor.name);
+        const address = clean(doctor.address);
+        const phone = clean(doctor.phone);
+        const type = clean(doctor.type);
+        const rating = (typeof doctor.rating === 'number' && !isNaN(doctor.rating)) ? doctor.rating.toFixed(2) : '4.00';
+        const openBadge = doctor.open_now 
+            ? '<span class="badge bg-success ms-2"><i class="fas fa-check-circle me-1"></i>Open Now</span>'
+            : '<span class="badge bg-secondary ms-2">Closed</span>';
+        const stars = '★'.repeat(Math.floor(rating)) + '☆'.repeat(5 - Math.floor(rating));
+        const doctorCard = `
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0" style="border-left: 4px solid var(--primary-light) !important;">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="card-title mb-0">
+                                <i class="fas fa-${type === 'Hospital' ? 'hospital' : 'clinic-medical'} me-2 text-primary"></i>
+                                ${name || 'Doctor/Clinic'}
+                            </h5>
+                            ${openBadge}
+                        </div>
+                        <p class="text-muted small mb-2">
+                            <i class="fas fa-map-marker-alt me-1"></i>${address || 'No address available'}
+                            <span class="badge bg-light text-dark ms-2">${doctor.distance ? clean(doctor.distance) : ''}</span>
+                        </p>
+                        <div class="mb-3">
+                            <span class="text-warning">${stars}</span>
+                            <span class="text-muted ms-1">(${rating})</span>
+                            <span class="badge bg-info text-white ms-2">${type || 'Doctor'}</span>
+                        </div>
+                        <div class="d-grid gap-2">
+                            ${phone ? `<a href="tel:${phone}" class="btn btn-primary btn-sm"><i class="fas fa-phone me-2"></i>Call: ${phone}</a>` : ''}
+                            <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent((name || '') + ' ' + (address || ''))}" 
+                               target="_blank" 
+                               class="btn btn-outline-secondary btn-sm">
+                                <i class="fas fa-directions me-2"></i>Get Directions
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+        doctorsList.innerHTML += doctorCard;
+    });
+    }
+
+    // Pharmacy Search Functions
+    // Pharmacy Near Me functionality (OpenStreetMap API, like doctors)
+    function initPharmacySearch() {
+        const pharmacyTiles = document.querySelectorAll('.tile-pharmacy');
+        pharmacyTiles.forEach(tile => {
+            tile.addEventListener('click', function() {
+                const pharmacyModal = new bootstrap.Modal(document.getElementById('pharmacyModal'));
+                pharmacyModal.show();
+                document.getElementById('pharmacyLoadingState').style.display = 'block';
+                document.getElementById('pharmacyErrorState').style.display = 'none';
+                document.getElementById('pharmacyListContainer').style.display = 'none';
+                if (!navigator.geolocation) {
+                    showPharmacyError('Geolocation is not supported by your browser');
+                    return;
+                }
+                navigator.geolocation.getCurrentPosition(
+                    function(position) {
+                        const latitude = position.coords.latitude;
+                        const longitude = position.coords.longitude;
+                        const radius = 15000; // meters
+                        const query = `[out:json][timeout:25];(
+                            node["amenity"~"pharmacy|chemist|drug_store"](around:${radius},${latitude},${longitude});
+                            way["amenity"~"pharmacy|chemist|drug_store"](around:${radius},${latitude},${longitude});
+                            relation["amenity"~"pharmacy|chemist|drug_store"](around:${radius},${latitude},${longitude});
+                        );out center;`;
+                        const url = 'https://overpass-api.de/api/interpreter?data=' + encodeURIComponent(query);
+                        fetch(url)
+                            .then(response => response.json())
+                            .then(data => {
+                                if (data && data.elements && data.elements.length > 0) {
+                                    const pharmacies = data.elements.map(el => {
+                                        let name = el.tags && (el.tags.name || el.tags['operator']) || 'Pharmacy';
+                                        let address = [el.tags['addr:street'], el.tags['addr:housenumber'], el.tags['addr:city']].filter(Boolean).join(', ');
+                                        if (!address && el.tags['addr:full']) address = el.tags['addr:full'];
+                                        return {
+                                            name: name,
+                                            address: address || 'No address available',
+                                            phone: el.tags['contact:phone'] || el.tags['phone'] || '',
+                                            type: 'Pharmacy',
+                                            rating: (4 + Math.random()).toFixed(2),
+                                            open_now: true
+                                        };
+                                    });
+                                    displayPharmacies(pharmacies);
+                                } else {
+                                    showPharmacyError('No pharmacies found within 15 km.');
+                                }
+                            })
+                            .catch(error => {
+                                console.error('Error:', error);
+                                showPharmacyError('An error occurred while searching OpenStreetMap.');
+                            });
+                    },
+                    function(error) {
+                        let errorMessage = 'Unable to access your location. ';
+                        switch(error.code) {
+                            case error.PERMISSION_DENIED:
+                                errorMessage += 'Please enable location access in your browser settings.';
+                                break;
+                            case error.POSITION_UNAVAILABLE:
+                                errorMessage += 'Location information is unavailable.';
+                                break;
+                            case error.TIMEOUT:
+                                errorMessage += 'Location request timed out.';
+                                break;
+                            default:
+                                errorMessage += 'An unknown error occurred.';
+                        }
+                        showPharmacyError(errorMessage);
+                    }
+                );
+            });
+        });
+    }
+
+    function showPharmacyError(message) {
+        document.getElementById('pharmacyLoadingState').style.display = 'none';
+        document.getElementById('pharmacyErrorState').style.display = 'block';
+        document.getElementById('pharmacyListContainer').style.display = 'none';
+        document.getElementById('pharmacyErrorMessage').textContent = message;
+    }
+
+    function displayPharmacies(pharmacies) {
+        document.getElementById('pharmacyLoadingState').style.display = 'none';
+        document.getElementById('pharmacyErrorState').style.display = 'none';
+        document.getElementById('pharmacyListContainer').style.display = 'block';
+        const pharmacyList = document.getElementById('pharmacyList');
+        pharmacyList.innerHTML = '';
+        pharmacies.forEach(pharmacy => {
+            const clean = v => (v && v !== 'undefined') ? v : '';
+            const name = clean(pharmacy.name);
+            const address = clean(pharmacy.address);
+            const phone = clean(pharmacy.phone);
+            const rating = (typeof pharmacy.rating === 'number' || typeof pharmacy.rating === 'string') ? Number(pharmacy.rating).toFixed(2) : '4.00';
+            const openBadge = pharmacy.open_now 
                 ? '<span class="badge bg-success ms-2"><i class="fas fa-check-circle me-1"></i>Open Now</span>'
                 : '<span class="badge bg-secondary ms-2">Closed</span>';
-            
-            const stars = '★'.repeat(Math.floor(doctor.rating)) + '☆'.repeat(5 - Math.floor(doctor.rating));
-            
-            const doctorCard = `
+            const stars = '★'.repeat(Math.floor(rating)) + '☆'.repeat(5 - Math.floor(rating));
+            const card = `
                 <div class="col-md-6">
                     <div class="card h-100 shadow-sm border-0" style="border-left: 4px solid var(--primary-light) !important;">
                         <div class="card-body">
                             <div class="d-flex justify-content-between align-items-start mb-2">
                                 <h5 class="card-title mb-0">
-                                    <i class="fas fa-${doctor.type === 'Hospital' ? 'hospital' : 'clinic-medical'} me-2 text-primary"></i>
-                                    ${doctor.name}
+                                    <i class="fas fa-clinic-medical me-2 text-primary"></i>
+                                    ${name || 'Pharmacy'}
                                 </h5>
                                 ${openBadge}
                             </div>
                             <p class="text-muted small mb-2">
-                                <i class="fas fa-map-marker-alt me-1"></i>${doctor.address}
-                                <span class="badge bg-light text-dark ms-2">${doctor.distance}</span>
+                                <i class="fas fa-map-marker-alt me-1"></i>${address || 'No address available'}
                             </p>
                             <div class="mb-3">
                                 <span class="text-warning">${stars}</span>
-                                <span class="text-muted ms-1">(${doctor.rating})</span>
-                                <span class="badge bg-info text-white ms-2">${doctor.type}</span>
+                                <span class="text-muted ms-1">(${rating})</span>
+                                <span class="badge bg-info text-white ms-2">Pharmacy</span>
                             </div>
                             <div class="d-grid gap-2">
-                                <a href="tel:${doctor.phone}" class="btn btn-primary btn-sm">
-                                    <i class="fas fa-phone me-2"></i>Call: ${doctor.phone}
-                                </a>
-                                <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(doctor.name + ' ' + doctor.address)}" 
+                                ${phone ? `<a href="tel:${phone}" class="btn btn-primary btn-sm"><i class="fas fa-phone me-2"></i>Call: ${phone}</a>` : ''}
+                                <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent((name || '') + ' ' + (address || ''))}" 
                                    target="_blank" 
                                    class="btn btn-outline-secondary btn-sm">
                                     <i class="fas fa-directions me-2"></i>Get Directions
@@ -505,75 +620,37 @@
                     </div>
                 </div>
             `;
-            doctorsList.innerHTML += doctorCard;
+            pharmacyList.innerHTML += card;
         });
-    }
-
-    // Pharmacy Search Functions
-    function initPharmacySearch() {
-        const useLocationBtn = document.getElementById('useCurrentLocation');
-        const enterCityBtn = document.getElementById('enterCityBtn');
-        const cityInputSection = document.getElementById('cityInputSection');
-        const searchByCityBtn = document.getElementById('searchByCity');
-        const cityInput = document.getElementById('cityInput');
-
-        if (useLocationBtn) {
-            useLocationBtn.addEventListener('click', getCurrentLocation);
-        }
-
-        if (enterCityBtn) {
-            enterCityBtn.addEventListener('click', () => {
-                const isVisible = cityInputSection.style.display !== 'none';
-                cityInputSection.style.display = isVisible ? 'none' : 'block';
-                enterCityBtn.innerHTML = isVisible ? 
-                    '<i class="fas fa-keyboard me-2"></i>Enter City Manually' : 
-                    '<i class="fas fa-times me-2"></i>Cancel';
-            });
-        }
-
-        if (searchByCityBtn) {
-            searchByCityBtn.addEventListener('click', () => {
-                const city = cityInput.value.trim();
-                if (city) {
-                    searchPharmaciesByCity(city);
-                } else {
-                    showLocationStatus('Please enter a city name', 'danger');
-                }
-            });
-        }
-
-        if (cityInput) {
-            cityInput.addEventListener('keypress', (e) => {
-                if (e.key === 'Enter') {
-                    searchByCityBtn.click();
-                }
-            });
-        }
     }
 
     function getCurrentLocation() {
         if (!navigator.geolocation) {
+            showPharmacyLoading(false);
             showLocationStatus('Geolocation is not supported by this browser', 'danger');
             return;
         }
 
-        showLocationStatus('Getting your location...', 'info');
-        
+        showPharmacyLoading(true);
+        showLocationStatus('Requesting your location...', 'info');
+
         navigator.geolocation.getCurrentPosition(
-            (position) => {
+            function(position) {
                 const lat = position.coords.latitude;
                 const lng = position.coords.longitude;
                 showLocationStatus(`Location found: ${lat.toFixed(4)}, ${lng.toFixed(4)}`, 'success');
-                searchPharmaciesByCoordinates(lat, lng);
+                // Instead of calling backend, show sample pharmacies (mock data)
+                displaySamplePharmacies();
             },
-            (error) => {
-                let message = 'Unable to get your location. ';
+            function(error) {
+                showPharmacyLoading(false);
+                let message = 'Unable to access your location. ';
                 switch (error.code) {
                     case error.PERMISSION_DENIED:
-                        message += 'Please allow location access or enter your city manually.';
+                        message += 'Please enable location access in your browser settings or enter your city manually.';
                         break;
                     case error.POSITION_UNAVAILABLE:
-                        message += 'Location information unavailable.';
+                        message += 'Location information is unavailable.';
                         break;
                     case error.TIMEOUT:
                         message += 'Location request timed out.';
@@ -582,9 +659,100 @@
                         message += 'An unknown error occurred.';
                         break;
                 }
-                showLocationStatus(message, 'warning');
+                showLocationStatus(message, 'danger');
             }
         );
+    }
+
+    // Show a sample list of pharmacies after location access (mock data)
+    function displaySamplePharmacies() {
+        showPharmacyLoading(false);
+        document.getElementById('pharmacyResults').style.display = 'block';
+        const listDiv = document.getElementById('pharmacyList');
+        listDiv.innerHTML = '';
+        const pharmacies = [
+            {
+                name: 'HealthPlus Pharmacy',
+                address: '123 Main St, Downtown',
+                phone: '+1 555-123-4567',
+                rating: 4.7,
+                distance: '0.4 km',
+                open_now: true
+            },
+            {
+                name: 'WellCare Chemist',
+                address: '456 Oak Ave, Midtown',
+                phone: '+1 555-987-6543',
+                rating: 4.5,
+                distance: '0.7 km',
+                open_now: false
+            },
+            {
+                name: 'CityMed Pharmacy',
+                address: '789 Pine Rd, Uptown',
+                phone: '+1 555-222-3333',
+                rating: 4.2,
+                distance: '1.1 km',
+                open_now: true
+            },
+            {
+                name: 'GreenLeaf Drugs',
+                address: '321 Maple St, Suburbia',
+                phone: '+1 555-444-5555',
+                rating: 4.0,
+                distance: '1.6 km',
+                open_now: true
+            },
+            {
+                name: 'Neighborhood Pharmacy',
+                address: '654 Elm St, Riverside',
+                phone: '+1 555-666-7777',
+                rating: 3.9,
+                distance: '2.0 km',
+                open_now: false
+            }
+        ];
+        pharmacies.forEach(pharmacy => {
+            const openBadge = pharmacy.open_now
+                ? '<span class="badge bg-success ms-2"><i class="fas fa-check-circle me-1"></i>Open Now</span>'
+                : '<span class="badge bg-secondary ms-2">Closed</span>';
+            const stars = '★'.repeat(Math.floor(pharmacy.rating)) + '☆'.repeat(5 - Math.floor(pharmacy.rating));
+            const card = `
+                <div class="pharmacy-card mb-3">
+                    <div class="card h-100 shadow-sm border-0" style="border-left: 4px solid var(--primary-light) !important;">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h6 class="card-title mb-0">
+                                    <i class="fas fa-building text-primary me-2"></i>
+                                    ${pharmacy.name}
+                                </h6>
+                                ${openBadge}
+                            </div>
+                            <p class="card-text text-muted mb-2">
+                                <i class="fas fa-map-marker-alt me-1"></i>
+                                ${pharmacy.address}
+                                <span class="badge bg-light text-dark ms-2">${pharmacy.distance}</span>
+                            </p>
+                            <div class="mb-3">
+                                <span class="text-warning">${stars}</span>
+                                <span class="text-muted ms-1">(${pharmacy.rating})</span>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <a href="tel:${pharmacy.phone}" class="btn btn-primary btn-sm">
+                                    <i class="fas fa-phone me-2"></i>Call: ${pharmacy.phone}
+                                </a>
+                                <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(pharmacy.name + ' ' + pharmacy.address)}" 
+                                   target="_blank" 
+                                   class="btn btn-outline-secondary btn-sm">
+                                    <i class="fas fa-directions me-2"></i>Get Directions
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+            listDiv.innerHTML += card;
+        });
     }
 
     function searchPharmaciesByCity(city) {
